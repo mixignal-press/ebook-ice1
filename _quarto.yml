@@ -3,8 +3,8 @@ project:
   output-dir: docs
 
 book:
-  title: "ice1"
-  author: "Norah Jones"
+  title: "IC Engineering I"
+  author: "Saroj Rout"
   date: "1/8/2025"
   chapters:
     - index.qmd
