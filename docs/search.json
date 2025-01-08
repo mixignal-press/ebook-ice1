@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "IC Engineering I",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This book covers basic topics in circuits and devices for Integrated Circuit (IC) engineers.\nThis is a book created from markdown and executable code.\nThis is an exmaple of reference citation: Thomas, Rosa, and Toussaint (2016)\n\n\n\n\nThomas, Roland E., Albert J. Rosa, and Gregory J. Toussaint. 2016. The Analysis and Design of Linear Circuits. John Wiley & Sons. https://www.dropbox.com/scl/fi/83ygnyynx2sfex1h7tdhg/Thomas-AnalysisDesignOfLinearCkts-Wiley-2023.pdf?rlkey=4xzk0an1z7r3fcj936o0enjg4&dl=0.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "passives.html",
+    "href": "passives.html",
+    "title": "2  Passive IC devices",
+    "section": "",
+    "text": "2.1 Resistance\nThis chapter covers basics principle behind passive IC devices: Resistors, Capcitors and Inductors.\nResistance calculation of metal or semiconductor material is fundamental to IC engineering. Consider a block of metal or semiconductor material with dimensions \\(L, W\\) and \\(h\\) as shown in Figure 2.1. Let \\(n\\) be the charge per unit volume. To calculate the current \\(I_R\\) for an applied voltage \\(V_R\\) across the length of the material, we will consider an incremental cross section of the material with length \\(\\Delta x\\). The current can be written as the total charge in the incremental volume in time \\(\\Delta t\\):\n\\(I_R = \\frac{\\Delta Q}{\\Delta t} = \\frac{Q_S \\Delta x}{\\Delta t} = Q_S v_d\\)\n\\(I_R = Sheet Charge \\times Average Velocity\\) or,\nwhere, \\(Q_S = nWh\\) is the sheet-charge or the charge per unit length,\n\\(v_d\\) is the average velocity of the electrons:\n\\(v_d= \\frac{\\Delta x}{\\Delta t} = \\mu E\\), and\nwhere, \\(E = \\frac{\\Delta v}{\\Delta x}\\), and \\(\\mu\\) is the mobility of the material.\nTherefore, \\(I_R = \\mu Q_S \\frac{\\Delta v}{\\Delta x}\\)\nThe incremental resistance can be expressed as\n\\(\\Delta R = \\Delta v / I_R = \\rho \\frac{\\Delta x}{W h}\\)\nwhere, \\(\\rho = 1/(n \\mu)\\) is the Specific resistivity (\\(\\rho\\)) is a property of the material that can be defined as the resistance per unit volume expressed in SI units of \\(\\Omega m\\) but more conveniently as \\(\\Omega cm\\).\nThe total resistance of the volume can be found by summing up all incremental resistances \\(\\Delta R\\):\n\\(R = \\rho \\frac{L}{A}\\)\nwhere, \\(L\\) is the length and \\(A\\) is the cross-sectional areai (\\(W h\\)).\nIn integrated circuit design, the height of the metal routing is fixed and is typically in the range of \\(0.1\\) to \\(5\\) micrometers (\\(\\mu m, 10^{-6} m)\\) and the resistance is measured in square units as ohms per square or \\(\\Omega/\\square\\).\n\\(R = (\\rho/h) (L/W)\\)\nWhere, \\(\\rho/h\\) is typically called sheet-rho (\\(\\rho_{sheet}\\))\nThe specific resistance (in \\(\\Omega cm\\)) and unit resistance (in \\(\\Omega/\\square\\)) of typical metals used in integrated circuits such as aluminum (Al), copper (Cu) and gold (Au) are tabulated:",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Passive IC devices</span>"
+    ]
+  },
+  {
+    "objectID": "passives.html#resistance",
+    "href": "passives.html#resistance",
+    "title": "2  Passive IC devices",
+    "section": "",
+    "text": "Figure 2.1: Setup for resistance calculation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\mu -\\Omega\\) cm\n\\(m\\Omega/\\square\\)\n\n\n\n\nAl\n2.65\n26.5\n\n\nCu\n1.68\n16.8\n\n\nAu\n2.44\n24.4",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Passive IC devices</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Thomas, Roland E., Albert J. Rosa, and Gregory J. Toussaint. 2016.\nThe Analysis and Design of\nLinear Circuits. John Wiley & Sons.\nhttps://www.dropbox.com/scl/fi/83ygnyynx2sfex1h7tdhg/Thomas-AnalysisDesignOfLinearCkts-Wiley-2023.pdf?rlkey=4xzk0an1z7r3fcj936o0enjg4&dl=0.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]
