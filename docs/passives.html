@@ -198,7 +198,17 @@ window.Quarto = {
 <p>This chapter covers basics principle behind passive IC devices: Resistors, Capcitors and Inductors.</p>
 <section id="resistance" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="resistance"><span class="header-section-number">2.1</span> Resistance</h2>
-<p>Resistance calculation of metal or semiconductor material is fundamental to IC engineering. Consider a block of metal or semiconductor material with dimensions <span class="math inline">\(L, W\)</span> and <span class="math inline">\(h\)</span>. Let <span class="math inline">\(n\)</span> be the charge per unit volume. To calculate the current <span class="math inline">\(I_R\)</span> for an applied voltage <span class="math inline">\(V_R\)</span> across the length of the material, we will consider an incremental cross section of the material with length <span class="math inline">\(\Delta x\)</span>. The current can be written as the total charge in the incremental volume in time <span class="math inline">\(\Delta t\)</span>:</p>
+<div id="fig-passive-res" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-passive-res-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig-passives-res.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-passive-res-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: Resistance
+</figcaption>
+</figure>
+</div>
+<p>Resistance calculation of metal or semiconductor material is fundamental to IC engineering. Consider a block of metal or semiconductor material with dimensions <span class="math inline">\(L, W\)</span> and <span class="math inline">\(h\)</span> as shown in <a href="#fig-passive-res" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>. Let <span class="math inline">\(n\)</span> be the charge per unit volume. To calculate the current <span class="math inline">\(I_R\)</span> for an applied voltage <span class="math inline">\(V_R\)</span> across the length of the material, we will consider an incremental cross section of the material with length <span class="math inline">\(\Delta x\)</span>. The current can be written as the total charge in the incremental volume in time <span class="math inline">\(\Delta t\)</span>:</p>
 <p><span class="math inline">\(I_R = \frac{\Delta Q}{\Delta t} = \frac{Q_S \Delta x}{\Delta t} = Q_S v_d\)</span></p>
 <p><span class="math inline">\(I_R = Sheet Charge \times Average Velocity\)</span> or,</p>
 <p>where, <span class="math inline">\(Q_S = nWh\)</span> is the sheet-charge or the charge per unit length,</p>
@@ -207,11 +217,11 @@ window.Quarto = {
 <p>where, <span class="math inline">\(E = \frac{\Delta v}{\Delta x}\)</span>, and <span class="math inline">\(\mu\)</span> is the <em>mobility</em> of the material.</p>
 <p>Therefore, <span class="math inline">\(I_R = \mu Q_S \frac{\Delta v}{\Delta x}\)</span></p>
 <p>The incremental resistance can be expressed as</p>
-<p><span class="math inline">\(\Delta R = \Delta v / I_R = \rho \Delta x/W\)</span></p>
-<p>where, <span class="math inline">\(\rho = 1/(Q_S \mu)\)</span> is the <em>Specific resistivity</em> (<span class="math inline">\(\rho\)</span>) is a property of the material that can be defined as the resistance per unit volume expressed in SI units of <span class="math inline">\(\Omega m\)</span> but more conveniently as <span class="math inline">\(\Omega cm\)</span>.</p>
+<p><span class="math inline">\(\Delta R = \Delta v / I_R = \rho \frac{\Delta x}{W h}\)</span></p>
+<p>where, <span class="math inline">\(\rho = 1/(n \mu)\)</span> is the <em>Specific resistivity</em> (<span class="math inline">\(\rho\)</span>) is a property of the material that can be defined as the resistance per unit volume expressed in SI units of <span class="math inline">\(\Omega m\)</span> but more conveniently as <span class="math inline">\(\Omega cm\)</span>.</p>
 <p>The total resistance of the volume can be found by summing up all incremental resistances <span class="math inline">\(\Delta R\)</span>:</p>
-<p><span class="math inline">\(R = \rho L/A\)</span></p>
-<p>where, <span class="math inline">\(L\)</span> is the length and <span class="math inline">\(A\)</span> is the cross-sectional area.</p>
+<p><span class="math inline">\(R = \rho \frac{L}{A}\)</span></p>
+<p>where, <span class="math inline">\(L\)</span> is the length and <span class="math inline">\(A\)</span> is the cross-sectional areai (<span class="math inline">\(W h\)</span>).</p>
 <p>In integrated circuit design, the height of the metal routing is fixed and is typically in the range of <span class="math inline">\(0.1\)</span> to <span class="math inline">\(5\)</span> micrometers (<span class="math inline">\(\mu m, 10^{-6} m)\)</span> and the resistance is measured in square units as <em>ohms per square</em> or <span class="math inline">\(\Omega/\square\)</span>.</p>
 <p><span class="math inline">\(R = (\rho/h) (L/W)\)</span></p>
 <p>Where, <span class="math inline">\(\rho/h\)</span> is typically called sheet-rho (<span class="math inline">\(\rho_{sheet}\)</span>)</p>
