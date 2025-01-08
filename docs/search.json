@@ -14,7 +14,7 @@
     "href": "intro.html",
     "title": "1  Introduction",
     "section": "",
-    "text": "This book covers basic topics in circuits and devices for Integrated Circuit (IC) engineers.\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "This book covers basic topics in circuits and devices for Integrated Circuit (IC) engineers.\nThis is a book created from markdown and executable code.\nThis is an exmaple of reference citation: Thomas, Rosa, and Toussaint (2016)\n\n\n\n\nThomas, Roland E., Albert J. Rosa, and Gregory J. Toussaint. 2016. The Analysis and Design of Linear Circuits. John Wiley & Sons. https://www.dropbox.com/scl/fi/83ygnyynx2sfex1h7tdhg/Thomas-AnalysisDesignOfLinearCkts-Wiley-2023.pdf?rlkey=4xzk0an1z7r3fcj936o0enjg4&dl=0.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -44,7 +44,7 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "Thomas, Roland E., Albert J. Rosa, and Gregory J. Toussaint. 2016.\nThe Analysis and Design of\nLinear Circuits. John Wiley & Sons.\nhttps://www.dropbox.com/scl/fi/83ygnyynx2sfex1h7tdhg/Thomas-AnalysisDesignOfLinearCkts-Wiley-2023.pdf?rlkey=4xzk0an1z7r3fcj936o0enjg4&dl=0.",
     "crumbs": [
       "References"
     ]

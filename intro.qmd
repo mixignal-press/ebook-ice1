@@ -4,4 +4,4 @@ This book covers basic topics in circuits and devices for Integrated Circuit (IC
 
 This is a book created from markdown and executable code.
 
-See @knuth84 for additional discussion of literate programming.
+This is an exmaple of reference citation: @thomas_analysis_2016
