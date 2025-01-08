@@ -1,6 +1,6 @@
 # Passive IC devices
 
-This chapter covers basics principle behind passive IC devices: Resistors, Capcitors and Inductors.
+This chapter covers basics principle behind passive IC devices: Resistors, Capacitors and Inductors.
 
 
 ## Resistance
