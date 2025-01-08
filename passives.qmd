@@ -5,7 +5,7 @@ This chapter covers basics principle behind passive IC devices: Resistors, Capci
 
 ## Resistance
 
-![Resistance](figures/fig-passives-res.png){#fig-passive-res}
+![Setup for resistance calculation](figures/fig-passives-res.png){#fig-passive-res}
 
 Resistance calculation of metal or semiconductor material is fundamental to IC engineering.
 Consider a block of metal or semiconductor material with dimensions $L, W$ and $h$ as shown in @fig-passive-res. Let $n$ be the charge per unit volume.
