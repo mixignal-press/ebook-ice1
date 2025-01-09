@@ -105,7 +105,7 @@ $\int \vec{E}\cdot da = \frac{Q}{\epsilon_0}$
 
 The flux leaving the bottom surface integrated results in:
 
-$EA = \frac{V}{d} = \frac{Q}{\epsilon_0}$
+$EA = \frac{V A}{d} = \frac{Q}{\epsilon_0}$
 
 Therefore, the capacitance of the parallel plates can be expressed as:
 
