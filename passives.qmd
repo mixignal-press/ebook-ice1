@@ -67,3 +67,11 @@ $L=100\mu m, W=1\mu m, h=0.5\mu m$
 
 :::
 
+::: {.callout-tip title="Excercise: Sheet-Rho and specific resistivity calculation"}
+
+Calculate the _sheet-rho_($\rho_{sheet} ( \Omega/\square$) and the specific resistivity ($\rho (\Omega cm$) for a material with the following dimensions:
+
+$L=50\mu m, W=1\mu m, h=0.5\mu m$
+
+and the measured resistance across the length is $35 \Omega$.
+:::
