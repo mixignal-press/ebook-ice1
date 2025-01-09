@@ -51,8 +51,7 @@ The specific resistance (in $\Omega cm$) and unit resistance (in $\Omega/\square
 | Al | 2.65 | 26.5 |
 | Cu | 1.68 | 16.8 |
 | Au | 2.44 | 24.4 |
-
-: Specific resistance (at $20^\circ C$) of typical metals used in integrated circuits expressed in $\Omega cm$ and, the unit resistance of a height of $1\mu m$ metal expressed in $\Omega/\square$ {#tbl-passives-rho}
+Specific resistance (at $20^\circ C$) of typical metals used in integrated circuits expressed in $\Omega cm$ and, the unit resistance of a height of $1\mu m$ metal expressed in $\Omega/\square$ {#tbl-passives-rho}
 
 ::: {.callout-tip title="Update material properties in Table @tbl-passives-rho "}
 Update material properties of the 3 metals in Table @tbl-passives-rho with **melting point**, **temperature coefficient**, and **cost in INR for 10gm**.
