@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+## Run Quatro to create the render files
+
+quarto render
+
+## Commit and push
+
+git commit --allow-empty -m "Update" -a
+git push
+

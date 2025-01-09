@@ -75,3 +75,10 @@ $L=50\mu m, W=1\mu m, h=0.5\mu m$
 
 and the measured resistance across the length is $35 \Omega$.
 :::
+
+
+
+## Capacitance {#sec-passive-cap}
+
+![Parallel plate calculation](figures/fig-passive-cap.eps){#fig-passive-cap}
+
