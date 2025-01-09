@@ -91,24 +91,28 @@ $Q \propto V$
 
 And the proportionality constant is the _capacitance_ $C$ of the parallel plates:
 
-$ Q = CV$
+$Q = CV$
 
 In order to calculate the capacitance of the parallel plates, we will apply Gauss' law ($\nabla\cdot \vec{E} = \rho /\epsilon_0$) by enclosing the top plate (or bottom plate), as show in @fig-passive-cap and calculate the total electric field _diverging_ from the enclosed volume. 
 
-Assuming a large area and a small separation, the peripheral electric field can be neglected and average electric field $\Vec{E}$ can be expressed as:
+Assuming a large area and a small separation, the peripheral electric field can be neglected and average electric field $\vec{E}$ can be expressed as:
 
-$\Vec{E} = \frac{V}{d}$
+$\vec{E} = \frac{V}{d}$
 
 Applying Gauss's to find the divergence of $\vec{E}$:
 
-$\int \Vec{E}\cdot da = \frac{Q}{\epsilon_0}$
+$\int \vec{E}\cdot da = \frac{Q}{\epsilon_0}$
 
 The flux leaving the bottom surface integrated results in:
 
-$ EA = \frac{V}{d} = \frac{Q}{\epsilon_0}$
+$EA = \frac{V}{d} = \frac{Q}{\epsilon_0}$
 
 Therefore, the capacitance of the parallel plates can be expressed as:
 
-$C = \frac{A\epsilon_0}{d}$
+$C = A\epsilon_0/d$
 
+In the presence of _dielectric_ material, the capacitance is expressed as:
 
+$C = A (1+\chi)\epsilon_0 / d = A\kappa \epsilon_0 / d $
+
+where, $\chi$ is the dielectric _susceptibility_ and $\kappa$ is the _relative permittivity_.
