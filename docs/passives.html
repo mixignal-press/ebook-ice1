@@ -169,7 +169,7 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#resistance" id="toc-resistance" class="nav-link active" data-scroll-target="#resistance"><span class="header-section-number">2.1</span> Resistance</a></li>
+  <li><a href="#sec-passive-res" id="toc-sec-passive-res" class="nav-link active" data-scroll-target="#sec-passive-res"><span class="header-section-number">2.1</span> Resistance</a></li>
   </ul>
 </nav>
     </div>
@@ -178,7 +178,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Passive IC devices</span></h1>
+<h1 class="title"><span id="sec-passives" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Passive IC devices</span></span></h1>
 </div>
 
 
@@ -196,8 +196,8 @@ window.Quarto = {
 
 
 <p>This chapter covers basics principle behind passive IC devices: Resistors, Capacitors and Inductors.</p>
-<section id="resistance" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="resistance"><span class="header-section-number">2.1</span> Resistance</h2>
+<section id="sec-passive-res" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sec-passive-res"><span class="header-section-number">2.1</span> Resistance</h2>
 <div id="fig-passive-res" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-passive-res-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -208,7 +208,7 @@ Figure&nbsp;2.1: Setup for resistance calculation
 </figcaption>
 </figure>
 </div>
-<p>Resistance calculation of metal or semiconductor material is fundamental to IC engineering. Consider a block of metal or semiconductor material with dimensions <span class="math inline">\(L, W\)</span> and <span class="math inline">\(h\)</span> as shown in <a href="#fig-passive-res" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>. Let <span class="math inline">\(n\)</span> be the charge per unit volume. To calculate the current <span class="math inline">\(I_R\)</span> for an applied voltage <span class="math inline">\(V_R\)</span> across the length of the material, we will consider an incremental cross section of the material with length <span class="math inline">\(\Delta x\)</span>. The current can be written as the total charge in the incremental volume in time <span class="math inline">\(\Delta t\)</span>:</p>
+<p>Resistance calculation of metal or semiconductor material is fundamental to IC engineering. Consider a block of metal or semiconductor material with dimensions <span class="math inline">\(L, W\)</span> and <span class="math inline">\(h\)</span> as shown in <a href="#fig-passive-res" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-passive-res</span></a>. Let <span class="math inline">\(n\)</span> be the charge per unit volume. To calculate the current <span class="math inline">\(I_R\)</span> for an applied voltage <span class="math inline">\(V_R\)</span> across the length of the material, we will consider an incremental cross section of the material with length <span class="math inline">\(\Delta x\)</span>. The current can be written as the total charge in the incremental volume in time <span class="math inline">\(\Delta t\)</span>:</p>
 <p><span class="math inline">\(I_R = \frac{\Delta Q}{\Delta t} = \frac{Q_S \Delta x}{\Delta t} = Q_S v_d\)</span></p>
 <p><span class="math inline">\(I_R = Sheet Charge \times Average Velocity\)</span> or,</p>
 <p>where, <span class="math inline">\(Q_S = nWh\)</span> is the sheet-charge or the charge per unit length,</p>
@@ -226,6 +226,12 @@ Figure&nbsp;2.1: Setup for resistance calculation
 <p><span class="math inline">\(R = (\rho/h) (L/W)\)</span></p>
 <p>Where, <span class="math inline">\(\rho/h\)</span> is typically called sheet-rho (<span class="math inline">\(\rho_{sheet}\)</span>)</p>
 <p>The specific resistance (in <span class="math inline">\(\Omega cm\)</span>) and unit resistance (in <span class="math inline">\(\Omega/\square\)</span>) of typical metals used in integrated circuits such as aluminum (Al), copper (Cu) and gold (Au) are tabulated:</p>
+<div id="tbl-passives-rho" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-passives-rho-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.1: Specific resistance (at <span class="math inline">\(20^\circ C\)</span>) of typical metals used in integrated circuits expressed in <span class="math inline">\(\Omega cm\)</span> and, the unit resistance of a height of <span class="math inline">\(1\mu m\)</span> metal expressed in <span class="math inline">\(\Omega/\square\)</span>
+</figcaption>
+<div aria-describedby="tbl-passives-rho-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -252,6 +258,37 @@ Figure&nbsp;2.1: Setup for resistance calculation
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Update material properties in Table @tbl-passives-rho ">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Update material properties in Table <a href="#tbl-passives-rho" class="quarto-xref">Table&nbsp;<span class="quarto-unresolved-ref">tbl-passives-rho</span></a>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Update material properties of the 3 metals in Table <a href="#tbl-passives-rho" class="quarto-xref">Table&nbsp;<span class="quarto-unresolved-ref">tbl-passives-rho</span></a> with <strong>melting point</strong>, <strong>temperature coefficient</strong>, and <strong>cost in INR for 10gm</strong>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Resistance calculation">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Resistance calculation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Calculate the resistance of an aluminum wire with the following dimension:</p>
+<p><span class="math inline">\(L=100\mu m, W=1\mu m, h=0.5\mu m\)</span></p>
+<p><strong>Hint</strong>: Re-calculate <span class="math inline">\(\rho_{sheet}\)</span> from table <a href="#tbl-passives-rho" class="quarto-xref">Table&nbsp;<span class="quarto-unresolved-ref">tbl-passives-rho</span></a> and use it to calculate the resistance.</p>
+</div>
+</div>
 
 
 </section>

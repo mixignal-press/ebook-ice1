@@ -1,9 +1,9 @@
-# Passive IC devices
+# Passive IC devices {#sec-passives}
 
 This chapter covers basics principle behind passive IC devices: Resistors, Capacitors and Inductors.
 
 
-## Resistance
+## Resistance {#sec-passive-res}
 
 ![Setup for resistance calculation](figures/fig-passives-res.png){#fig-passive-res}
 
@@ -51,3 +51,20 @@ The specific resistance (in $\Omega cm$) and unit resistance (in $\Omega/\square
 | Al | 2.65 | 26.5 |
 | Cu | 1.68 | 16.8 |
 | Au | 2.44 | 24.4 |
+
+: Specific resistance (at $20^\circ C$) of typical metals used in integrated circuits expressed in $\Omega cm$ and, the unit resistance of a height of $1\mu m$ metal expressed in $\Omega/\square$ {#tbl-passives-rho}
+
+::: {.callout-tip title="Update material properties in Table @tbl-passives-rho "}
+Update material properties of the 3 metals in Table @tbl-passives-rho with **melting point**, **temperature coefficient**, and **cost in INR for 10gm**.
+:::
+
+::: {.callout-tip title="Resistance calculation"}
+
+Calculate the resistance of an aluminum wire with the following dimension:
+
+$L=100\mu m, W=1\mu m, h=0.5\mu m$
+
+**Hint**: Re-calculate $\rho_{sheet}$ from table @tbl-passives-rho and use it to calculate the resistance.
+
+:::
+
