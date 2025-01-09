@@ -80,5 +80,5 @@ and the measured resistance across the length is $35 \Omega$.
 
 ## Capacitance {#sec-passive-cap}
 
-![Parallel plate calculation](figures/fig-passive-cap.eps){#fig-passive-cap}
+![Parallel plate calculation](figures/fig-passive-cap.pdf){#fig-passive-cap}
 
