@@ -1,5 +1,5 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+This is a Quarto book maintained at [GitHub](https://github.com/mixignal-press/ebook-ice1). If you find any errors or have any suggestions, please do a _pull request_.
 
 To learn more about Quarto books visit <https://quarto.org/docs/books>.
