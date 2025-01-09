@@ -113,6 +113,6 @@ $C = A\epsilon_0/d$
 
 In the presence of _dielectric_ material, the capacitance is expressed as:
 
-$C = A (1+\chi)\epsilon_0 / d = A\kappa \epsilon_0 / d $
+$C = A (1+\chi)\epsilon_0 / d = A\kappa \epsilon_0 / d$
 
 where, $\chi$ is the dielectric _susceptibility_ and $\kappa$ is the _relative permittivity_.
