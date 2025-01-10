@@ -96,6 +96,10 @@ and the measured resistance across the length is $35 \Omega$.
 :::
 
 
+::: {.callout-tip title="Excercise: Resistance and resistivity simulation using Virtual Lab"}
+
+Using a Virtual Laboratory, for example [PhET](https://phet.colorado.edu/en/simulations/resistance-in-a-wire), interactively predict and verify how resistance changes with each parameter ($\rho, L, A$). Enter the resistivity of Aluminum, copper and gold, verify the resistance matches your calculation.
+:::
 
 ## Capacitance {#sec-passive-cap}
 
