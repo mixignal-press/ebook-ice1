@@ -143,13 +143,15 @@ $$
 Therefore, the capacitance of the parallel plates can be expressed as:
 
 $$
-C = A\epsilon_0/d
+C = \frac{A\epsilon_0}{d}
 $$
 
-In the presence of _dielectric_ material, the capacitance is expressed as:
+![Parallel plate capacitance dielectric](figures/fig-passive-cap2.png){#fig-passive-cap2}
+
+In the presence of _dielectric_ material, as shown in @fig-passive-cap2, the capacitance is expressed as:
 
 $$
-C = A (1+\chi)\epsilon_0 / d = A\kappa \epsilon_0 / d
+C = \frac{A (1+\chi)\epsilon_0}{d} = \frac{A\kappa \epsilon_0}{d}
 $$
 
 where, $\chi$ is the dielectric _susceptibility_ and $\kappa$ is the _relative permittivity_.
@@ -215,7 +217,9 @@ The technique used to determine the inductance of a loop is known as the _method
 
 The inductance so obtained is referred to as the _self inductance_ of the loop. 
 
-The mutual inductance between two loops, one of which carries a current $I_1$, is defined with reference to Fig. FIXME as
+![Mutual inductance](figures/fig-passive-ind2.png){#fig-passive-ind2}
+
+The mutual inductance between two loops, one of which carries a current $I_1$, is defined with reference to @fig-passive-ind2 as
 
 $$
 M_{12} = \frac{\psi_2}{I_1}

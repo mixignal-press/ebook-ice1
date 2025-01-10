@@ -392,11 +392,21 @@ EA = \frac{V}{d}A = \frac{Q}{\epsilon_0}
 \]</span></p>
 <p>Therefore, the capacitance of the parallel plates can be expressed as:</p>
 <p><span class="math display">\[
-C = A\epsilon_0/d
+C = \frac{A\epsilon_0}{d}
 \]</span></p>
-<p>In the presence of <em>dielectric</em> material, the capacitance is expressed as:</p>
+<div id="fig-passive-cap2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-passive-cap2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig-passive-cap2.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-passive-cap2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.3: Parallel plate capacitance dielectric
+</figcaption>
+</figure>
+</div>
+<p>In the presence of <em>dielectric</em> material, as shown in <a href="#fig-passive-cap2" class="quarto-xref">Figure&nbsp;<span>2.3</span></a>, the capacitance is expressed as:</p>
 <p><span class="math display">\[
-C = A (1+\chi)\epsilon_0 / d = A\kappa \epsilon_0 / d
+C = \frac{A (1+\chi)\epsilon_0}{d} = \frac{A\kappa \epsilon_0}{d}
 \]</span></p>
 <p>where, <span class="math inline">\(\chi\)</span> is the dielectric <em>susceptibility</em> and <span class="math inline">\(\kappa\)</span> is the <em>relative permittivity</em>.</p>
 </section>
@@ -408,12 +418,12 @@ C = A (1+\chi)\epsilon_0 / d = A\kappa \epsilon_0 / d
 <img src="figures/fig-passive-ind.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-passive-ind-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.3: Loop inductance by Faraday’s law
+Figure&nbsp;2.4: Loop inductance by Faraday’s law
 </figcaption>
 </figure>
 </div>
 <p>Inductors are virtually nonexistent in Integrated Circuits due to the very small loop areas. Our discussion will be confined to the <em>self-inductance</em> of a current loop to familiarize the reader with the fundamental concepts of self-inductance.</p>
-<p>Faraday’s law of induction is crucial for understanding inductance. Consider the circular wire loop in <a href="#fig-passive-ind" class="quarto-xref">Figure&nbsp;<span>2.3</span></a> , with a small gap for introducing current <span class="math inline">\(I\)</span>. This current circulates counter-clockwise around the loop, as in <a href="#fig-passive-ind" class="quarto-xref">Figure&nbsp;<span>2.3</span></a> , creating a magnetic flux density <span class="math inline">\(B\)</span> through the surface <span class="math inline">\(s\)</span> the loop encloses. The surface’s shape doesn’t affect the result, as long as the loop encircles it. With counter-clockwise current, the magnetic field is upward through the surface. The total magnetic flux through the loop can be calculated as</p>
+<p>Faraday’s law of induction is crucial for understanding inductance. Consider the circular wire loop in <a href="#fig-passive-ind" class="quarto-xref">Figure&nbsp;<span>2.4</span></a> , with a small gap for introducing current <span class="math inline">\(I\)</span>. This current circulates counter-clockwise around the loop, as in <a href="#fig-passive-ind" class="quarto-xref">Figure&nbsp;<span>2.4</span></a> , creating a magnetic flux density <span class="math inline">\(B\)</span> through the surface <span class="math inline">\(s\)</span> the loop encloses. The surface’s shape doesn’t affect the result, as long as the loop encircles it. With counter-clockwise current, the magnetic field is upward through the surface. The total magnetic flux through the loop can be calculated as</p>
 <p><span class="math display">\[
 \psi = \int_S \vec{B}\cdot ds
 \]</span></p>
@@ -425,7 +435,7 @@ emf = \int_C \vec{E}\cdot dl = - d\psi / dt
 <p><span class="math display">\[
 V = d\psi / dt
 \]</span></p>
-<p>Lenz’s law clarifies that the negative sign in Faraday’s law indicates the induced emf and current oppose the change in magnetic flux that creates them. Thus, the voltage source polarity is as shown in <a href="#fig-passive-ind" class="quarto-xref">Figure&nbsp;<span>2.3</span></a> . <em>Inductance</em> is fundamentally the ratio of the magnetic flux through the loop to the current causing it</p>
+<p>Lenz’s law clarifies that the negative sign in Faraday’s law indicates the induced emf and current oppose the change in magnetic flux that creates them. Thus, the voltage source polarity is as shown in <a href="#fig-passive-ind" class="quarto-xref">Figure&nbsp;<span>2.4</span></a> . <em>Inductance</em> is fundamentally the ratio of the magnetic flux through the loop to the current causing it</p>
 <p><span class="math display">\[
 L=\frac{\psi}{I}
 \]</span></p>
@@ -441,7 +451,7 @@ V=\frac{d\psi}{dt}
 <p><span class="math display">\[
 V=L\frac{dI}{dt}
 \]</span></p>
-<p><a href="#fig-passive-ind" class="quarto-xref">Figure&nbsp;<span>2.3</span></a> illustrates replacing the induced source with an inductor symbol, where the voltage across it is given by <span class="math inline">\(L\cdot dI/dt\)</span> and appears as a Thevenin open-circuit voltage. If the loop’s wire has resistance, it’s shown with a resistor symbol in series, adding an IR voltage drop around the loop.</p>
+<p><a href="#fig-passive-ind" class="quarto-xref">Figure&nbsp;<span>2.4</span></a> illustrates replacing the induced source with an inductor symbol, where the voltage across it is given by <span class="math inline">\(L\cdot dI/dt\)</span> and appears as a Thevenin open-circuit voltage. If the loop’s wire has resistance, it’s shown with a resistor symbol in series, adding an IR voltage drop around the loop.</p>
 <p>The technique used to determine the inductance of a loop is known as the <em>method of flux linkages</em>, as it involves calculating the flux that “links” with the current. This method comprises four steps:</p>
 <ul>
 <li>Injecting a current <span class="math inline">\(I\)</span> around the closed loop.</li>
@@ -450,7 +460,17 @@ V=L\frac{dI}{dt}
 <li>Divide that flux by the current I to get the inductance of the loop.</li>
 </ul>
 <p>The inductance so obtained is referred to as the <em>self inductance</em> of the loop.</p>
-<p>The mutual inductance between two loops, one of which carries a current <span class="math inline">\(I_1\)</span>, is defined with reference to Fig. FIXME as</p>
+<div id="fig-passive-ind2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-passive-ind2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig-passive-ind2.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-passive-ind2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.5: Mutual inductance
+</figcaption>
+</figure>
+</div>
+<p>The mutual inductance between two loops, one of which carries a current <span class="math inline">\(I_1\)</span>, is defined with reference to <a href="#fig-passive-ind2" class="quarto-xref">Figure&nbsp;<span>2.5</span></a> as</p>
 <p><span class="math display">\[
 M_{12} = \frac{\psi_2}{I_1}
 \]</span></p>
