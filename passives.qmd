@@ -154,7 +154,7 @@ where, $\chi$ is the dielectric _susceptibility_ and $\kappa$ is the _relative p
 
 ## Inductance {#sec-passive-ind}
 
-![Loop inductance by Faraday's law](figures/fig-passive-cap.png){#fig-passive-ind}
+![Loop inductance by Faraday's law](figures/fig-passive-ind.png){#fig-passive-ind}
 
 Inductors are virtually nonexistent in Integrated Circuits due to the very small loop areas. Our discussion will be confined to the _self-inductance_ of a current loop to familiarize the reader with the fundamental concepts of self-inductance.
 
