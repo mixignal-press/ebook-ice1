@@ -151,8 +151,7 @@ $V=\frac{d\psi}{dt}$
 
 or
 
-$V=L\frac{dI}{dt}$ 
-:{#eq-passive-ind1}
+$V=L\frac{dI}{dt}$ :{#eq-passive-ind1}
 
 @fig-passive-ind illustrates replacing the induced source with an inductor symbol, where the voltage across it is given by @eq-passive-ind1 ($L\cdot dI/dt$) and appears as a Thevenin open-circuit voltage. If the loop's wire has resistance, it's shown with a resistor symbol in series, adding an IR voltage drop around the loop.
 
