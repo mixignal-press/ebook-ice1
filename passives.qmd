@@ -121,23 +121,23 @@ where, $\chi$ is the dielectric _susceptibility_ and $\kappa$ is the _relative p
 
 ## Inductance {#sec-passive-ind}
 
-![Loop inductance by Faraday's law](figures/fig-passive-cap.png){#fig-passive-cap}
+![Loop inductance by Faraday's law](figures/fig-passive-cap.png){#fig-passive-ind}
 
-Inductors are virtually nonexistent in Integrated Circuits due to the very small loop areas. Our discussion will be confined to the self-inductance of a current loop to familiarize the reader with the fundamental concepts of self-inductance.
+Inductors are virtually nonexistent in Integrated Circuits due to the very small loop areas. Our discussion will be confined to the _self-inductance_ of a current loop to familiarize the reader with the fundamental concepts of self-inductance.
 
-Faraday's law of induction is crucial for understanding inductance. Consider the circular wire loop in Fig. FIXME, with a small gap for introducing current $I$. This current circulates counter-clockwise around the loop, as in Fig. FIXME, creating a magnetic flux density $B$ through the surface $s$ the loop encloses. The surface's shape doesn't affect the result, as long as the loop encircles it. With counter-clockwise current, the magnetic field is upward through the surface. The total magnetic flux through the loop can be calculated as
+Faraday's law of induction is crucial for understanding inductance. Consider the circular wire loop in @fig-passive-ind , with a small gap for introducing current $I$. This current circulates counter-clockwise around the loop, as in @fig-passive-ind , creating a magnetic flux density $B$ through the surface $s$ the loop encloses. The surface's shape doesn't affect the result, as long as the loop encircles it. With counter-clockwise current, the magnetic field is upward through the surface. The total magnetic flux through the loop can be calculated as
 
 $\psi = \int_S \vec{B}\cdot ds$
 
 where $s$ is the surface enclosed by the current loop. If the current and magnetic field change over time, Faraday's law of induction states that the change in magnetic flux through the loop induces an electromotive force (emf) around its contour.
 
-$ emf = \int_C \vec{E}\cdot dl = - d\psi / dt$
+$emf = \int_C \vec{E}\cdot dl = - d\psi / dt$
 
 where $C$ is the loop's contour around surface $s$. If the loop is electrically small, we can represent the emf as a voltage source equal to the rate of change of magnetic flux through the loop:
 
-$ V = d\psi / dt $
+$V = d\psi / dt$
 
-Lenz's law clarifies that the negative sign in Faraday's law indicates the induced emf and current oppose the change in magnetic flux that creates them. Thus, the voltage source polarity is as shown in Fig. FIXME. Inductance is fundamentally the ratio of the magnetic flux through the loop to the current causing it.:
+Lenz's law clarifies that the negative sign in Faraday's law indicates the induced emf and current oppose the change in magnetic flux that creates them. Thus, the voltage source polarity is as shown in @fig-passive-ind . _Inductance_ is fundamentally the ratio of the magnetic flux through the loop to the current causing it
 
 $L=\frac{\psi}{I}$
 
@@ -151,18 +151,18 @@ $V=\frac{d\psi}{dt}$
 
 or
 
-$V=L\frac{dI}{dt}$
+$V=L\frac{dI}{dt}$ {#eq-passive-ind1}
 
-Figure FIXME illustrates replacing the induced source with an inductor symbol, where the voltage across it is given by $L\cdot dI/dt$ and appears as a Thevenin open-circuit voltage. If the loop's wire has resistance, it's shown with a resistor symbol in series, adding an IR voltage drop around the loop.
+@fig-passive-ind illustrates replacing the induced source with an inductor symbol, where the voltage across it is given by @eq-passive-ind1 ($L\cdot dI/dt$) and appears as a Thevenin open-circuit voltage. If the loop's wire has resistance, it's shown with a resistor symbol in series, adding an IR voltage drop around the loop.
 
-The technique used to determine the inductance of a loop is known as the method of flux linkages, as it involves calculating the flux that "links" with the current. This method comprises four steps:
+The technique used to determine the inductance of a loop is known as the _method of flux linkages_, as it involves calculating the flux that "links" with the current. This method comprises four steps:
 
-- Inject a current I around the closed loop.
-- Use Biot-Savart's law $\vec{B}$ to find the magnetic flux density over the loop's surface, akin to Gauss' law for magnetism.
+- Injecting a current $I$ around the closed loop.
+- Use Biot-Savart's law to find the magnetic flux density $\vec{B}$ over the loop's surface, akin to Gauss' law for magnetism.
 - Determine the overall magnetic flux passing through the loop by utilizing the equation $\psi = \int_S \vec{B} \cdot ds$.
 - Divide that flux by the current I to get the inductance of the loop.
 
-The inductance so obtained is referred to as the self inductance of the loop. 
+The inductance so obtained is referred to as the _self inductance_ of the loop. 
 
 The mutual inductance between two loops, one of which carries a current $I_1$, is defined with reference to Fig. FIXME as
 
