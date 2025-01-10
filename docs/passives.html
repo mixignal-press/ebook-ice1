@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -390,11 +410,16 @@ Methods for calculating magnetic flux density
 </div>
 <div class="callout-body-container callout-body">
 <p>The determination of the magnetic flux density <span class="math inline">\(\vec{B}\)</span> can be performed using several approaches, all of which necessitate the computation of complex integrals. To finalize the calculation of the structure’s inductance via the flux linkage method, it will be essential to compute additional intricate integrals involving these <span class="math inline">\(\vec{B}\)</span> fields.</p>
-<p>There are many textbooks that discuss various methods for their calculation, and one such source is FIXME.</p>
+<p>There are many textbooks that discuss various methods for their calculation, and one such source is <span class="citation" data-cites="paul_inductance_2011">Paul (<a href="references.html#ref-paul_inductance_2011" role="doc-biblioref">2011</a>)</span> .</p>
 </div>
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-paul_inductance_2011" class="csl-entry" role="listitem">
+Paul, Clayton R. 2011. <em>Inductance: <span>Loop</span> and <span>Partial</span></em>. John Wiley &amp; Sons.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

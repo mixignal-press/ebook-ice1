@@ -178,7 +178,7 @@ $\psi_2 = \int_{s2} \vec{B}_{12}\cdot ds$
 
 The determination of the magnetic flux density $\vec{B}$ can be performed using several approaches, all of which necessitate the computation of complex integrals. To finalize the calculation of the structure's inductance via the flux linkage method, it will be essential to compute additional intricate integrals involving these $\vec{B}$ fields.
 
-There are many textbooks that discuss various methods for their calculation, and one such source is FIXME.
+There are many textbooks that discuss various methods for their calculation, and one such source is @paul_inductance_2011 .
 
 :::
 
