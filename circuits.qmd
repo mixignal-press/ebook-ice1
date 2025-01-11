@@ -75,7 +75,7 @@ In circuit analysis, the voltage or current from ideal sources is called a **for
 
 **CONNECTION CONSTRAINTS** are activated when devices are connected within a circuit. Two essential principles governed by connection constraints are Kirchhoff's current law (KCL) and Kirchhoff's voltage law (KVL).
 
-Kirchhoff‘s Current Law
+### Kirchhoff‘s Current Law
 
 Kirchhoff's first law is founded on the conservation of charge principle. Kirchhoff's current law (KCL) asserts that
 
