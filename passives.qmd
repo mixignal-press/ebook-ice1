@@ -23,7 +23,7 @@ TASKS:
 
 # Passive IC devices {#sec-passives}
 
-This chapter covers basics principle behind passive IC devices: Resistors, Capacitors and Inductors.
+This chapter covers basic principles behind passive IC devices: Resistors, Capacitors and Inductors.
 
 
 ## Resistance {#sec-passive-res}
