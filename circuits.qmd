@@ -1,0 +1,48 @@
+::: {.content-hidden}
+
+Copyright (C) 2025 Mixignal Press. All rights reserved.
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licensei (the "License"). You may share and adapt this material for non-commercial purposes, provided you give appropriate credit to the original author, indicate if changes were made, and distribute your contributions under the same License.
+
+You may obtain a copy of the License at
+
+   https://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+You can contact the publisher at info@mixignal.com
+
+
+:::
+
+::: {.content-hidden}
+TASKS:
+
+* 
+
+:::
+
+# Linear Circuits {#chap-linear-ckts}
+
+This chapter assumes the reader knows basic linear circuit analysis and needs a refresher. We focus on key techniques like linearity properties, Thevenin-Norton equivalents, and interface circuit design.
+
+
+# Basic Circuit Analysis {#sec-linear-ckts-basics}
+
+ We have derived the $I-V$ characteristics of resistors, capacitors, and inductors. Although these devices are often non-linear in practice, we will use their linear models, known as circuit elements, and apply the following linear equations:
+
+ $$Resistor: v = iR$$
+
+ also known as Ohm's law,
+ 
+ $$Capacitor: i = C\frac{dv}{dt}$$
+
+ $$Inductor: v = L \frac{di}{dt}$$
+
+ The capacitor and inductor are non-dissipative devices but resistor is not, and the power dissipated by it is given by
+
+ $$ p = v^2/R$$
+
+
+ or,
+
+ $$ p = i^2 R$$
+
