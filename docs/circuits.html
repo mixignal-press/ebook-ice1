@@ -247,6 +247,42 @@ Excercise: Linear range calculation
 <p><span class="math display">\[ i=i_s \text{ and } v=\text{any value}\]</span></p>
 <p>where, <span class="math inline">\(s_s\)</span> is the current flowing through the source and <span class="math inline">\(v\)</span> is the voltage across it.</p>
 <p>In circuit analysis, the voltage or current from ideal sources is called a <strong>forcing</strong> or <strong>driving</strong> function, as it triggers a circuit response. Time-varying voltage or current is typically denoted as <span class="math inline">\(v(t)\)</span> or <span class="math inline">\(i(t)\)</span>.</p>
+<p><strong>CONNECTION CONSTRAINTS</strong> are activated when devices are connected within a circuit. Two essential principles governed by connection constraints are Kirchhoff’s current law (KCL) and Kirchhoff’s voltage law (KVL).</p>
+<p>Kirchhoff‘s Current Law</p>
+<p>Kirchhoff’s first law is founded on the conservation of charge principle. Kirchhoff’s current law (KCL) asserts that</p>
+<p>the algebraic sum of the currents entering a node is zero at every instant.</p>
+<p>When summing currents algebraically, consider each device’s reference direction: assign a positive sign if directed into the node, and a negative sign if directed away.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Applying this convention to the nodes in Figure-FIXME, we obtain the following set of KCL connection equations:</p>
+<p><span class="math display">\[
+\text{Node A:} -i_1 - i_2 = 0
+\text{Node B:} i_1 - i_3 - i_4 + i_5= 0
+\text{Node A:} i_2 + i_3 + i_4 - i_5= 0
+\]</span></p>
+</div>
+</div>
+<p>The KCL equation at node A indicates that the reference direction for currents <span class="math inline">\(i_1\)</span> and <span class="math inline">\(i_2\)</span> is away from node A, not that they are negative. Similarly, the equation at node B could be expressed as</p>
+<p><span class="math display">\[
+i_1  + i_5 =  i_3 + i_4
+\]</span></p>
+<p>This example demonstrates a different formulation of KCL:</p>
+<blockquote class="blockquote">
+<p><strong>The sum of the currents entering a node equals the sum of the currents leaving the node</strong>.</p>
+</blockquote>
+<p>Another general principle that can be easily derived from KCL:</p>
+<blockquote class="blockquote">
+<p><strong>In a circuit containing a total of N nodes there are only N – 1 independent KCL connection equations</strong>.</p>
+</blockquote>
+<p>The current equations specified at N – 1 nodes encapsulate all the independent connection constraints derivable from the Kirchhoff’s Current Law (KCL).</p>
 
 
 </section>

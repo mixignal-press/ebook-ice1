@@ -72,3 +72,46 @@ where, $s_s$ is the current flowing through the source and $v$ is the voltage ac
 
 In circuit analysis, the voltage or current from ideal sources is called a **forcing** or **driving** function, as it triggers a circuit response. Time-varying voltage or current is typically denoted as $v(t)$ or $i(t)$.
 
+
+**CONNECTION CONSTRAINTS** are activated when devices are connected within a circuit. Two essential principles governed by connection constraints are Kirchhoff's current law (KCL) and Kirchhoff's voltage law (KVL).
+
+Kirchhoff‘s Current Law
+
+Kirchhoff's first law is founded on the conservation of charge principle. Kirchhoff's current law (KCL) asserts that
+
+
+the algebraic sum of the currents entering a node is zero at every instant.
+
+
+When summing currents algebraically, consider each device's reference direction: assign a positive sign if directed into the node, and a negative sign if directed away.
+
+::: {.callout-tip title="Example"}
+
+Applying this convention to the nodes in Figure-FIXME, we obtain the following set of KCL connection equations:
+
+$$
+\text{Node A:} -i_1 - i_2 = 0
+\text{Node B:} i_1 - i_3 - i_4 + i_5= 0
+\text{Node A:} i_2 + i_3 + i_4 - i_5= 0
+$$
+
+:::
+
+The KCL equation at node A indicates that the reference direction for currents $i_1$ and $i_2$ is away from node A, not that they are negative. Similarly, the equation at node B could be expressed as
+
+$$
+i_1  + i_5 =  i_3 + i_4
+$$
+
+
+
+This example demonstrates a different formulation of KCL:
+
+> **The sum of the currents entering a node equals the sum of the currents leaving the node**.
+
+Another general principle that can be easily derived from KCL:
+
+> **In a circuit containing a total of N nodes there are only N – 1 independent KCL connection equations**.
+
+The current equations specified at N – 1 nodes encapsulate all the independent connection constraints derivable from the Kirchhoff's Current Law (KCL).
+
