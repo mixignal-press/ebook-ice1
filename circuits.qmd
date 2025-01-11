@@ -56,4 +56,19 @@ A resistor remains linear when voltage and current are within its power rating l
 :::
 
 
-**IDEAL SOURCES** 
+**IDEAL SOURCES** are essential for electronic circuits to function and are represented by two elements: voltage sources and current sources.
+
+The $i–v$ characteristic of an **ideal voltage source** is described by the following element equations:
+
+$$ v=v_s \text{ and } i=\text{any value}$$
+
+where, $v_s$ is voltage across the source and $i$ is the current flowing through it.
+
+The $i–v$ characteristic of an **ideal current source** is described by the following element equations:
+
+$$ i=i_s \text{ and } v=\text{any value}$$
+
+where, $s_s$ is the current flowing through the source and $v$ is the voltage across it.
+
+In circuit analysis, the voltage or current from ideal sources is called a forcing or driving function, as it triggers a circuit response. Time-varying voltage or current is typically denoted as $v(t)$ or $i(t)$.
+
