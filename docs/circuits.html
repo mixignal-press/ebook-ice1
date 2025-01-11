@@ -175,7 +175,7 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-linear-ckts-basics" id="toc-sec-linear-ckts-basics" class="nav-link active" data-scroll-target="#sec-linear-ckts-basics"><span class="header-section-number">4</span> Basic Circuit Analysis</a></li>
+  <li><a href="#sec-linear-ckts-basics" id="toc-sec-linear-ckts-basics" class="nav-link active" data-scroll-target="#sec-linear-ckts-basics"><span class="header-section-number">3.1</span> Basic Circuit Analysis</a></li>
   </ul>
 </nav>
     </div>
@@ -202,9 +202,9 @@ window.Quarto = {
 
 
 <p>This chapter assumes the reader knows basic linear circuit analysis and needs a refresher. We focus on key techniques like linearity properties, Thevenin-Norton equivalents, and interface circuit design.</p>
-<section id="sec-linear-ckts-basics" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Basic Circuit Analysis</h1>
-<p>We have derived the <span class="math inline">\(I-V\)</span> characteristics of resistors, capacitors, and inductors. Although these devices are often non-linear in practice, we will use their linear models, known as circuit elements, and apply the following linear equations:</p>
+<section id="sec-linear-ckts-basics" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-linear-ckts-basics"><span class="header-section-number">3.1</span> Basic Circuit Analysis</h2>
+<p><strong>PASSIVE DEVICE</strong> (R,L,C) <span class="math inline">\(I-V\)</span> characteristics has been derived. Although these devices are often non-linear in practice, we will use their linear models, known as <em>circuit elements</em>, and apply the following linear equations:</p>
 <p><span class="math display">\[Resistor: v = iR\]</span></p>
 <p>also known as Ohm’s law,</p>
 <p><span class="math display">\[Capacitor: i = C\frac{dv}{dt}\]</span></p>
@@ -213,6 +213,33 @@ window.Quarto = {
 <p><span class="math display">\[ p = v^2/R\]</span></p>
 <p>or,</p>
 <p><span class="math display">\[ p = i^2 R\]</span></p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Excercise: Power and current calculation">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Excercise: Power and current calculation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Determine the current flowing through a <span class="math inline">\(3.3 k\Omega\)</span> resistor when <span class="math inline">\(3.3 V\)</span> is applied across it, and calculate the power it dissipates.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Excercise: Linear range calculation">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Excercise: Linear range calculation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A resistor remains linear when voltage and current are within its power rating limits. For a <span class="math inline">\(10 k\Omega\)</span> resistor with a power rating of <span class="math inline">\(0.25 W\)</span>, determine the maximum current and voltage to keep it within its linear range</p>
+</div>
+</div>
+<p><strong>IDEAL SOURCES</strong></p>
 
 
 </section>

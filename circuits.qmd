@@ -25,9 +25,9 @@ TASKS:
 This chapter assumes the reader knows basic linear circuit analysis and needs a refresher. We focus on key techniques like linearity properties, Thevenin-Norton equivalents, and interface circuit design.
 
 
-# Basic Circuit Analysis {#sec-linear-ckts-basics}
+## Basic Circuit Analysis {#sec-linear-ckts-basics}
 
- We have derived the $I-V$ characteristics of resistors, capacitors, and inductors. Although these devices are often non-linear in practice, we will use their linear models, known as circuit elements, and apply the following linear equations:
+ **PASSIVE DEVICE** (R,L,C)  $I-V$ characteristics has been derived. Although these devices are often non-linear in practice, we will use their linear models, known as _circuit elements_, and apply the following linear equations:
 
  $$Resistor: v = iR$$
 
@@ -46,3 +46,14 @@ This chapter assumes the reader knows basic linear circuit analysis and needs a 
 
  $$ p = i^2 R$$
 
+::: {.callout-tip title="Excercise: Power and current calculation"}
+Determine the current flowing through a $3.3 k\Omega$ resistor when $3.3 V$ is applied across it, and calculate the power it dissipates.
+:::
+
+
+::: {.callout-tip title="Excercise: Linear range calculation"}
+A resistor remains linear when voltage and current are within its power rating limits. For a $10 k\Omega$ resistor with a power rating of $0.25 W$, determine the maximum current and voltage to keep it within its linear range
+:::
+
+
+**IDEAL SOURCES** 
