@@ -1,17 +1,16 @@
 ::: {.content-hidden}
-Copyright (C) 2025 Mixignal Press ()
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
+Copyright (C) 2025 Mixignal Press. All rights reserved.
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licensei (the "License"). You may share and adapt this material for non-commercial purposes, provided you give appropriate credit to the original author, indicate if changes were made, and distribute your contributions under the same License.
+
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+   https://creativecommons.org/licenses/by-nc-sa/4.0/.
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+You can contact the publisher at info@mixignal.com
+
+
 :::
 
 ::: {.content-hidden}
@@ -21,7 +20,7 @@ TASKS:
   * Add capacitor and inductor excercises
 :::
 
-# Passive IC devices {#sec-passives}
+# Passive IC devices {#chap-passives}
 
 This chapter covers basic principles behind passive IC devices: Resistors, Capacitors and Inductors.
 
