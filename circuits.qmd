@@ -87,8 +87,6 @@ Kirchhoff's first law is founded on the conservation of charge principle. Kirchh
 
 When summing currents algebraically, consider each device's reference direction: assign a positive sign if directed into the node, and a negative sign if directed away.
 
-::: {.callout-tip title="Example"}
-
 ![Circuit for demonstrating KCL](figures/fig-circuits-KCL.png){#fig-circuits-kcl}
 
 Applying this convention to the nodes in @fig-circuits-kcl, we obtain the following set of KCL connection equations:
@@ -96,8 +94,6 @@ Applying this convention to the nodes in @fig-circuits-kcl, we obtain the follow
 $$\text{Node A:} -i_1 - i_2 = 0$$
 $$\text{Node B:} i_1 - i_3 - i_4 + i_5= 0$$
 $$\text{Node A:} i_2 + i_3 + i_4 - i_5= 0$$
-
-:::
 
 The KCL equation at node A indicates that the reference direction for currents $i_1$ and $i_2$ is away from node A, not that they are negative. Similarly, the equation at node B could be expressed as
 
@@ -126,7 +122,7 @@ Kirchhoff's second circuit law is rooted in the energy conservation principle. A
 **the algebraic sum of all voltages around a loop is zero at every instant**.
 :::
 
-![Circuit for demonstrating KCL](figures/fig-circuits-KVL.png){#fig-circuits-kvl}
+![Circuit for demonstrating KVL](figures/fig-circuits-KVL.png){#fig-circuits-kvl}
 
 Three loops in @fig-circuits-kvl show the circuit. A voltage receives a positive sign when moving from “+” to “–” and a negative sign from “–” to “+.” The loop's clockwise traversal gives these KVL equations.
 
@@ -149,4 +145,21 @@ A general principle can be derived from KVL :
 In the passive sign convention, we can choose either the + voltage reference or the current reference arrow for a two-terminal element, but not both simultaneously. Once the voltage reference is set, the current arrow must enter the terminal with the + mark. Conversely, if the current reference is chosen first, the + voltage reference is applied to the same terminal.
 
 :::
+
+
+## Circuit Analysis Techniques
+
+### Node-Voltage Analysis
+
+Circuit behavior is governed by two constraints: (1) Kirchhoff’s laws and (2) $i–v$ relationships. These constraints expressed in terms of voltages and currents lead to numerous simultaneous equations. For instance, a six-device circuit requires solving 12 equations with 12 unknowns. Simplifying these equations is ideal, despite available computation tools.
+
+Using node voltages as circuit variables reduces the number of simultaneous equations. Define node voltages by selecting a reference node, typically ground, and measuring the voltage between the remaining nodes and this reference.
+
+Use node voltage analysis to express element voltages without explicitly writing KVL equations.
+
+![Circuit for demonstrating node-voltage analysis]{(figures/fig-circuits-nodev.png}{#fig-circuits-nodev}
+
+The circuit in @fig-circuits-nodev illustrates node-voltage equation formulation, identifying a reference node (ground), four currents ($i_0$, $i_1$, $i_2$, $i_3$), and two node voltages ($v_a$, $v_b$).
+
+
 
