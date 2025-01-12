@@ -128,7 +128,7 @@ Kirchhoff's second circuit law is rooted in the energy conservation principle. A
 
 ![Circuit for demonstrating KCL](figures/fig-circuits-KVL.png) {#fig-circuits-kvl}
 
-Three loops in @fig-circuits-kcl show the circuit. A voltage receives a positive sign when moving from “+” to “–” and a negative sign from “–” to “+.” The loop's clockwise traversal gives these KVL equations.
+Three loops in @fig-circuits-kvl show the circuit. A voltage receives a positive sign when moving from “+” to “–” and a negative sign from “–” to “+.” The loop's clockwise traversal gives these KVL equations.
 
 $$ \text{Loop 1: } -v_1 + v_2 + v_3 = 0 $$
 $$ \text{Loop 2: } -v_3 + v_4 + v_5 = 0 $$
