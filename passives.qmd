@@ -1,6 +1,6 @@
 ::: {.content-hidden}
 
-Copyright (C) 2025 Mixignal Press. All rights reserved.
+Copyright (C) 2025 Mixignal Innovations LLC. All rights reserved.
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licensei (the "License"). You may share and adapt this material for non-commercial purposes, provided you give appropriate credit to the original author, indicate if changes were made, and distribute your contributions under the same License.
 

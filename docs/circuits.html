@@ -177,7 +177,8 @@ window.Quarto = {
   <ul>
   <li><a href="#sec-linear-ckts-basics" id="toc-sec-linear-ckts-basics" class="nav-link active" data-scroll-target="#sec-linear-ckts-basics"><span class="header-section-number">3.1</span> Basic Circuit Analysis</a>
   <ul class="collapse">
-  <li><a href="#kirchhoffs-current-law" id="toc-kirchhoffs-current-law" class="nav-link" data-scroll-target="#kirchhoffs-current-law"><span class="header-section-number">3.1.1</span> Kirchhoff‘s Current Law</a></li>
+  <li><a href="#kirchhoffs-current-law-kcl" id="toc-kirchhoffs-current-law-kcl" class="nav-link" data-scroll-target="#kirchhoffs-current-law-kcl"><span class="header-section-number">3.1.1</span> Kirchhoff‘s Current Law (KCL)</a></li>
+  <li><a href="#kirchhoffs-voltage-law-kvl" id="toc-kirchhoffs-voltage-law-kvl" class="nav-link" data-scroll-target="#kirchhoffs-voltage-law-kvl"><span class="header-section-number">3.1.2</span> Kirchhoff’s Voltage Law (KVL)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -251,10 +252,22 @@ Excercise: Linear range calculation
 <p>where, <span class="math inline">\(s_s\)</span> is the current flowing through the source and <span class="math inline">\(v\)</span> is the voltage across it.</p>
 <p>In circuit analysis, the voltage or current from ideal sources is called a <strong>forcing</strong> or <strong>driving</strong> function, as it triggers a circuit response. Time-varying voltage or current is typically denoted as <span class="math inline">\(v(t)\)</span> or <span class="math inline">\(i(t)\)</span>.</p>
 <p><strong>CONNECTION CONSTRAINTS</strong> are activated when devices are connected within a circuit. Two essential principles governed by connection constraints are Kirchhoff’s current law (KCL) and Kirchhoff’s voltage law (KVL).</p>
-<section id="kirchhoffs-current-law" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="kirchhoffs-current-law"><span class="header-section-number">3.1.1</span> Kirchhoff‘s Current Law</h3>
+<section id="kirchhoffs-current-law-kcl" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="kirchhoffs-current-law-kcl"><span class="header-section-number">3.1.1</span> Kirchhoff‘s Current Law (KCL)</h3>
 <p>Kirchhoff’s first law is founded on the conservation of charge principle. Kirchhoff’s current law (KCL) asserts that</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Kirchhoff‘s Current Law (KCL)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Kirchhoff‘s Current Law (KCL)
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>the algebraic sum of the currents entering a node is zero at every instant.</p>
+</div>
+</div>
 <p>When summing currents algebraically, consider each device’s reference direction: assign a positive sign if directed into the node, and a negative sign if directed away.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Example">
 <div class="callout-header d-flex align-content-center">
@@ -267,11 +280,7 @@ Example
 </div>
 <div class="callout-body-container callout-body">
 <p>Applying this convention to the nodes in Figure-FIXME, we obtain the following set of KCL connection equations:</p>
-<p><span class="math display">\[
-\text{Node A:} -i_1 - i_2 = 0
-\text{Node B:} i_1 - i_3 - i_4 + i_5= 0
-\text{Node A:} i_2 + i_3 + i_4 - i_5= 0
-\]</span></p>
+<p><span class="math display">\[\text{Node A:} -i_1 - i_2 = 0\]</span> <span class="math display">\[\text{Node B:} i_1 - i_3 - i_4 + i_5= 0\]</span> <span class="math display">\[\text{Node A:} i_2 + i_3 + i_4 - i_5= 0\]</span></p>
 </div>
 </div>
 <p>The KCL equation at node A indicates that the reference direction for currents <span class="math inline">\(i_1\)</span> and <span class="math inline">\(i_2\)</span> is away from node A, not that they are negative. Similarly, the equation at node B could be expressed as</p>
@@ -284,9 +293,50 @@ i_1  + i_5 =  i_3 + i_4
 </blockquote>
 <p>Another general principle that can be easily derived from KCL:</p>
 <blockquote class="blockquote">
-<p><strong>In a circuit containing a total of N nodes there are only N – 1 independent KCL connection equations</strong>.</p>
+<p><strong>In a circuit containing a total of N nodes there are only <span class="math inline">\(N – 1\)</span> independent KCL connection equations</strong>.</p>
 </blockquote>
-<p>The current equations specified at N – 1 nodes encapsulate all the independent connection constraints derivable from the Kirchhoff’s Current Law (KCL).</p>
+<p>The current equations specified at <span class="math inline">\(N – 1\)</span> nodes encapsulate all the independent connection constraints derivable from the Kirchhoff’s Current Law (KCL).</p>
+</section>
+<section id="kirchhoffs-voltage-law-kvl" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="kirchhoffs-voltage-law-kvl"><span class="header-section-number">3.1.2</span> Kirchhoff’s Voltage Law (KVL)</h3>
+<p>Kirchhoff’s second circuit law is rooted in the energy conservation principle. According to the Kirchhoff voltage law (KVL),</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Kirchoff's Voltage Law (KVL)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Kirchoff’s Voltage Law (KVL)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>the algebraic sum of all voltages around a loop is zero at every instant.</p>
+</div>
+</div>
+<p>Three loops in Figure FIXME show the circuit. A voltage receives a positive sign when moving from “+” to “–” and a negative sign from “–” to “+.” The loop’s clockwise traversal gives these KVL equations.</p>
+<p><span class="math display">\[ \text{Loop 1: } -v_1 + v_2 + v_3 = 0 \]</span> <span class="math display">\[ \text{Loop 2: } -v_3 + v_4 + v_5 = 0 \]</span> <span class="math display">\[ \text{Loop 3: } -v_1 + v_2 + v_4 + v_5 = 0 \]</span></p>
+<p>Two signs are linked to each voltage. The first sign is used when formulating the KVL connection equation. The second sign depends on the real polarity of the voltage compared to its designated reference polarity.</p>
+<p>A general principle can be derived from KVL :</p>
+<blockquote class="blockquote">
+<p><strong>For a circuit that includes <span class="math inline">\(E\)</span> number of two-terminal elements and has <span class="math inline">\(N\)</span> nodes, only <span class="math inline">\(E - N + 1\)</span> independent Kirchhoff’s Voltage Law (KVL) equations can be formed.</strong></p>
+</blockquote>
+<div class="callout callout-style-default callout-note callout-titled" title="A note on assigning voltage polarities and current direction ">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+A note on assigning voltage polarities and current direction
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When voltage polarities or current directions are missing in a circuit diagram, they need to be set arbitrarily before analysis. These assignments don’t reflect the actual circuit conditions. If the assumed direction and polarities match the actual ones, the response’s sign will be positive; otherwise, it will be negative.</p>
+<blockquote class="blockquote">
+<p><strong>In other words, the sign of the answer together with the assigned polarities and directions tells us the actual voltage polarity or current direction. </strong></p>
+</blockquote>
+<p>In the passive sign convention, we can choose either the + voltage reference or the current reference arrow for a two-terminal element, but not both simultaneously. Once the voltage reference is set, the current arrow must enter the terminal with the + mark. Conversely, if the current reference is chosen first, the + voltage reference is applied to the same terminal.</p>
+</div>
+</div>
 
 
 </section>

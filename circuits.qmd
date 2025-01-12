@@ -1,8 +1,8 @@
 ::: {.content-hidden}
 
-Copyright (C) 2025 Mixignal Press. All rights reserved.
+Copyright (C) 2025 Mixignal Innovations LLC. All rights reserved.
 
-This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licensei (the "License"). You may share and adapt this material for non-commercial purposes, provided you give appropriate credit to the original author, indicate if changes were made, and distribute your contributions under the same License.
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (the "License"). You may share and adapt this material for non-commercial purposes, provided you give appropriate credit to the original author, indicate if changes were made, and distribute your contributions under the same License.
 
 You may obtain a copy of the License at
 
@@ -75,25 +75,28 @@ In circuit analysis, the voltage or current from ideal sources is called a **for
 
 **CONNECTION CONSTRAINTS** are activated when devices are connected within a circuit. Two essential principles governed by connection constraints are Kirchhoff's current law (KCL) and Kirchhoff's voltage law (KVL).
 
-### Kirchhoff‘s Current Law
+### Kirchhoff‘s Current Law (KCL)
 
 Kirchhoff's first law is founded on the conservation of charge principle. Kirchhoff's current law (KCL) asserts that
 
+::: {.callout-note title="Kirchhoff‘s Current Law (KCL)"}
 
 the algebraic sum of the currents entering a node is zero at every instant.
 
+:::
 
 When summing currents algebraically, consider each device's reference direction: assign a positive sign if directed into the node, and a negative sign if directed away.
 
-::: {.callout-tip title="Example"}
+::: {.content-hidden}
+ Figure 2.11 p-145 @Thomas
+:::
 
+::: {.callout-tip title="Example"}
 Applying this convention to the nodes in Figure-FIXME, we obtain the following set of KCL connection equations:
 
-$$
-\text{Node A:} -i_1 - i_2 = 0
-\text{Node B:} i_1 - i_3 - i_4 + i_5= 0
-\text{Node A:} i_2 + i_3 + i_4 - i_5= 0
-$$
+$$\text{Node A:} -i_1 - i_2 = 0$$
+$$\text{Node B:} i_1 - i_3 - i_4 + i_5= 0$$
+$$\text{Node A:} i_2 + i_3 + i_4 - i_5= 0$$
 
 :::
 
@@ -111,7 +114,38 @@ This example demonstrates a different formulation of KCL:
 
 Another general principle that can be easily derived from KCL:
 
-> **In a circuit containing a total of N nodes there are only N – 1 independent KCL connection equations**.
+> **In a circuit containing a total of N nodes there are only $N – 1$ independent KCL connection equations**.
 
-The current equations specified at N – 1 nodes encapsulate all the independent connection constraints derivable from the Kirchhoff's Current Law (KCL).
+The current equations specified at $N – 1$ nodes encapsulate all the independent connection constraints derivable from the Kirchhoff's Current Law (KCL).
+
+
+### Kirchhoff's Voltage Law (KVL)
+
+Kirchhoff's second circuit law is rooted in the energy conservation principle. According to the Kirchhoff voltage law (KVL),
+
+::: {.callout-note title="Kirchoff's Voltage Law (KVL)"}
+the algebraic sum of all voltages around a loop is zero at every instant.
+:::
+
+Three loops in Figure FIXME show the circuit. A voltage receives a positive sign when moving from “+” to “–” and a negative sign from “–” to “+.” The loop's clockwise traversal gives these KVL equations.
+
+$$ \text{Loop 1: } -v_1 + v_2 + v_3 = 0 $$
+$$ \text{Loop 2: } -v_3 + v_4 + v_5 = 0 $$
+$$ \text{Loop 3: } -v_1 + v_2 + v_4 + v_5 = 0 $$
+
+Two signs are linked to each voltage. The first sign is used when formulating the KVL connection equation. The second sign depends on the real polarity of the voltage compared to its designated reference polarity.
+
+A general principle can be derived from KVL :
+
+> **For a circuit that includes $E$ number of two-terminal elements and has $N$ nodes, only $E - N + 1$ independent Kirchhoff's Voltage Law (KVL) equations can be formed.**
+
+::: {.callout-note title="A note on assigning voltage polarities and current direction "}
+
+ When voltage polarities or current directions are missing in a circuit diagram, they need to be set arbitrarily before analysis. These assignments don't reflect the actual circuit conditions. If the assumed direction and polarities match the actual ones, the response's sign will be positive; otherwise, it will be negative.
+ 
+ > **In other words, the sign of the answer together with the assigned polarities and directions tells us the actual voltage polarity or current direction. **
+
+In the passive sign convention, we can choose either the + voltage reference or the current reference arrow for a two-terminal element, but not both simultaneously. Once the voltage reference is set, the current arrow must enter the terminal with the + mark. Conversely, if the current reference is chosen first, the + voltage reference is applied to the same terminal.
+
+:::
 
