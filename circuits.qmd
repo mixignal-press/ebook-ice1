@@ -157,7 +157,7 @@ Using node voltages as circuit variables reduces the number of simultaneous equa
 
 Use node voltage analysis to express element voltages without explicitly writing KVL equations.
 
-![Circuit for demonstrating node-voltage analysis]{(figures/fig-circuits-nodev.png}{#fig-circuits-nodev}
+![Circuit for demonstrating node-voltage analysis](figures/fig-circuits-nodev.png){#fig-circuits-nodev}
 
 The circuit in @fig-circuits-nodev illustrates node-voltage equation formulation, identifying a reference node (ground), four currents ($i_0$, $i_1$, $i_2$, $i_3$), and two node voltages ($v_a$, $v_b$).
 
