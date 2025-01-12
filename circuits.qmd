@@ -89,7 +89,7 @@ When summing currents algebraically, consider each device's reference direction:
 
 ::: {.callout-tip title="Example"}
 
-![Circuit for demonstrating KCL](figures/fig-circuits-KCL.png) {#fig-circuits-kcl}
+![Circuit for demonstrating KCL](figures/fig-circuits-KCL.png){#fig-circuits-kcl}
 
 Applying this convention to the nodes in @fig-circuits-kcl, we obtain the following set of KCL connection equations:
 
@@ -126,7 +126,7 @@ Kirchhoff's second circuit law is rooted in the energy conservation principle. A
 **the algebraic sum of all voltages around a loop is zero at every instant**.
 :::
 
-![Circuit for demonstrating KCL](figures/fig-circuits-KVL.png) {#fig-circuits-kvl}
+![Circuit for demonstrating KCL](figures/fig-circuits-KVL.png){#fig-circuits-kvl}
 
 Three loops in @fig-circuits-kvl show the circuit. A voltage receives a positive sign when moving from “+” to “–” and a negative sign from “–” to “+.” The loop's clockwise traversal gives these KVL equations.
 
