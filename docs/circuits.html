@@ -265,7 +265,7 @@ Kirchhoff‘s Current Law (KCL)
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>the algebraic sum of the currents entering a node is zero at every instant.</p>
+<p><strong>the algebraic sum of the currents entering a node is zero at every instant</strong>.</p>
 </div>
 </div>
 <p>When summing currents algebraically, consider each device’s reference direction: assign a positive sign if directed into the node, and a negative sign if directed away.</p>
@@ -279,7 +279,8 @@ Example
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Applying this convention to the nodes in Figure-FIXME, we obtain the following set of KCL connection equations:</p>
+<p><img src="figures/fig-circuits-KCL.png" class="img-fluid" alt="Circuit for demonstrating KCL"> {#fig-circuits-kcl}</p>
+<p>Applying this convention to the nodes in <span class="quarto-unresolved-ref">?fig-circuits-kcl</span>, we obtain the following set of KCL connection equations:</p>
 <p><span class="math display">\[\text{Node A:} -i_1 - i_2 = 0\]</span> <span class="math display">\[\text{Node B:} i_1 - i_3 - i_4 + i_5= 0\]</span> <span class="math display">\[\text{Node A:} i_2 + i_3 + i_4 - i_5= 0\]</span></p>
 </div>
 </div>
@@ -310,10 +311,11 @@ Kirchoff’s Voltage Law (KVL)
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>the algebraic sum of all voltages around a loop is zero at every instant.</p>
+<p><strong>the algebraic sum of all voltages around a loop is zero at every instant</strong>.</p>
 </div>
 </div>
-<p>Three loops in Figure FIXME show the circuit. A voltage receives a positive sign when moving from “+” to “–” and a negative sign from “–” to “+.” The loop’s clockwise traversal gives these KVL equations.</p>
+<p><img src="figures/fig-circuits-KVL.png" class="img-fluid" alt="Circuit for demonstrating KCL"> {#fig-circuits-kvl}</p>
+<p>Three loops in <span class="quarto-unresolved-ref">?fig-circuits-kcl</span> show the circuit. A voltage receives a positive sign when moving from “+” to “–” and a negative sign from “–” to “+.” The loop’s clockwise traversal gives these KVL equations.</p>
 <p><span class="math display">\[ \text{Loop 1: } -v_1 + v_2 + v_3 = 0 \]</span> <span class="math display">\[ \text{Loop 2: } -v_3 + v_4 + v_5 = 0 \]</span> <span class="math display">\[ \text{Loop 3: } -v_1 + v_2 + v_4 + v_5 = 0 \]</span></p>
 <p>Two signs are linked to each voltage. The first sign is used when formulating the KVL connection equation. The second sign depends on the real polarity of the voltage compared to its designated reference polarity.</p>
 <p>A general principle can be derived from KVL :</p>
