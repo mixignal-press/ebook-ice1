@@ -193,7 +193,7 @@ In summary, creating node-voltage equations requires four steps:
 
 - **STEP 1**: Select a reference node. Assign a voltage to each of the other $N– 1$ nodes and determine a current for each circuit element.
 - **STEP 2**: Express the KCL connection constraints through the currents of the elements at the $N-1$ non-reference nodes.
--**STEP 3**: Utilize the $i–v$ relationships and the principles of nodal analysis to express the currents traversing elements concerning node voltages.
-**STEP 4**: Incorporate the element constraints from step 3 into the KCL constraints from step 2, then format the resulting N–1 equations into standard form.
+- **STEP 3**: Utilize the $i–v$ relationships and the principles of nodal analysis to express the currents traversing elements concerning node voltages.
+- **STEP 4**: Incorporate the element constraints from step 3 into the KCL constraints from step 2, then format the resulting N–1 equations into standard form.
 
 The node-voltage method simplifies solving to $N– 1$ equations. With $E$ elements, the reduction from $2E$ to $N– 1$ is notable in circuits having many elements ($E$) interconnected in parallel ($N$).
