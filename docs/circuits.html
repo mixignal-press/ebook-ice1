@@ -284,7 +284,7 @@ Figure&nbsp;3.1: Circuit for demonstrating KCL
 </figure>
 </div>
 <p>Applying this convention to the nodes in <a href="#fig-circuits-kcl" class="quarto-xref">Figure&nbsp;<span>3.1</span></a>, we obtain the following set of KCL connection equations:</p>
-<p><span class="math display">\[\text{Node A:} -i_1 - i_2 = 0\]</span> <span class="math display">\[\text{Node B:} i_1 - i_3 - i_4 + i_5= 0\]</span> <span class="math display">\[\text{Node A:} i_2 + i_3 + i_4 - i_5= 0\]</span></p>
+<p><span class="math display">\[\text{Node A: } -i_1 - i_2 = 0\]</span> <span class="math display">\[\text{Node B: } i_1 - i_3 - i_4 + i_5= 0\]</span> <span class="math display">\[\text{Node C: } i_2 + i_3 + i_4 - i_5= 0\]</span></p>
 <p>The KCL equation at node A indicates that the reference direction for currents <span class="math inline">\(i_1\)</span> and <span class="math inline">\(i_2\)</span> is away from node A, not that they are negative. Similarly, the equation at node B could be expressed as</p>
 <p><span class="math display">\[
 i_1  + i_5 =  i_3 + i_4
@@ -295,9 +295,26 @@ i_1  + i_5 =  i_3 + i_4
 </blockquote>
 <p>Another general principle that can be easily derived from KCL:</p>
 <blockquote class="blockquote">
-<p><strong>In a circuit containing a total of N nodes there are only <span class="math inline">\(N – 1\)</span> independent KCL connection equations</strong>.</p>
+<p><strong>In a circuit containing a total of N nodes, there are only <span class="math inline">\(N – 1\)</span> independent KCL connection equations</strong>.</p>
 </blockquote>
 <p>The current equations specified at <span class="math inline">\(N – 1\)</span> nodes encapsulate all the independent connection constraints derivable from the Kirchhoff’s Current Law (KCL).</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Equivalent circuits">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Equivalent circuits
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that the three parallel elements in <a href="#fig-circuits-kcl" class="quarto-xref">Figure&nbsp;<span>3.1</span></a> can be replaced by one <em>equivalent</em> element, which can generally be stated as:</p>
+<blockquote class="blockquote">
+<p><strong>Two circuits are said to be equivalent if they have identical <span class="math inline">\(i–v\)</span> characteristics at a specified pair of terminals.</strong></p>
+</blockquote>
+<p>For example, if the 3 elements were resistors <span class="math inline">\(R_1, R_2, R_3\)</span>, they can be replaced with an equivalent resistor of value <span class="math inline">\(R_1R_2R_3/(R_1+R_2+R_3)\)</span>.</p>
+</div>
+</div>
 </section>
 <section id="kirchhoffs-voltage-law-kvl" class="level3" data-number="3.1.2">
 <h3 data-number="3.1.2" class="anchored" data-anchor-id="kirchhoffs-voltage-law-kvl"><span class="header-section-number">3.1.2</span> Kirchhoff’s Voltage Law (KVL)</h3>
@@ -368,7 +385,20 @@ Figure&nbsp;3.3: Circuit for demonstrating node-voltage analysis
 </figcaption>
 </figure>
 </div>
-<p>The circuit in <a href="#fig-circuits-nodev" class="quarto-xref">Figure&nbsp;<span>3.3</span></a> illustrates node-voltage equation formulation, identifying a reference node (ground), four currents (<span class="math inline">\(i_0\)</span>, <span class="math inline">\(i_1\)</span>, <span class="math inline">\(i_2\)</span>, <span class="math inline">\(i_3\)</span>), and two node voltages (<span class="math inline">\(v_a\)</span>, <span class="math inline">\(v_b\)</span>).</p>
+<p>The circuit in <a href="#fig-circuits-nodev" class="quarto-xref">Figure&nbsp;<span>3.3</span></a> illustrates node-voltage equation formulation, identifying a reference node (ground), four currents (<span class="math inline">\(i_0\)</span>, <span class="math inline">\(i_1\)</span>, <span class="math inline">\(i_2\)</span>, <span class="math inline">\(i_3\)</span>), and two node voltages (<span class="math inline">\(v_A\)</span>, <span class="math inline">\(v_B\)</span>).</p>
+<p>At the two nodes that are not used as references, the KCL constraints can be stated as follows:</p>
+<p><span class="math display">\[ \text{Node A: } -i_0-i_1-i_2 = 0\]</span> <span class="math display">\[ \text{Node B: } i_2-i_3 = 0\]</span></p>
+<p>By applying the core principles of node analysis, we can connect element currents with node voltages through the corresponding element equations.</p>
+<p><span class="math display">\[\text{Resistor} R_1\text{: } i_1 = \frac{v_A}{R_1} \]</span> <span class="math display">\[\text{Resistor} R_2\text{: } i_2 = \frac{v_A-v_B}{R_2} \]</span> <span class="math display">\[\text{Resistor} R_3\text{: } i_3 = \frac{v_B}{R_3} \]</span> <span class="math display">\[\text{Current source: } i_0 = -i_S \]</span></p>
+<p>We formulate six equations for six unknowns, four currents of the element, and two node voltages. The right side of these equations involves unknown node voltages and the input signal <span class="math inline">\(i_S\)</span>. By substituting device constraints into the KCL equation and rearranging terms, we derive the following standard form:</p>
+<p><span class="math display">\[ \text{Node A: } \left({\frac{1}{R_1}+\frac{1}{R_2}}\right) v_A - \frac{v_B}{R_2} = i_S\]</span> <span class="math display">\[ \text{Node B: } \frac{v_A}{R_2} + \left({\frac{1}{R_2}+\frac{1}{R_3}}\right) v_B = 0\]</span></p>
+<p>In this standard form, unknown node voltages are on one side, and independent sources on the other, easing analysis. By eliminating element currents, the circuit is reduced to two linear equations with two unknown node voltages.</p>
+<p>In summary, creating node-voltage equations requires four steps:</p>
+<ul>
+<li><strong>STEP 1</strong>: Select a reference node. Assign a voltage to each of the other <span class="math inline">\(N– 1\)</span> nodes and determine a current for each circuit element.</li>
+<li><strong>STEP 2</strong>: Express the KCL connection constraints through the currents of the elements at the <span class="math inline">\(N-1\)</span> non-reference nodes. -<strong>STEP 3</strong>: Utilize the <span class="math inline">\(i–v\)</span> relationships and the principles of nodal analysis to express the currents traversing elements concerning node voltages. <strong>STEP 4</strong>: Incorporate the element constraints from step 3 into the KCL constraints from step 2, then format the resulting N–1 equations into standard form.</li>
+</ul>
+<p>The node-voltage method simplifies solving to <span class="math inline">\(N– 1\)</span> equations. With <span class="math inline">\(E\)</span> elements, the reduction from <span class="math inline">\(2E\)</span> to <span class="math inline">\(N– 1\)</span> is notable in circuits having many elements (<span class="math inline">\(E\)</span>) interconnected in parallel (<span class="math inline">\(N\)</span>).</p>
 
 
 </section>
