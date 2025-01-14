@@ -242,7 +242,7 @@ $$ -R_3i_1 + (R2+R_3)i_2 = -V_2$$
 
 Now we can solve the simultaneous equations using the techniques of our choice. 
 
-::: {.callout-note titel="Mesh Analysis with current sources"}
+::: {.callout-note title="Mesh Analysis with current sources"}
 
 Similar to nodal analysis with voltage sources, two methods to handle current sources in mesh analysis: 1) When a current source exists only in one mesh, the mesh current is simply set to the current value of the current source, 2) When a current source exists between two meshes, create a supermesh such that KVL can be applied to it.
 
