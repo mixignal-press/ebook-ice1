@@ -201,7 +201,7 @@ The node-voltage method simplifies solving to $N– 1$ equations. With $E$ eleme
 
 ::: {.callout-note titel="Solving linear algebraic equations"}
 
-The linear equation system derived from node analysis is solvable using either manual calculations or computer-aided approaches. An integrated circuit (IC) engineer should be proficient in both methods. For lower complexity problems with numerical coefficients, techniques such as **Cramer's Rule** or **Gaussian Elimination** can be applied [@thomas_analysis_2016, @alexander_fundamentals_2007].
+The linear equation system derived from node analysis is solvable using either manual calculations or computer-aided approaches. An integrated circuit (IC) engineer should be proficient in both methods. For lower complexity problems with numerical coefficients, techniques such as **Cramer's Rule** or **Gaussian Elimination** can be applied [@thomas_analysis_2016], [@alexander_fundamentals_2007].
 
 As the complexity of the problem rises, employing a programming language such as Python or a circuit simulator like ngspice becomes more efficient.
 
