@@ -197,3 +197,19 @@ In summary, creating node-voltage equations requires four steps:
 - **STEP 4**: Incorporate the element constraints from step 3 into the KCL constraints from step 2, then format the resulting N–1 equations into standard form.
 
 The node-voltage method simplifies solving to $N– 1$ equations. With $E$ elements, the reduction from $2E$ to $N– 1$ is notable in circuits having many elements ($E$) interconnected in parallel ($N$).
+
+
+::: {.callout-note titel="Solving linear algebraic equations"}
+
+The linear equation system derived from node analysis is solvable using either manual calculations or computer-aided approaches. An integrated circuit (IC) engineer should be proficient in both methods. For lower complexity problems with numerical coefficients, techniques such as Cramer's Rule or Gaussian Elimination can be applied [@Thomas2016, Sadiku].
+
+As the complexity of the problem rises, employing a programming language such as Python or a circuit simulator like ngspice becomes more efficient.
+
+
+::: {.content-hidden}
+FIXME: Add python and ngspice example
+:::
+
+:::
+
+

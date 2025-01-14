@@ -401,6 +401,20 @@ Figure&nbsp;3.3: Circuit for demonstrating node-voltage analysis
 <li><strong>STEP 4</strong>: Incorporate the element constraints from step 3 into the KCL constraints from step 2, then format the resulting N–1 equations into standard form.</li>
 </ul>
 <p>The node-voltage method simplifies solving to <span class="math inline">\(N– 1\)</span> equations. With <span class="math inline">\(E\)</span> elements, the reduction from <span class="math inline">\(2E\)</span> to <span class="math inline">\(N– 1\)</span> is notable in circuits having many elements (<span class="math inline">\(E\)</span>) interconnected in parallel (<span class="math inline">\(N\)</span>).</p>
+<div class="callout callout-style-default callout-note callout-titled" data-titel="Solving linear algebraic equations">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The linear equation system derived from node analysis is solvable using either manual calculations or computer-aided approaches. An integrated circuit (IC) engineer should be proficient in both methods. For lower complexity problems with numerical coefficients, techniques such as Cramer’s Rule or Gaussian Elimination can be applied <span class="citation" data-cites="Thomas2016">(<a href="references.html#ref-Thomas2016" role="doc-biblioref"><strong>Thomas2016?</strong></a>, Sadiku)</span>.</p>
+<p>As the complexity of the problem rises, employing a programming language such as Python or a circuit simulator like ngspice becomes more efficient.</p>
+</div>
+</div>
 
 
 </section>
