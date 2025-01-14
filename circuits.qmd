@@ -218,4 +218,32 @@ As the complexity of the problem rises, employing a programming language such as
 
 ### Mesh Analysis
 
+Mesh analysis is a method for analyzing circuits using mesh currents as variables, simplifying equations by using these currents instead of element currents. A loop is a closed path passing each node once, while a mesh is a loop without any smaller loops inside.
+Nodal analysis uses KCL to find unknown voltages, while mesh analysis uses KVL to find unknown currents. Mesh analysis is less general than nodal analysis as it only applies to planar circuits, which can be drawn without crossing branches. Circuits with crossing branches may still be planar if they can be redrawn without them.
 
+A circuit with $n$ meshes can be analyzed using three steps:
+
+::: {.callout-note title="Steps to determine mesh current"}
+
+1. Assign mesh currents $i_1, i_2, \ldots i_n$ to the $n$ meshes.
+
+2. Apply KVL to each of the $n$ meshes using Ohm's law to express voltages in terms of the mesh currents.
+
+3. Solve the resulting $n$ simultaneous equations to get the mesh currents. 
+
+:::
+
+![A circuit with two meshes](figures/fig-circuits-meshi.png){#fig-circuits-meshi}
+
+Refer to @fig-circuits-meshi, where mesh currents $i_1$ and $i_2$ are assigned clockwise by convention, though any direction is possible. Applying KVL to each mesh, we obtain
+
+$$ (R_1+R_3)i_1 - R_3i_2 = V_1$$
+$$ -R_3i_1 + (R2+R_3)i_2 = -V_2$$
+
+Now we can solve the simultaneous equations using the techniques of our choice. 
+
+::: {.callout-note titel="Mesh Analysis with current sources"}
+
+Similar to nodal analysis with voltage sources, two methods to handle current sources in mesh analysis: 1) When a current source exists only in one mesh, the mesh current is simply set to the current value of the current source, 2) When a current source exists between two meshes, create a supermesh such that KVL can be applied to it.
+
+:::

@@ -461,6 +461,51 @@ Solving linear algebraic equations
 </section>
 <section id="mesh-analysis" class="level3" data-number="3.2.2">
 <h3 data-number="3.2.2" class="anchored" data-anchor-id="mesh-analysis"><span class="header-section-number">3.2.2</span> Mesh Analysis</h3>
+<p>Mesh analysis is a method for analyzing circuits using mesh currents as variables, simplifying equations by using these currents instead of element currents. A loop is a closed path passing each node once, while a mesh is a loop without any smaller loops inside. Nodal analysis uses KCL to find unknown voltages, while mesh analysis uses KVL to find unknown currents. Mesh analysis is less general than nodal analysis as it only applies to planar circuits, which can be drawn without crossing branches. Circuits with crossing branches may still be planar if they can be redrawn without them.</p>
+<p>A circuit with <span class="math inline">\(n\)</span> meshes can be analyzed using three steps:</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Steps to determine mesh current">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Steps to determine mesh current
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Assign mesh currents <span class="math inline">\(i_1, i_2, \ldots i_n\)</span> to the <span class="math inline">\(n\)</span> meshes.</p></li>
+<li><p>Apply KVL to each of the <span class="math inline">\(n\)</span> meshes using Ohm’s law to express voltages in terms of the mesh currents.</p></li>
+<li><p>Solve the resulting <span class="math inline">\(n\)</span> simultaneous equations to get the mesh currents.</p></li>
+</ol>
+</div>
+</div>
+<div id="fig-circuits-meshi" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-circuits-meshi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig-circuits-meshi.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-circuits-meshi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.4: A circuit with two meshes
+</figcaption>
+</figure>
+</div>
+<p>Refer to <a href="#fig-circuits-meshi" class="quarto-xref">Figure&nbsp;<span>3.4</span></a>, where mesh currents <span class="math inline">\(i_1\)</span> and <span class="math inline">\(i_2\)</span> are assigned clockwise by convention, though any direction is possible. Applying KVL to each mesh, we obtain</p>
+<p><span class="math display">\[ (R_1+R_3)i_1 - R_3i_2 = V_1\]</span> <span class="math display">\[ -R_3i_1 + (R2+R_3)i_2 = -V_2\]</span></p>
+<p>Now we can solve the simultaneous equations using the techniques of our choice.</p>
+<div class="callout callout-style-default callout-note callout-titled" data-titel="Mesh Analysis with current sources">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Similar to nodal analysis with voltage sources, two methods to handle current sources in mesh analysis: 1) When a current source exists only in one mesh, the mesh current is simply set to the current value of the current source, 2) When a current source exists between two meshes, create a supermesh such that KVL can be applied to it.</p>
+</div>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
