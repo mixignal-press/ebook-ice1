@@ -203,7 +203,7 @@ window.Quarto = {
   <li><a href="#circuit-analysis-techniques" id="toc-circuit-analysis-techniques" class="nav-link" data-scroll-target="#circuit-analysis-techniques"><span class="header-section-number">3.2</span> Circuit Analysis Techniques</a>
   <ul class="collapse">
   <li><a href="#nodal-analysis" id="toc-nodal-analysis" class="nav-link" data-scroll-target="#nodal-analysis"><span class="header-section-number">3.2.1</span> Nodal Analysis</a></li>
-  <li><a href="#mesh-current-analysis" id="toc-mesh-current-analysis" class="nav-link" data-scroll-target="#mesh-current-analysis"><span class="header-section-number">3.2.2</span> Mesh-Current Analysis</a></li>
+  <li><a href="#mesh-analysis" id="toc-mesh-analysis" class="nav-link" data-scroll-target="#mesh-analysis"><span class="header-section-number">3.2.2</span> Mesh Analysis</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -431,26 +431,26 @@ Figure&nbsp;3.3: Circuit for demonstrating node-voltage analysis
 <p><span class="math display">\[ \text{Node A: } \left({\frac{1}{R_1}+\frac{1}{R_2}}\right) v_A - \frac{v_B}{R_2} = i_S\]</span> <span class="math display">\[ \text{Node B: } \frac{v_A}{R_2} + \left({\frac{1}{R_2}+\frac{1}{R_3}}\right) v_B = 0\]</span></p>
 <p>In this standard form, unknown node voltages are on one side, and independent sources on the other, easing analysis. By eliminating element currents, the circuit is reduced to two linear equations with two unknown node voltages.</p>
 <p>The node-voltage method simplifies solving to <span class="math inline">\(N– 1\)</span> equations. With <span class="math inline">\(E\)</span> elements, the reduction from <span class="math inline">\(2E\)</span> to <span class="math inline">\(N– 1\)</span> is notable in circuits having many elements (<span class="math inline">\(E\)</span>) interconnected in parallel (<span class="math inline">\(N\)</span>).</p>
-<div class="callout callout-style-default callout-note callout-titled" data-titel="Nodal Analysis with voltage sources">
+<div class="callout callout-style-default callout-note callout-titled" title="Nodal Analysis with voltage sources">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Nodal Analysis with voltage sources
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>Two methods to handle voltage sources in nodal analysis: 1) Set one node as the reference node, 2) Form a supernode with both nodes to apply KCL, ensuring the voltage across it equals the source voltage.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" data-titel="Solving linear algebraic equations">
+<div class="callout callout-style-default callout-note callout-titled" title="Solving linear algebraic equations">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Solving linear algebraic equations
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -459,8 +459,8 @@ Note
 </div>
 </div>
 </section>
-<section id="mesh-current-analysis" class="level3" data-number="3.2.2">
-<h3 data-number="3.2.2" class="anchored" data-anchor-id="mesh-current-analysis"><span class="header-section-number">3.2.2</span> Mesh-Current Analysis</h3>
+<section id="mesh-analysis" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="mesh-analysis"><span class="header-section-number">3.2.2</span> Mesh Analysis</h3>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">

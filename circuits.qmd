@@ -202,13 +202,13 @@ In this standard form, unknown node voltages are on one side, and independent so
 The node-voltage method simplifies solving to $N– 1$ equations. With $E$ elements, the reduction from $2E$ to $N– 1$ is notable in circuits having many elements ($E$) interconnected in parallel ($N$).
 
 
-::: {.callout-note titel="Nodal Analysis with voltage sources"}
+::: {.callout-note title="Nodal Analysis with voltage sources"}
 
 Two methods to handle voltage sources in nodal analysis: 1) Set one node as the reference node, 2) Form a supernode with both nodes to apply KCL, ensuring the voltage across it equals the source voltage.
 
 :::
 
-::: {.callout-note titel="Solving linear algebraic equations"}
+::: {.callout-note title="Solving linear algebraic equations"}
 
 The linear equation system derived from node analysis is solvable using either manual calculations or computer-aided approaches. An integrated circuit (IC) engineer should be proficient in both methods. For lower complexity problems with numerical coefficients, techniques such as Cramer's Rule or Gaussian Elimination can be applied [@thomas_analysis_2016], [@alexander_fundamentals_2007].
 
@@ -217,6 +217,6 @@ As the complexity of the problem rises, employing a programming language such as
 :::
 
 
-### Mesh-Current Analysis
+### Mesh Analysis
 
 
