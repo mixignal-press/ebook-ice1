@@ -16,14 +16,27 @@ You can contact the publisher at info@mixignal.com
 ::: {.content-hidden}
 TASKS:
 
-* Add the KCL and KVL figures 
 
 :::
 
 # Linear Circuits {#chap-linear-ckts}
 
-This chapter assumes the reader knows basic linear circuit analysis and needs a refresher. We focus on key techniques like linearity properties, Thevenin-Norton equivalents, and interface circuit design.
+All the analysis techniques we will cover in this text is for linear circuits. Therefore, it's beneficial to understand the definition of linear circuits. Briefly, a linear circuit adheres to the principles of linearity, namely **homogeneity** and **additivity**. 
+Mathematically, these properties can be expressed as:
 
+$$ f(Kx) = Kf(x) \text{(homogeneity)}$$ 
+
+where $K$ is a scalar constant with the homogeneity property also known as **proportionality**, and
+
+$$ f(x_1+x_2) = f(x_1) + f(x_2) \text{(additivity)}$$
+
+where the additive property is also known as **superposition**
+
+::: {.callout-note}
+
+The superposition and proportionality principle is also employed to assess the linearity of a circuit. For instance, in the case of a two-terminal circuit whose linearity is uncertain, we can utilize linearity principles to ascertain this property.
+
+:::
 
 ## Basic Circuit Analysis {#sec-linear-ckts-basics}
 
@@ -249,23 +262,5 @@ Similar to nodal analysis with voltage sources, two methods to handle current so
 :::
 
 
-### What are Linear Circuits?
-
-The analyses conducted up to this point, as well as those we will conduct in the future, pertain to linear circuits. Therefore, it's beneficial to understand the definition of linear circuits. Briefly, a linear circuit adheres to the principles of linearity, namely **homogeneity** and **additivity**. 
-Mathematically, these properties can be expressed as:
-
-$$ f(Kx) = Kf(x) \text{(homogeneity)}$$ 
-
-where $K$ is a scalar constant with the homogeneity property also known as **proportionality**, and
-
-$$ f(x_1+x_2) = f(x_1) + f(x_2) \text{(additivity)}$$
-
-where the additive property is also known as **superposition**
-
-::: {.callout-note}
-
-The superposition and proportionality principle is also employed to assess the linearity of a circuit. For instance, in the case of a two-terminal circuit whose linearity is uncertain, we can utilize linearity principles to ascertain this property.
-
-:::
 
 

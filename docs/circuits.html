@@ -204,7 +204,6 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#nodal-analysis" id="toc-nodal-analysis" class="nav-link" data-scroll-target="#nodal-analysis"><span class="header-section-number">3.2.1</span> Nodal Analysis</a></li>
   <li><a href="#mesh-analysis" id="toc-mesh-analysis" class="nav-link" data-scroll-target="#mesh-analysis"><span class="header-section-number">3.2.2</span> Mesh Analysis</a></li>
-  <li><a href="#what-are-linear-circuits" id="toc-what-are-linear-circuits" class="nav-link" data-scroll-target="#what-are-linear-circuits"><span class="header-section-number">3.2.3</span> What are Linear Circuits?</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -231,7 +230,24 @@ window.Quarto = {
 </header>
 
 
-<p>This chapter assumes the reader knows basic linear circuit analysis and needs a refresher. We focus on key techniques like linearity properties, Thevenin-Norton equivalents, and interface circuit design.</p>
+<p>All the analysis techniques we will cover in this text is for linear circuits. Therefore, it’s beneficial to understand the definition of linear circuits. Briefly, a linear circuit adheres to the principles of linearity, namely <strong>homogeneity</strong> and <strong>additivity</strong>. Mathematically, these properties can be expressed as:</p>
+<p><span class="math display">\[ f(Kx) = Kf(x) \text{(homogeneity)}\]</span></p>
+<p>where <span class="math inline">\(K\)</span> is a scalar constant with the homogeneity property also known as <strong>proportionality</strong>, and</p>
+<p><span class="math display">\[ f(x_1+x_2) = f(x_1) + f(x_2) \text{(additivity)}\]</span></p>
+<p>where the additive property is also known as <strong>superposition</strong></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The superposition and proportionality principle is also employed to assess the linearity of a circuit. For instance, in the case of a two-terminal circuit whose linearity is uncertain, we can utilize linearity principles to ascertain this property.</p>
+</div>
+</div>
 <section id="sec-linear-ckts-basics" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="sec-linear-ckts-basics"><span class="header-section-number">3.1</span> Basic Circuit Analysis</h2>
 <p><strong>PASSIVE DEVICE</strong> (R,L,C) <span class="math inline">\(I-V\)</span> characteristics has been derived. Although these devices are often non-linear in practice, we will use their linear models, known as <em>circuit elements</em>, and apply the following linear equations:</p>
@@ -505,27 +521,6 @@ Mesh Analysis with current sources
 </div>
 <div class="callout-body-container callout-body">
 <p>Similar to nodal analysis with voltage sources, two methods to handle current sources in mesh analysis: 1) When a current source exists only in one mesh, the mesh current is simply set to the current value of the current source, 2) When a current source exists between two meshes, create a supermesh such that KVL can be applied to it.</p>
-</div>
-</div>
-</section>
-<section id="what-are-linear-circuits" class="level3" data-number="3.2.3">
-<h3 data-number="3.2.3" class="anchored" data-anchor-id="what-are-linear-circuits"><span class="header-section-number">3.2.3</span> What are Linear Circuits?</h3>
-<p>The analyses conducted up to this point, as well as those we will conduct in the future, pertain to linear circuits. Therefore, it’s beneficial to understand the definition of linear circuits. Briefly, a linear circuit adheres to the principles of linearity, namely <strong>homogeneity</strong> and <strong>additivity</strong>. Mathematically, these properties can be expressed as:</p>
-<p><span class="math display">\[ f(Kx) = Kf(x) \text{(homogeneity)}\]</span></p>
-<p>where <span class="math inline">\(K\)</span> is a scalar constant with the homogeneity property also known as <strong>proportionality</strong>, and</p>
-<p><span class="math display">\[ f(x_1+x_2) = f(x_1) + f(x_2) \text{(additivity)}\]</span></p>
-<p>where the additive property is also known as <strong>superposition</strong></p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The superposition and proportionality principle is also employed to assess the linearity of a circuit. For instance, in the case of a two-terminal circuit whose linearity is uncertain, we can utilize linearity principles to ascertain this property.</p>
 </div>
 </div>
 
