@@ -50,6 +50,13 @@ The superposition and proportionality principle is also employed to assess the l
 
  $$Inductor: v = L \frac{di}{dt}$$
 
+
+::: {.callout-tip title="Excercise"}
+
+Using the principles of linearity, prove that the linear models of the passive RLC elements are linear.
+
+:::
+
  The capacitor and inductor are non-dissipative devices but resistor is not, and the power dissipated by it is given by
 
  $$ p = v^2/R$$
