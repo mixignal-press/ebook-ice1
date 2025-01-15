@@ -247,3 +247,25 @@ Now we can solve the simultaneous equations using the techniques of our choice.
 Similar to nodal analysis with voltage sources, two methods to handle current sources in mesh analysis: 1) When a current source exists only in one mesh, the mesh current is simply set to the current value of the current source, 2) When a current source exists between two meshes, create a supermesh such that KVL can be applied to it.
 
 :::
+
+
+### What are Linear Circuits?
+
+The analyses conducted up to this point, as well as those we will conduct in the future, pertain to linear circuits. Therefore, it's beneficial to understand the definition of linear circuits. Briefly, a linear circuit adheres to the principles of linearity, namely **homogeneity** and **additivity**. 
+Mathematically, these properties can be expressed as:
+
+$$ f(Kx) = Kf(x) $$ (homogeneity)
+
+where $K$ is a scalar constant with the homogeneity property also known as **proportionality**, and
+
+$$ f(x_1+x_2) = f(x_1) + f(x_2)$$ (additivity)
+
+where the additive property is also known as **superposition**
+
+::: {.callout-note}
+
+The superposition and proportionality principle is also employed to assess the linearity of a circuit. For instance, in the case of a two-terminal circuit whose linearity is uncertain, we can utilize linearity principles to ascertain this property.
+
+:::
+
+
