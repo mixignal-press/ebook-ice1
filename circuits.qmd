@@ -274,7 +274,7 @@ Similar to nodal analysis with voltage sources, two methods to handle current so
 
 The linearity principle states that the output of a linear circuit with multiple inputs is a linear combination of scaled inputs:
 
-$$ y = \sum^n_{i=1} K+Ix_i$$
+$$ y = \sum^n_{i=1} K_ix_i$$
 
 where $x_i$ are the inputs of current or voltage and $K_i$ are the scalar constants that are circuit-dependent.
 
