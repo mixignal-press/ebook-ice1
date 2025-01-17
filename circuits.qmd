@@ -21,14 +21,14 @@ TASKS:
 
 # Linear Circuits {#chap-linear-ckts}
 
-All the analysis techniques we will cover in this text is for linear circuits. Therefore, it's beneficial to understand the definition of linear circuits. Briefly, a linear circuit adheres to the principles of linearity, namely **homogeneity** and **additivity**. 
-Mathematically, these properties can be expressed as:
+All the analysis techniques we will cover in this text are for linear circuits. Therefore, it's beneficial to understand the definition of linear circuits. Briefly, a linear circuit adheres to the principles of linearity, namely **homogeneity** and **additivity**. 
+Mathematically, these properties can be expressed as follows.
 
-$$ f(Kx) = Kf(x) \text{(homogeneity)}$$ 
+$$ f(Kx) = Kf(x) \text{  (homogeneity)}$$ 
 
 where $K$ is a scalar constant with the homogeneity property also known as **proportionality**, and
 
-$$ f(x_1+x_2) = f(x_1) + f(x_2) \text{(additivity)}$$
+$$ f(x_1+x_2) = f(x_1) + f(x_2) \text{  (additivity)}$$
 
 where the additive property is also known as **superposition**
 
@@ -269,5 +269,40 @@ Similar to nodal analysis with voltage sources, two methods to handle current so
 :::
 
 
+
+### Superposition Principle
+
+The linearity principle states that the output of a linear circuit with multiple inputs is a linear combination of scaled inputs:
+
+$$ y = \sum^n_{i=1} K+Ix_i$$
+
+where $x_i$ are the inputs of current or voltage and $K_i$ are the scalar constants that are circuit-dependent.
+
+The output is a linear combination where each input's contribution is independent. Thus, the total output is the sum of each source's individual response, allowing us to determine the output of a multiple input linear circuit.
+
+::: {.callout-note title="Three-step approach to solving linear circuits using superposition principle"}
+
+1. "Turn Off" all independent sources save for one, then determine the circuit's output as a result of the influence of that single source.
+2. Continue the procedure in step 1 for each independent source, ensuring all other sources are turned off, and determine the output resulting from that specific source.
+3. The combined output from all independent sources activated simultaneously is the algebraic sum of the outputs produced by each source independently.
+
+:::
+
+::: {.callout-note title="**Turning Off** Independent Sources"}
+
+Switching off an independent source implies setting its value to zero, denoted as $v_s=0$ or $i_s=0$. In this case, a voltage source is substituted by a **short circuit**, and a current source by an **open circuit**. Does this substitution alter the circuit? The answer is no. As zero is a legitimate value for each independent source, the resulting circuit remains valid.
+
+:::
+
+::: {.callout-tip title="Example"}
+
+![(a) Circuit used to demonstrate superposition. (b) Block diagram.](figures/fig-circuits-sposition.png){#fig-circuits-sposition}
+
+We demonstrate the superposition principle by examining the two-input circuit in @fig-circuits-sposition (a) through node-voltage analysis. By employing KCL at node A and rearranging the terms, we obtain the equation
+
+$$ v_o = \left[{\frac{R_2}{R_1+R_2}}\right]v_S + \left[{\frac{R_1R_2}{R_1+R_2}}\right]i_S$$
+
+The outcome indicates that the result is a linear combination of the two inputs. A typical block diagram is depicted in @fig-circuits-sposition (b).
+:::
 
 

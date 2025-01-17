@@ -204,6 +204,7 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#nodal-analysis" id="toc-nodal-analysis" class="nav-link" data-scroll-target="#nodal-analysis"><span class="header-section-number">3.2.1</span> Nodal Analysis</a></li>
   <li><a href="#mesh-analysis" id="toc-mesh-analysis" class="nav-link" data-scroll-target="#mesh-analysis"><span class="header-section-number">3.2.2</span> Mesh Analysis</a></li>
+  <li><a href="#superposition-principle" id="toc-superposition-principle" class="nav-link" data-scroll-target="#superposition-principle"><span class="header-section-number">3.2.3</span> Superposition Principle</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -230,10 +231,10 @@ window.Quarto = {
 </header>
 
 
-<p>All the analysis techniques we will cover in this text is for linear circuits. Therefore, it’s beneficial to understand the definition of linear circuits. Briefly, a linear circuit adheres to the principles of linearity, namely <strong>homogeneity</strong> and <strong>additivity</strong>. Mathematically, these properties can be expressed as:</p>
-<p><span class="math display">\[ f(Kx) = Kf(x) \text{(homogeneity)}\]</span></p>
+<p>All the analysis techniques we will cover in this text are for linear circuits. Therefore, it’s beneficial to understand the definition of linear circuits. Briefly, a linear circuit adheres to the principles of linearity, namely <strong>homogeneity</strong> and <strong>additivity</strong>. Mathematically, these properties can be expressed as follows.</p>
+<p><span class="math display">\[ f(Kx) = Kf(x) \text{  (homogeneity)}\]</span></p>
 <p>where <span class="math inline">\(K\)</span> is a scalar constant with the homogeneity property also known as <strong>proportionality</strong>, and</p>
-<p><span class="math display">\[ f(x_1+x_2) = f(x_1) + f(x_2) \text{(additivity)}\]</span></p>
+<p><span class="math display">\[ f(x_1+x_2) = f(x_1) + f(x_2) \text{  (additivity)}\]</span></p>
 <p>where the additive property is also known as <strong>superposition</strong></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -534,6 +535,68 @@ Mesh Analysis with current sources
 </div>
 <div class="callout-body-container callout-body">
 <p>Similar to nodal analysis with voltage sources, two methods to handle current sources in mesh analysis: 1) When a current source exists only in one mesh, the mesh current is simply set to the current value of the current source, 2) When a current source exists between two meshes, create a supermesh such that KVL can be applied to it.</p>
+</div>
+</div>
+</section>
+<section id="superposition-principle" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="superposition-principle"><span class="header-section-number">3.2.3</span> Superposition Principle</h3>
+<p>The linearity principle states that the output of a linear circuit with multiple inputs is a linear combination of scaled inputs:</p>
+<p><span class="math display">\[ y = \sum^n_{i=1} K+Ix_i\]</span></p>
+<p>where <span class="math inline">\(x_i\)</span> are the inputs of current or voltage and <span class="math inline">\(K_i\)</span> are the scalar constants that are circuit-dependent.</p>
+<p>The output is a linear combination where each input’s contribution is independent. Thus, the total output is the sum of each source’s individual response, allowing us to determine the output of a multiple input linear circuit.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Three-step approach to solving linear circuits using superposition principle">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Three-step approach to solving linear circuits using superposition principle
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>“Turn Off” all independent sources save for one, then determine the circuit’s output as a result of the influence of that single source.</li>
+<li>Continue the procedure in step 1 for each independent source, ensuring all other sources are turned off, and determine the output resulting from that specific source.</li>
+<li>The combined output from all independent sources activated simultaneously is the algebraic sum of the outputs produced by each source independently.</li>
+</ol>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="**Turning Off** Independent Sources">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Turning Off</strong> Independent Sources
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Switching off an independent source implies setting its value to zero, denoted as <span class="math inline">\(v_s=0\)</span> or <span class="math inline">\(i_s=0\)</span>. In this case, a voltage source is substituted by a <strong>short circuit</strong>, and a current source by an <strong>open circuit</strong>. Does this substitution alter the circuit? The answer is no. As zero is a legitimate value for each independent source, the resulting circuit remains valid.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div id="fig-circuits-sposition" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-circuits-sposition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig-circuits-sposition.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-circuits-sposition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.5: (a) Circuit used to demonstrate superposition. (b) Block diagram.
+</figcaption>
+</figure>
+</div>
+<p>We demonstrate the superposition principle by examining the two-input circuit in <a href="#fig-circuits-sposition" class="quarto-xref">Figure&nbsp;<span>3.5</span></a> (a) through node-voltage analysis. By employing KCL at node A and rearranging the terms, we obtain the equation</p>
+<p><span class="math display">\[ v_o = \left[{\frac{R_2}{R_1+R_2}}\right]v_S + \left[{\frac{R_1R_2}{R_1+R_2}}\right]i_S\]</span></p>
+<p>The outcome indicates that the result is a linear combination of the two inputs. A typical block diagram is depicted in <a href="#fig-circuits-sposition" class="quarto-xref">Figure&nbsp;<span>3.5</span></a> (b).</p>
 </div>
 </div>
 

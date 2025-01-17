@@ -61,7 +61,7 @@ $$
 I_R = \mu Q_S \frac{\Delta v}{\Delta x}
 $$
 
-The incremental resistance can be expressed as 
+Using Ohm's law, the incremental resistance can be expressed as 
 
 $$
 \Delta R = \Delta v / I_R = \rho \frac{\Delta x}{W h}
