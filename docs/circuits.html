@@ -205,6 +205,7 @@ window.Quarto = {
   <li><a href="#nodal-analysis" id="toc-nodal-analysis" class="nav-link" data-scroll-target="#nodal-analysis"><span class="header-section-number">3.2.1</span> Nodal Analysis</a></li>
   <li><a href="#mesh-analysis" id="toc-mesh-analysis" class="nav-link" data-scroll-target="#mesh-analysis"><span class="header-section-number">3.2.2</span> Mesh Analysis</a></li>
   <li><a href="#superposition-principle" id="toc-superposition-principle" class="nav-link" data-scroll-target="#superposition-principle"><span class="header-section-number">3.2.3</span> Superposition Principle</a></li>
+  <li><a href="#thevenin-and-norton-equivalent-circuits" id="toc-thevenin-and-norton-equivalent-circuits" class="nav-link" data-scroll-target="#thevenin-and-norton-equivalent-circuits"><span class="header-section-number">3.2.4</span> Thevenin and Norton Equivalent Circuits</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -492,7 +493,7 @@ Solving linear algebraic equations
 </section>
 <section id="mesh-analysis" class="level3" data-number="3.2.2">
 <h3 data-number="3.2.2" class="anchored" data-anchor-id="mesh-analysis"><span class="header-section-number">3.2.2</span> Mesh Analysis</h3>
-<p>Mesh analysis is a method for analyzing circuits using mesh currents as variables, simplifying equations by using these currents instead of element currents. A loop is a closed path passing each node once, while a mesh is a loop without any smaller loops inside. Nodal analysis uses KCL to find unknown voltages, while mesh analysis uses KVL to find unknown currents. Mesh analysis is less general than nodal analysis as it only applies to planar circuits, which can be drawn without crossing branches. Circuits with crossing branches may still be planar if they can be redrawn without them.</p>
+<p>Mesh analysis, the dual of node analysis, is a method for analyzing circuits using mesh currents as variables, simplifying equations by using these currents instead of element currents. A loop is a closed path passing each node once, while a mesh is a loop without any smaller loops inside. Nodal analysis uses KCL to find unknown voltages, while mesh analysis uses KVL to find unknown currents. Mesh analysis is less general than nodal analysis as it only applies to planar circuits, which can be drawn without crossing branches. Circuits with crossing branches may still be planar if they can be redrawn without them.</p>
 <p>A circuit with <span class="math inline">\(n\)</span> meshes can be analyzed using three steps:</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Steps to determine mesh current">
 <div class="callout-header d-flex align-content-center">
@@ -599,11 +600,56 @@ Figure&nbsp;3.5: (a) Circuit used to demonstrate superposition. (b) Block diagra
 <p>The outcome indicates that the result is a linear combination of the two inputs. A typical block diagram is depicted in <a href="#fig-circuits-sposition" class="quarto-xref">Figure&nbsp;<span>3.5</span></a> (b).</p>
 </div>
 </div>
+</section>
+<section id="thevenin-and-norton-equivalent-circuits" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="thevenin-and-norton-equivalent-circuits"><span class="header-section-number">3.2.4</span> Thevenin and Norton Equivalent Circuits</h3>
+<p>The Thevenin and Norton equivalent circuit theorems stand as foundational elements in circuit theory, often taken for granted. These theorems simplify circuit analysis significantly, and without them, circuit analysis would be difficult.</p>
+<p><strong>THE THEOREMS</strong></p>
+<div id="fig-circuits-linckt" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-circuits-linckt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig-circuits-linckt.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-circuits-linckt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.6: A linear circuit with resistors and both dependent and independent sources is connected to a linear or non-linear load.
+</figcaption>
+</figure>
+</div>
+<p>Consider a circuit with linear elements, such as resistors, dependent, and independent voltage and current sources as shown in <a href="#fig-circuits-linckt" class="quarto-xref">Figure&nbsp;<span>3.6</span></a>. Capacitors and inductors are excluded for simplicity, but the theorem applies to them as well. We focus on linear time-invariant circuits, although the theorems are valid for time-varying circuits as well <span class="citation" data-cites="thomas_analysis_2016">Thomas, Rosa, and Toussaint (<a href="references.html#ref-thomas_analysis_2016" role="doc-biblioref">2016</a>)</span>. This circuit is connected to a linear or non-linear load circuit.</p>
+<p><strong>Thevenin’s theorem</strong> simply states that the entire circuit can be replaced with an independent voltage source and a series resistor, which is indistinguishable from its original circuit in terms of their i-v characteristics.</p>
+<p>Similarly, <strong>Norton’s theorem</strong> states that the entire circuit can be replaced with a single independent current source in parallel with a resistor which, again, is indistinguishable from its original circuit in terms of their i-v characteristics.</p>
+<div id="fig-circuits-thevenin" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-circuits-thevenin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig-circuits-thevenin.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-circuits-thevenin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.7: Thevenin Equivalent: (a) Disconnect the load and measure the open-circuit voltage. (b) Zero all independent sources to find the equivalent resistance. (c) The Thévenin circuit combines the open-circuit voltage in series with the equivalent resistance.
+</figcaption>
+</figure>
+</div>
+<p>To determine the Thévenin voltage source, open the load connection and measure the open-circuit voltage <span class="math inline">\(v_{oc} (t)\)</span> at the output port as in <a href="#fig-circuits-thevenin" class="quarto-xref">Figure&nbsp;<span>3.7</span></a> (a). For Thévenin resistance, disconnect the load, set all independent sources to zero, and find the equivalent resistance of the remaining circuit, which consists of resistors and dependent sources, and reduce it to a single resistor. The Thévenin equivalent circuit is shown in <a href="#fig-circuits-thevenin" class="quarto-xref">Figure&nbsp;<span>3.7</span></a> (c).</p>
+<div id="fig-circuits-norton" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-circuits-norton-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig-circuits-norton.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-circuits-norton-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.8: Norton Equivalent: (a) Short the load and measure the current to find the short circuit current. (b) Zero all independent sources in the block to find the equivalent resistance. (c) The Norton equivalent circuit consists of the short circuit current in parallel with the equivalent resistance from (a) and (b).
+</figcaption>
+</figure>
+</div>
+<p>To determine the Norton current source, short the output port as in <a href="#fig-circuits-norton" class="quarto-xref">Figure&nbsp;<span>3.8</span></a> (a) and measure the short circuit current <span class="math inline">\(i_{sc} (t)\)</span>. The Norton resistance, parallel to this current source, is found exactly like the Thévenin resistance, as shown in <a href="#fig-circuits-norton" class="quarto-xref">Figure&nbsp;<span>3.8</span></a> (b). The Norton equivalent circuit is depicted in <a href="#fig-circuits-norton" class="quarto-xref">Figure&nbsp;<span>3.8</span></a> (c).</p>
+<p>To find the equivalent resistance, zero all independent sources: short voltage sources and open current sources. But if the circuits are inaccessible, like in a black box, can we still find it? Yes, the equivalent resistance equals <span class="math inline">\(v_{oc} (t)/i_{sc} (t)\)</span>. We can easily calculate it by measuring <span class="math inline">\(v_{oc} (t)\)</span> and <span class="math inline">\(i_{sc} (t)\)</span> without seeing inside.</p>
+<p>The big question is why these theorems are valid. How do you prove them? See <span class="citation" data-cites="sheikholeslami_thevenin_2018">Sheikholeslami (<a href="references.html#ref-sheikholeslami_thevenin_2018" role="doc-biblioref">2018</a>)</span> for an intuitive proof.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-alexander_fundamentals_2007" class="csl-entry" role="listitem">
 Alexander, Charles K., and Matthew N. O. Sadiku. 2007. <em>Fundamentals of <span>Electric</span> <span>Circuits</span></em>. McGraw-Hill Higher Education.
+</div>
+<div id="ref-sheikholeslami_thevenin_2018" class="csl-entry" role="listitem">
+Sheikholeslami, Ali. 2018. <span>“Thevenin and <span>Norton</span> <span>Equivalent</span> <span>Circuits</span>: <span>Part</span> 1 [<span>Circuit</span> <span>Intuitions</span>].”</span> <em>IEEE Solid-State Circuits Magazine</em> 10 (2): 8–10. <a href="https://doi.org/10.1109/MSSC.2018.2822858">https://doi.org/10.1109/MSSC.2018.2822858</a>.
 </div>
 <div id="ref-thomas_analysis_2016" class="csl-entry" role="listitem">
 Thomas, Roland E., Albert J. Rosa, and Gregory J. Toussaint. 2016. <em>The <span>Analysis</span> and <span>Design</span> of <span>Linear</span> <span>Circuits</span></em>. John Wiley &amp; Sons.
