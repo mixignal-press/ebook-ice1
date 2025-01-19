@@ -311,7 +311,7 @@ The Thevenin and Norton equivalent circuit theorems stand as foundational elemen
 
 **THE THEOREMS**
 
-![A linear circuit with resistors and both dependent and independent sources is connected to a linear or non-linear load.](fig-circuits-linckt.png){#fig-circuits-linckt}
+![A linear circuit with resistors and both dependent and independent sources is connected to a linear or non-linear load.](figures/fig-circuits-linckt.png){#fig-circuits-linckt}
 
 Consider a circuit with linear elements, such as resistors, dependent, and independent voltage and current sources as shown in @fig-circuits-linckt. Capacitors and inductors are excluded for simplicity, but the theorem applies to them as well. We focus on linear time-invariant circuits, although the theorems are valid for time-varying circuits as well @thomas_analysis_2016. This circuit is connected to a linear or non-linear load circuit.
 
@@ -320,11 +320,11 @@ Consider a circuit with linear elements, such as resistors, dependent, and indep
 
 Similarly, **Norton's theorem** states that the entire circuit can be replaced with a single independent current source in parallel with a resistor which, again, is indistinguishable from its original circuit in terms of their i-v characteristics.
 
-![Thevenin Equivalent: (a) Disconnect the load and measure the open-circuit voltage. (b) Zero all independent sources to find the equivalent resistance. (c) The Thévenin circuit combines the open-circuit voltage in series with the equivalent resistance.](fig-circuits-thevenin.png){#fig-circuits-thevenin}
+![Thevenin Equivalent: (a) Disconnect the load and measure the open-circuit voltage. (b) Zero all independent sources to find the equivalent resistance. (c) The Thévenin circuit combines the open-circuit voltage in series with the equivalent resistance.](figures/fig-circuits-thevenin.png){#fig-circuits-thevenin}
 
 To determine the Thévenin voltage source, open the load connection and measure the open-circuit voltage $v_{oc} (t)$ at the output port as in @fig-circuits-thevenin (a). For Thévenin resistance, disconnect the load, set all independent sources to zero, and find the equivalent resistance of the remaining circuit, which consists of resistors and dependent sources, and reduce it to a single resistor. The Thévenin equivalent circuit is shown in @fig-circuits-thevenin (c).
 
-![Norton Equivalent: (a) Short the load and measure the current to find the short circuit current. (b) Zero all independent sources in the block to find the equivalent resistance. (c) The Norton equivalent circuit consists of the short circuit current in parallel with the equivalent resistance from (a) and (b).](fig-circuits-norton.png){#fig-circuits-norton}
+![Norton Equivalent: (a) Short the load and measure the current to find the short circuit current. (b) Zero all independent sources in the block to find the equivalent resistance. (c) The Norton equivalent circuit consists of the short circuit current in parallel with the equivalent resistance from (a) and (b).](figures/fig-circuits-norton.png){#fig-circuits-norton}
 
 To determine the Norton current source, short the output port as in @fig-circuits-norton (a) and measure the short circuit current $i_{sc} (t)$. The Norton resistance, parallel to this current source, is found exactly like the Thévenin resistance, as shown in @fig-circuits-norton (b). The Norton equivalent circuit is depicted in @fig-circuits-norton (c).
 
