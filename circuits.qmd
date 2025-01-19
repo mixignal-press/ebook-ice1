@@ -333,4 +333,20 @@ To find the equivalent resistance, zero all independent sources: short voltage s
 
 The big question is why these theorems are  valid. How  do  you  prove them? See @sheikholeslami_thevenin_2018 for an intuitive proof. 
 
+::: {.callout-tip title="Example"}
 
+Let us find the Thevenin and Norton's equivalent of the circuit shown in @fig-circuits-sposition.
+
+The open-circuit Thevenin voltage has already been calculated in the example to be
+
+$$ v_{TH} = \left[{\frac{R_2}{R_1+R_2}}\right]v_S + \left[{\frac{R_1R_2}{R_1+R_2}}\right]i_S$$,
+
+and the Thevenin, and Norton, resistance can be calculated by shorting independent voltage source and opening independent current sources results in 
+
+$$ R_{TH} = R_1 || R_2 = \frac{R_1 R_2}{R_1 + R_2}$$
+
+The Norton short-circuit current can be shown to be
+
+$$i_{N} = \frac{v_S}{R_1} + i_S$$
+
+:::

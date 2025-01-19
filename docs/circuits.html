@@ -642,6 +642,25 @@ Figure&nbsp;3.8: Norton Equivalent: (a) Short the load and measure the current t
 <p>To determine the Norton current source, short the output port as in <a href="#fig-circuits-norton" class="quarto-xref">Figure&nbsp;<span>3.8</span></a> (a) and measure the short circuit current <span class="math inline">\(i_{sc} (t)\)</span>. The Norton resistance, parallel to this current source, is found exactly like the Thévenin resistance, as shown in <a href="#fig-circuits-norton" class="quarto-xref">Figure&nbsp;<span>3.8</span></a> (b). The Norton equivalent circuit is depicted in <a href="#fig-circuits-norton" class="quarto-xref">Figure&nbsp;<span>3.8</span></a> (c).</p>
 <p>To find the equivalent resistance, zero all independent sources: short voltage sources and open current sources. But if the circuits are inaccessible, like in a black box, can we still find it? Yes, the equivalent resistance equals <span class="math inline">\(v_{oc} (t)/i_{sc} (t)\)</span>. We can easily calculate it by measuring <span class="math inline">\(v_{oc} (t)\)</span> and <span class="math inline">\(i_{sc} (t)\)</span> without seeing inside.</p>
 <p>The big question is why these theorems are valid. How do you prove them? See <span class="citation" data-cites="sheikholeslami_thevenin_2018">Sheikholeslami (<a href="references.html#ref-sheikholeslami_thevenin_2018" role="doc-biblioref">2018</a>)</span> for an intuitive proof.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Let us find the Thevenin and Norton’s equivalent of the circuit shown in <a href="#fig-circuits-sposition" class="quarto-xref">Figure&nbsp;<span>3.5</span></a>.</p>
+<p>The open-circuit Thevenin voltage has already been calculated in the example to be</p>
+<p><span class="math display">\[ v_{TH} = \left[{\frac{R_2}{R_1+R_2}}\right]v_S + \left[{\frac{R_1R_2}{R_1+R_2}}\right]i_S\]</span>,</p>
+<p>and the Thevenin, and Norton, resistance can be calculated by shorting independent voltage source and opening independent current sources results in</p>
+<p><span class="math display">\[ R_{TH} = R_1 || R_2 = \frac{R_1 R_2}{R_1 + R_2}\]</span></p>
+<p>The Norton short-circuit current can be shown to be</p>
+<p><span class="math display">\[i_{N} = \frac{v_S}{R_1} + i_S\]</span></p>
+</div>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
