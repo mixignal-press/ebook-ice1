@@ -339,14 +339,14 @@ Let us find the Thevenin and Norton's equivalent of the circuit shown in @fig-ci
 
 The open-circuit Thevenin voltage has already been calculated in the example to be
 
-$$ v_{TH} = \left[{\frac{R_2}{R_1+R_2}}\right]v_S + \left[{\frac{R_1R_2}{R_1+R_2}}\right]i_S$$,
+$$ v_{oc} = \left[{\frac{R_2}{R_1+R_2}}\right]v_S + \left[{\frac{R_1R_2}{R_1+R_2}}\right]i_S$$,
 
-and the Thevenin, and Norton, resistance can be calculated by shorting independent voltage source and opening independent current sources results in 
+and the Thevenin, Norton as well, resistance can be calculated by shorting independent voltage source and opening independent current sources, resulting in 
 
-$$ R_{TH} = R_1 || R_2 = \frac{R_1 R_2}{R_1 + R_2}$$
+$$ R_{eq} = R_1 || R_2 = \frac{R_1 R_2}{R_1 + R_2}$$
 
 The Norton short-circuit current can be shown to be
 
-$$i_{N} = \frac{v_S}{R_1} + i_S$$
+$$i_{sc} = \frac{v_S}{R_1} + i_S$$
 
 :::
