@@ -206,6 +206,7 @@ window.Quarto = {
   <li><a href="#mesh-analysis" id="toc-mesh-analysis" class="nav-link" data-scroll-target="#mesh-analysis"><span class="header-section-number">3.2.2</span> Mesh Analysis</a></li>
   <li><a href="#superposition-principle" id="toc-superposition-principle" class="nav-link" data-scroll-target="#superposition-principle"><span class="header-section-number">3.2.3</span> Superposition Principle</a></li>
   <li><a href="#thevenin-and-norton-equivalent-circuits" id="toc-thevenin-and-norton-equivalent-circuits" class="nav-link" data-scroll-target="#thevenin-and-norton-equivalent-circuits"><span class="header-section-number">3.2.4</span> Thevenin and Norton Equivalent Circuits</a></li>
+  <li><a href="#interfacing-circuits-for-max-power-transfer" id="toc-interfacing-circuits-for-max-power-transfer" class="nav-link" data-scroll-target="#interfacing-circuits-for-max-power-transfer"><span class="header-section-number">3.2.5</span> Interfacing Circuits for Max Power Transfer</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -659,6 +660,37 @@ Example
 <p><span class="math display">\[ R_{eq} = R_1 || R_2 = \frac{R_1 R_2}{R_1 + R_2}\]</span></p>
 <p>The Norton short-circuit current can be shown to be</p>
 <p><span class="math display">\[i_{sc} = \frac{v_S}{R_1} + i_S\]</span></p>
+</div>
+</div>
+</section>
+<section id="interfacing-circuits-for-max-power-transfer" class="level3" data-number="3.2.5">
+<h3 data-number="3.2.5" class="anchored" data-anchor-id="interfacing-circuits-for-max-power-transfer"><span class="header-section-number">3.2.5</span> Interfacing Circuits for Max Power Transfer</h3>
+<p>In circuits where efficiency of power delivery is crucial, interfacing circuits have to be properly designed to ensure maximum power is delivered to the load. For example, an audio amplifier that delivers power to a speaker is typically between <span class="math inline">\(4-8\ Omega\)</span>. Or a power amplifier on a mobile phone that delivers power to the antenna which is typically <span class="math inline">\(50 \Omega\)</span>.</p>
+<div id="fig-circuits-maxpower" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-circuits-maxpower-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig-circuits-maxpower.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-circuits-maxpower-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.9: (a) Circuit used for max power transfer analysis. (b) Sketch of power delivered to the load as a function of <span class="math inline">\(R_L\)</span>
+</figcaption>
+</figure>
+</div>
+<p>We now address the problem of delivering maximum power to a load by a circuit. This is best done by representing the circuit with it’s Thevenin (or Norton) equivalent circuit connected to the load as shown in <a href="#fig-circuits-maxpower" class="quarto-xref">Figure&nbsp;<span>3.9</span></a> (a) .</p>
+<p>The Thevenin equivalent is useful for finding the maximum power a linear circuit can deliver to a load. We assume that we can adjust the load resistance <span class="math inline">\(R_L\)</span>. The power delivered to the load is</p>
+<p><span class="math display">\[p = i^2R_L = \left({\frac{V_{Th}}{R_{Th}+R_L}}\right)^2 R_L\]</span></p>
+<p>In a circuit with fixed <span class="math inline">\(V{Th}\)</span> and <span class="math inline">\(R_{Th}\)</span>, altering the load resistance <span class="math inline">\(R_L\)</span> changes the power delivered to the load as illustrated in <a href="#fig-circuits-maxpower" class="quarto-xref">Figure&nbsp;<span>3.9</span></a> (b). The sketch shows that power is minimal when <span class="math inline">\(R_L\)</span> is too small or too large, but peaks at some <span class="math inline">\(R_L\)</span> value between <span class="math inline">\(0\)</span> and <span class="math inline">\(\infty\)</span>. It can be shown that maximum power is achieved when <span class="math inline">\(R_L\)</span> equals <span class="math inline">\(R_{Th}\)</span>, known as the <em>maximum power theorem</em>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Maximum power theorem">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Maximum power theorem
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Maximum power is transferred to the load when the load resistance equals the Thevenin resistance as seen from the load (<span class="math inline">\(R_L = R_{Th}\)</span>)</p>
 </div>
 </div>
 

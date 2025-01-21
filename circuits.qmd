@@ -350,3 +350,23 @@ The Norton short-circuit current can be shown to be
 $$i_{sc} = \frac{v_S}{R_1} + i_S$$
 
 :::
+
+### Interfacing Circuits for Max Power Transfer
+
+In circuits where efficiency of power delivery is crucial, interfacing circuits have to be properly designed to ensure maximum power is delivered to the load. For example, an audio amplifier that delivers power to a speaker is typically between $4-8\ Omega$. Or a power amplifier on a mobile phone that delivers power to the antenna which is typically $50 \Omega$.
+
+![(a) Circuit used for max power transfer analysis. (b) Sketch of power delivered to the load as a function of $R_L$
+](fig-circuits-maxpower.png){#fig-circuits-maxpower}
+
+We now address the problem of delivering maximum power to a load by a circuit. This is best done by representing the circuit with it's Thevenin (or Norton) equivalent circuit connected to the load as shown in @fig-circuits-maxpower (a) . 
+
+The Thevenin equivalent is useful for finding the maximum power a linear circuit can deliver to a load. We assume that we can adjust the load resistance $R_L$. The power delivered to the load is
+
+$$p = i^2R_L = \left({\frac{V_{Th}}{R_{Th}+R_L}}\right)^2 R_L$$
+
+In a circuit with fixed $V{Th}$ and $R_{Th}$, altering the load resistance $R_L$ changes the power delivered to the load as illustrated in @fig-circuits-maxpower (b). The sketch shows that power is minimal when $R_L$ is too small or too large, but peaks at some $R_L$ value between $0$ and $\infty$. It can be shown that maximum power is achieved when $R_L$ equals $R_{Th}$, known as the _maximum power theorem_.
+
+::: {.callout-note title="Maximum power theorem"}
+
+Maximum power is transferred to the load when the load resistance equals the Thevenin resistance as seen from the load ($R_L = R_{Th}$)
+:::
