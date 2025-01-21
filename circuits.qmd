@@ -356,7 +356,7 @@ $$i_{sc} = \frac{v_S}{R_1} + i_S$$
 In circuits where efficiency of power delivery is crucial, interfacing circuits have to be properly designed to ensure maximum power is delivered to the load. For example, an audio amplifier that delivers power to a speaker is typically between $4-8\ Omega$. Or a power amplifier on a mobile phone that delivers power to the antenna which is typically $50 \Omega$.
 
 ![(a) Circuit used for max power transfer analysis. (b) Sketch of power delivered to the load as a function of $R_L$
-](fig-circuits-maxpower.png){#fig-circuits-maxpower}
+](figures/fig-circuits-maxpower.png){#fig-circuits-maxpower}
 
 We now address the problem of delivering maximum power to a load by a circuit. This is best done by representing the circuit with it's Thevenin (or Norton) equivalent circuit connected to the load as shown in @fig-circuits-maxpower (a) . 
 
