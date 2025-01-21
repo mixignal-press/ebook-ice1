@@ -371,3 +371,10 @@ In a circuit with fixed $V_{Th}$ and $R_{Th}$, altering the load resistance $R_L
 Maximum power is transferred to the load when the load resistance equals the Thevenin resistance as seen from the load ($R_L = R_{Th}$)
 :::
 
+::: {.callout-tip title="Excercise"}
+
+Prove the _maximum power theorem_ by taking the derivative of power w.r.t. the load $R_L$ and set it to zero. ($dp/dR_L = 0$)
+
+:::
+
+
