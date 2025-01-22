@@ -377,4 +377,28 @@ Prove the _maximum power theorem_ by taking the derivative of power w.r.t. the l
 
 :::
 
+::: {.callout-tip title="Intuitive proof"}
 
+Power from $V_{Th}$ varies with $R_L$ as $V^2_{Th}/(R_{Th}+R_L)$, ranging from $0$ to $V^2_{Th}/R_{Th}$ when $R_L$ shifts from $\infty$ to $0$. Most of this power is transferred to the load when $R_L > R_{TH}$; however, if $R_L < R_{TH}$, more power is lost in $R_{TH}$. Therefore, maximum transfer occurs when $R_L = R_{Th}$.
+
+:::
+
+::: {.callout-tip title="Programming exercise"}
+
+Write to program which plots $i \text{ vs } R_L$, $p_L \text{ vs } R_L$, and $p_s \text{ vs } R_L$ where, $i$ is the current drawn from the source, $p_L$ is the power delivered to the load, and $p_s$ is the power consumed from the source.
+
+:::
+
+**INTERFACING CIRCUITS**
+
+In typical applications such as an audio amplifier driving a speaker $4~\Omega$ or a power amplifier in a mobile phone driving a $50~\Omega$ antenna, the load is fixed and the circuit designer designs the circuit so that the source impedance $R_{Th}$ is equal to the load $R_L$. 
+
+There are times when the circuit designer does not have the freedom to change $R_{TH}$ (or $R_L$), then an interfacing circuit is necessary to facilitate maximum power transfer. 
+
+![A general interface circuit and a few examples: (a) Simple pass-through (often omitted), (b) series resistor, (c) parallel resistor, (d) L-pad left, (e) L-pad right](figures/fig-circuits-interface.png){#fig-circuits-interface}
+
+::: {.content-hidden}
+See what can be included from examples 3.25-3.29 from @thomas_analysis
+:::
+
+@fig-circuits-interface illustrates general and example resistive interface circuits. These circuits feature two terminal pairs, or ports, forming a two-port network, with an input connected to the source and an output to the load. The network ensures specific source-load interaction. There are countless interface circuit designs, but @fig-circuits-interface highlights five basic ones. Pass-through is simply a direct connection when design allows source or load variation. Series interfaces suit voltage-powered loads, while parallel interfaces are for current-powered loads. L-pads match fixed source and load resistances to achieve desired electrical outputs.

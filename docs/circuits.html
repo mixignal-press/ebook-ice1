@@ -706,6 +706,46 @@ Excercise
 <p>Prove the <em>maximum power theorem</em> by taking the derivative of power w.r.t. the load <span class="math inline">\(R_L\)</span> and set it to zero. (<span class="math inline">\(dp/dR_L = 0\)</span>)</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Intuitive proof">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Intuitive proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Power from <span class="math inline">\(V_{Th}\)</span> varies with <span class="math inline">\(R_L\)</span> as <span class="math inline">\(V^2_{Th}/(R_{Th}+R_L)\)</span>, ranging from <span class="math inline">\(0\)</span> to <span class="math inline">\(V^2_{Th}/R_{Th}\)</span> when <span class="math inline">\(R_L\)</span> shifts from <span class="math inline">\(\infty\)</span> to <span class="math inline">\(0\)</span>. Most of this power is transferred to the load when <span class="math inline">\(R_L &gt; R_{TH}\)</span>; however, if <span class="math inline">\(R_L &lt; R_{TH}\)</span>, more power is lost in <span class="math inline">\(R_{TH}\)</span>. Therefore, maximum transfer occurs when <span class="math inline">\(R_L = R_{Th}\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Programming exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Programming exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Write to program which plots <span class="math inline">\(i \text{ vs } R_L\)</span>, <span class="math inline">\(p_L \text{ vs } R_L\)</span>, and <span class="math inline">\(p_s \text{ vs } R_L\)</span> where, <span class="math inline">\(i\)</span> is the current drawn from the source, <span class="math inline">\(p_L\)</span> is the power delivered to the load, and <span class="math inline">\(p_s\)</span> is the power consumed from the source.</p>
+</div>
+</div>
+<p><strong>INTERFACING CIRCUITS</strong></p>
+<p>In typical applications such as an audio amplifier driving a speaker <span class="math inline">\(4~\Omega\)</span> or a power amplifier in a mobile phone driving a <span class="math inline">\(50~\Omega\)</span> antenna, the load is fixed and the circuit designer designs the circuit so that the source impedance <span class="math inline">\(R_{Th}\)</span> is equal to the load <span class="math inline">\(R_L\)</span>.</p>
+<p>There are times when the circuit designer does not have the freedom to change <span class="math inline">\(R_{TH}\)</span> (or <span class="math inline">\(R_L\)</span>), then an interfacing circuit is necessary to facilitate maximum power transfer.</p>
+<div id="fig-circuits-interface" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-circuits-interface-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig-circuits-interface.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-circuits-interface-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.10: A general interface circuit and a few examples: (a) Simple pass-through (often omitted), (b) series resistor, (c) parallel resistor, (d) L-pad left, (e) L-pad right
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-circuits-interface" class="quarto-xref">Figure&nbsp;<span>3.10</span></a> illustrates general and example resistive interface circuits. These circuits feature two terminal pairs, or ports, forming a two-port network, with an input connected to the source and an output to the load. The network ensures specific source-load interaction. There are countless interface circuit designs, but <a href="#fig-circuits-interface" class="quarto-xref">Figure&nbsp;<span>3.10</span></a> highlights five basic ones. Pass-through is simply a direct connection when design allows source or load variation. Series interfaces suit voltage-powered loads, while parallel interfaces are for current-powered loads. L-pads match fixed source and load resistances to achieve desired electrical outputs.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">

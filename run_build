@@ -1,4 +1,7 @@
 #!/usr/bin/bash
+#
+#Pull any changes from the cloud
+git pull
 
 ## Run Quatro to create the render files
 
