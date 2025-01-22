@@ -351,7 +351,7 @@ $$i_{sc} = \frac{v_S}{R_1} + i_S$$
 
 :::
 
-### Interfacing Circuits for Max Power Transfer
+### Max Power Transfer and Interfacing Circuits
 
 In circuits where efficiency of power delivery is crucial, interfacing circuits have to be properly designed to ensure maximum power is delivered to the load. For example, an audio amplifier that delivers power to a speaker is typically between $4-8 \Omega$. Or a power amplifier on a mobile phone that delivers power to the antenna which is typically $50 \Omega$.
 
