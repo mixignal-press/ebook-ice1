@@ -20,16 +20,15 @@ TASKS:
   * Add capacitor and inductor excercises
 :::
 
+# Passive IC devices {#chap-passives}
+
 ::: {.callout-tip title="Pre-requisite"}
 Basic Electrostatic and Magnetostatic laws namely: Gauss' Law, Faraday's Lay, Ampere's Law, Coulomb's Law and Biot-Savart's Law.
 :::
 
-# Introduction {#chap-intro}
+## Introduction {#chap-intro}
 This chapter provides a concise review of passive devices—resistors, capacitors, and inductors—as implemented in integrated circuits (ICs). It is specifically tailored for IC designers, including electrical engineering graduates seeking a refresher and practicing engineers aiming to reinforce their fundamental knowledge. The content balances theoretical underpinnings with practical considerations relevant to modern IC design. Exercises and examples are included to enhance understanding and facilitate application of the concepts discussed.
 
-# Passive IC devices {#chap-passives}
-
-This chapter covers basic principles behind passive IC devices: Resistors, Capacitors and Inductors.
 
 
 ## Resistance {#sec-passive-res}
