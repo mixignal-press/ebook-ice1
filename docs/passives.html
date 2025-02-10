@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Passive IC devices – IC Engineering I</title>
+<title>2&nbsp; Introduction – IC Engineering I</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -130,7 +130,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./passives.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Passive IC devices</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./passives.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -170,7 +170,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./passives.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Passive IC devices</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -195,9 +195,12 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-passive-res" id="toc-sec-passive-res" class="nav-link active" data-scroll-target="#sec-passive-res"><span class="header-section-number">2.1</span> Resistance</a></li>
-  <li><a href="#sec-passive-cap" id="toc-sec-passive-cap" class="nav-link" data-scroll-target="#sec-passive-cap"><span class="header-section-number">2.2</span> Capacitance</a></li>
-  <li><a href="#sec-passive-ind" id="toc-sec-passive-ind" class="nav-link" data-scroll-target="#sec-passive-ind"><span class="header-section-number">2.3</span> Inductance</a></li>
+  <li><a href="#chap-passives" id="toc-chap-passives" class="nav-link active" data-scroll-target="#chap-passives"><span class="header-section-number">3</span> Passive IC devices</a>
+  <ul class="collapse">
+  <li><a href="#sec-passive-res" id="toc-sec-passive-res" class="nav-link" data-scroll-target="#sec-passive-res"><span class="header-section-number">3.1</span> Resistance</a></li>
+  <li><a href="#sec-passive-cap" id="toc-sec-passive-cap" class="nav-link" data-scroll-target="#sec-passive-cap"><span class="header-section-number">3.2</span> Capacitance</a></li>
+  <li><a href="#sec-passive-ind" id="toc-sec-passive-ind" class="nav-link" data-scroll-target="#sec-passive-ind"><span class="header-section-number">3.3</span> Inductance</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -206,7 +209,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="chap-passives" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Passive IC devices</span></span></h1>
+<h1 class="title"><span id="chap-intro" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></h1>
 </div>
 
 
@@ -223,20 +226,36 @@ window.Quarto = {
 </header>
 
 
+<div class="callout callout-style-default callout-tip callout-titled" title="Pre-requisite">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Pre-requisite
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Basic Electrostatic and Magnetostatic laws namely: Gauss’ Law, Faraday’s Lay, Ampere’s Law, Coulomb’s Law and Biot-Savart’s Law.</p>
+</div>
+</div>
+<p>This chapter provides a concise review of passive devices—resistors, capacitors, and inductors—as implemented in integrated circuits (ICs). It is specifically tailored for IC designers, including electrical engineering graduates seeking a refresher and practicing engineers aiming to reinforce their fundamental knowledge. The content balances theoretical underpinnings with practical considerations relevant to modern IC design. Exercises and examples are included to enhance understanding and facilitate application of the concepts discussed.</p>
+<section id="chap-passives" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Passive IC devices</h1>
 <p>This chapter covers basic principles behind passive IC devices: Resistors, Capacitors and Inductors.</p>
-<section id="sec-passive-res" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="sec-passive-res"><span class="header-section-number">2.1</span> Resistance</h2>
+<section id="sec-passive-res" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-passive-res"><span class="header-section-number">3.1</span> Resistance</h2>
 <div id="fig-passive-res" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-passive-res-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/fig-passives-res.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-passive-res-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.1: Setup for resistance calculation
+Figure&nbsp;3.1: Setup for resistance calculation
 </figcaption>
 </figure>
 </div>
-<p>Resistance calculation of metal or semiconductor material is fundamental to IC engineering. Consider a block of metal or semiconductor material with dimensions <span class="math inline">\(L, W\)</span> and <span class="math inline">\(h\)</span> as shown in <a href="#fig-passive-res" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>. Let <span class="math inline">\(n\)</span> be the charge per unit volume. To calculate the current <span class="math inline">\(I_R\)</span> for an applied voltage <span class="math inline">\(V_R\)</span> across the length of the material, we will consider an incremental cross section of the material with length <span class="math inline">\(\Delta x\)</span>. The current can be written as the total charge in the incremental volume in time <span class="math inline">\(\Delta t\)</span>:</p>
+<p>Resistance calculation of metal or semiconductor material is fundamental to IC engineering. Consider a block of metal or semiconductor material with dimensions <span class="math inline">\(L, W\)</span> and <span class="math inline">\(h\)</span> as shown in <a href="#fig-passive-res" class="quarto-xref">Figure&nbsp;<span>3.1</span></a>. Let <span class="math inline">\(n\)</span> be the charge per unit volume. To calculate the current <span class="math inline">\(I_R\)</span> for an applied voltage <span class="math inline">\(V_R\)</span> across the length of the material, we will consider an incremental cross section of the material with length <span class="math inline">\(\Delta x\)</span>. The current can be written as the total charge in the incremental volume in time <span class="math inline">\(\Delta t\)</span>:</p>
 <p><span class="math display">\[
 I_R = \frac{\Delta Q}{\Delta t} = \frac{Q_S \Delta x}{\Delta t} = Q_S v_d
 \]</span></p>
@@ -273,7 +292,7 @@ R = (\rho/h) (L/W)
 <div id="tbl-passives-rho" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-passives-rho-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2.1: Specific resistance (at <span class="math inline">\(20^\circ C\)</span>) of typical metals used in integrated circuits expressed in <span class="math inline">\(\Omega cm\)</span> and, the unit resistance of a height of <span class="math inline">\(1\mu m\)</span> metal expressed in <span class="math inline">\(\Omega/\square\)</span>
+Table&nbsp;3.1: Specific resistance (at <span class="math inline">\(20^\circ C\)</span>) of typical metals used in integrated circuits expressed in <span class="math inline">\(\Omega cm\)</span> and, the unit resistance of a height of <span class="math inline">\(1\mu m\)</span> metal expressed in <span class="math inline">\(\Omega/\square\)</span>
 </figcaption>
 <div aria-describedby="tbl-passives-rho-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -315,7 +334,7 @@ Excercise: Update material properties in the Table
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Update material properties of the 3 metals in Table <a href="#tbl-passives-rho" class="quarto-xref">Table&nbsp;<span>2.1</span></a> with <strong>melting point</strong>, <strong>temperature coefficient</strong>, and <strong>cost in INR for 10gm</strong>.</p>
+<p>Update material properties of the 3 metals in Table <a href="#tbl-passives-rho" class="quarto-xref">Table&nbsp;<span>3.1</span></a> with <strong>melting point</strong>, <strong>temperature coefficient</strong>, and <strong>cost in INR for 10gm</strong>.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Excercise: Resistance calculation">
@@ -330,7 +349,7 @@ Excercise: Resistance calculation
 <div class="callout-body-container callout-body">
 <p>Calculate the resistance of an aluminum wire with the following dimension:</p>
 <p><span class="math inline">\(L=100\mu m, W=1\mu m, h=0.5\mu m\)</span></p>
-<p><strong>Hint</strong>: Re-calculate <span class="math inline">\(\rho_{sheet}\)</span> from table <a href="#tbl-passives-rho" class="quarto-xref">Table&nbsp;<span>2.1</span></a> and use it to calculate the resistance.</p>
+<p><strong>Hint</strong>: Re-calculate <span class="math inline">\(\rho_{sheet}\)</span> from table <a href="#tbl-passives-rho" class="quarto-xref">Table&nbsp;<span>3.1</span></a> and use it to calculate the resistance.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Excercise: Sheet-Rho and specific resistivity calculation">
@@ -362,19 +381,19 @@ Excercise: Resistance and resistivity simulation using Virtual Lab
 </div>
 </div>
 </section>
-<section id="sec-passive-cap" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="sec-passive-cap"><span class="header-section-number">2.2</span> Capacitance</h2>
+<section id="sec-passive-cap" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sec-passive-cap"><span class="header-section-number">3.2</span> Capacitance</h2>
 <div id="fig-passive-cap" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-passive-cap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/fig-passive-cap.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-passive-cap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.2: Parallel plate capacitance calculation
+Figure&nbsp;3.2: Parallel plate capacitance calculation
 </figcaption>
 </figure>
 </div>
-<p>Consider two parallel metal plates of area <span class="math inline">\(A\)</span> separated by distance <span class="math inline">\(d\)</span> as shown in <a href="#fig-passive-cap" class="quarto-xref">Figure&nbsp;<span>2.2</span></a> .</p>
+<p>Consider two parallel metal plates of area <span class="math inline">\(A\)</span> separated by distance <span class="math inline">\(d\)</span> as shown in <a href="#fig-passive-cap" class="quarto-xref">Figure&nbsp;<span>3.2</span></a> .</p>
 <p>If the total charge on the top and bottom plate is <span class="math inline">\(+Q\)</span> and <span class="math inline">\(-Q\)</span> respectively, and the potential on the plates are <span class="math inline">\(V_1\)</span> and <span class="math inline">\(V_2\)</span> respectively, total charge on the plate is directly proportional to the potential difference (<span class="math inline">\(V=V_1-V_2\)</span>):</p>
 <p><span class="math display">\[
 Q \propto V
@@ -383,7 +402,7 @@ Q \propto V
 <p><span class="math display">\[
 Q = CV
 \]</span></p>
-<p>In order to calculate the capacitance of the parallel plates, we will apply Gauss’ law (<span class="math inline">\(\nabla\cdot \vec{E} = \rho /\epsilon_0\)</span>) by enclosing the top plate (or bottom plate), as show in <a href="#fig-passive-cap" class="quarto-xref">Figure&nbsp;<span>2.2</span></a> and calculate the total electric field <em>diverging</em> from the enclosed volume.</p>
+<p>In order to calculate the capacitance of the parallel plates, we will apply Gauss’ law (<span class="math inline">\(\nabla\cdot \vec{E} = \rho /\epsilon_0\)</span>) by enclosing the top plate (or bottom plate), as show in <a href="#fig-passive-cap" class="quarto-xref">Figure&nbsp;<span>3.2</span></a> and calculate the total electric field <em>diverging</em> from the enclosed volume.</p>
 <p>Assuming a large area and a small separation, the peripheral electric field can be neglected and average electric field <span class="math inline">\(\vec{E}\)</span> can be expressed as:</p>
 <p><span class="math display">\[
 \vec{E} = \frac{V}{d}
@@ -406,30 +425,30 @@ C = \frac{A\epsilon_0}{d}
 <img src="figures/fig-passive-cap2.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-passive-cap2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.3: Parallel plate capacitance dielectric
+Figure&nbsp;3.3: Parallel plate capacitance dielectric
 </figcaption>
 </figure>
 </div>
-<p>In the presence of <em>dielectric</em> material, as shown in <a href="#fig-passive-cap2" class="quarto-xref">Figure&nbsp;<span>2.3</span></a>, the capacitance is expressed as:</p>
+<p>In the presence of <em>dielectric</em> material, as shown in <a href="#fig-passive-cap2" class="quarto-xref">Figure&nbsp;<span>3.3</span></a>, the capacitance is expressed as:</p>
 <p><span class="math display">\[
 C = \frac{A (1+\chi)\epsilon_0}{d} = \frac{A\kappa \epsilon_0}{d}
 \]</span></p>
 <p>where, <span class="math inline">\(\chi\)</span> is the dielectric <em>susceptibility</em> and <span class="math inline">\(\kappa\)</span> is the <em>relative permittivity</em>.</p>
 </section>
-<section id="sec-passive-ind" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="sec-passive-ind"><span class="header-section-number">2.3</span> Inductance</h2>
+<section id="sec-passive-ind" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="sec-passive-ind"><span class="header-section-number">3.3</span> Inductance</h2>
 <div id="fig-passive-ind" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-passive-ind-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/fig-passive-ind.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-passive-ind-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.4: Loop inductance by Faraday’s law
+Figure&nbsp;3.4: Loop inductance by Faraday’s law
 </figcaption>
 </figure>
 </div>
 <p>Inductors are virtually nonexistent in Integrated Circuits due to the very small loop areas. Our discussion will be confined to the <em>self-inductance</em> of a current loop to familiarize the reader with the fundamental concepts of self-inductance.</p>
-<p>Faraday’s law of induction is crucial for understanding inductance. Consider the circular wire loop in <a href="#fig-passive-ind" class="quarto-xref">Figure&nbsp;<span>2.4</span></a> , with a small gap for introducing current <span class="math inline">\(I\)</span>. This current circulates counter-clockwise around the loop, as in <a href="#fig-passive-ind" class="quarto-xref">Figure&nbsp;<span>2.4</span></a> , creating a magnetic flux density <span class="math inline">\(B\)</span> through the surface <span class="math inline">\(s\)</span> the loop encloses. The surface’s shape doesn’t affect the result, as long as the loop encircles it. With counter-clockwise current, the magnetic field is upward through the surface. The total magnetic flux through the loop can be calculated as</p>
+<p>Faraday’s law of induction is crucial for understanding inductance. Consider the circular wire loop in <a href="#fig-passive-ind" class="quarto-xref">Figure&nbsp;<span>3.4</span></a> , with a small gap for introducing current <span class="math inline">\(I\)</span>. This current circulates counter-clockwise around the loop, as in <a href="#fig-passive-ind" class="quarto-xref">Figure&nbsp;<span>3.4</span></a> , creating a magnetic flux density <span class="math inline">\(B\)</span> through the surface <span class="math inline">\(s\)</span> the loop encloses. The surface’s shape doesn’t affect the result, as long as the loop encircles it. With counter-clockwise current, the magnetic field is upward through the surface. The total magnetic flux through the loop can be calculated as</p>
 <p><span class="math display">\[
 \psi = \int_S \vec{B}\cdot ds
 \]</span></p>
@@ -441,7 +460,7 @@ emf = \int_C \vec{E}\cdot dl = - d\psi / dt
 <p><span class="math display">\[
 V = d\psi / dt
 \]</span></p>
-<p>Lenz’s law clarifies that the negative sign in Faraday’s law indicates the induced emf and current oppose the change in magnetic flux that creates them. Thus, the voltage source polarity is as shown in <a href="#fig-passive-ind" class="quarto-xref">Figure&nbsp;<span>2.4</span></a> . <em>Inductance</em> is fundamentally the ratio of the magnetic flux through the loop to the current causing it</p>
+<p>Lenz’s law clarifies that the negative sign in Faraday’s law indicates the induced emf and current oppose the change in magnetic flux that creates them. Thus, the voltage source polarity is as shown in <a href="#fig-passive-ind" class="quarto-xref">Figure&nbsp;<span>3.4</span></a> . <em>Inductance</em> is fundamentally the ratio of the magnetic flux through the loop to the current causing it</p>
 <p><span class="math display">\[
 L=\frac{\psi}{I}
 \]</span></p>
@@ -457,7 +476,7 @@ V=\frac{d\psi}{dt}
 <p><span class="math display">\[
 V=L\frac{dI}{dt}
 \]</span></p>
-<p><a href="#fig-passive-ind" class="quarto-xref">Figure&nbsp;<span>2.4</span></a> illustrates replacing the induced source with an inductor symbol, where the voltage across it is given by <span class="math inline">\(L\cdot dI/dt\)</span> and appears as a Thevenin open-circuit voltage. If the loop’s wire has resistance, it’s shown with a resistor symbol in series, adding an IR voltage drop around the loop.</p>
+<p><a href="#fig-passive-ind" class="quarto-xref">Figure&nbsp;<span>3.4</span></a> illustrates replacing the induced source with an inductor symbol, where the voltage across it is given by <span class="math inline">\(L\cdot dI/dt\)</span> and appears as a Thevenin open-circuit voltage. If the loop’s wire has resistance, it’s shown with a resistor symbol in series, adding an IR voltage drop around the loop.</p>
 <p>The technique used to determine the inductance of a loop is known as the <em>method of flux linkages</em>, as it involves calculating the flux that “links” with the current. This method comprises four steps:</p>
 <ul>
 <li>Injecting a current <span class="math inline">\(I\)</span> around the closed loop.</li>
@@ -472,11 +491,11 @@ V=L\frac{dI}{dt}
 <img src="figures/fig-passive-ind2.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-passive-ind2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.5: Mutual inductance
+Figure&nbsp;3.5: Mutual inductance
 </figcaption>
 </figure>
 </div>
-<p>The mutual inductance between two loops, one of which carries a current <span class="math inline">\(I_1\)</span>, is defined with reference to <a href="#fig-passive-ind2" class="quarto-xref">Figure&nbsp;<span>2.5</span></a> as</p>
+<p>The mutual inductance between two loops, one of which carries a current <span class="math inline">\(I_1\)</span>, is defined with reference to <a href="#fig-passive-ind2" class="quarto-xref">Figure&nbsp;<span>3.5</span></a> as</p>
 <p><span class="math display">\[
 M_{12} = \frac{\psi_2}{I_1}
 \]</span></p>
@@ -505,6 +524,7 @@ Methods for calculating magnetic flux density
 Paul, Clayton R. 2011. <em>Inductance: <span>Loop</span> and <span>Partial</span></em>. John Wiley &amp; Sons.
 </div>
 </div>
+</section>
 </section>
 
 </main> <!-- /main -->
