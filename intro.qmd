@@ -1,7 +1,29 @@
-# Introduction {#sec-intro}
+::: {.content-hidden}
 
-This book covers basic topics in circuits and devices for Integrated Circuit (IC) engineers. 
+Copyright (C) 2025 Mixignal Innovations LLC. All rights reserved.
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licensei (the "License"). You may share and adapt this material for non-commercial purposes, provided you give appropriate credit to the original author, indicate if changes were made, and distribute your contributions under the same License.
+
+You may obtain a copy of the License at
+
+   https://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+You can contact the publisher at info@mixignal.com
+
+
+:::
+
+# Introduction {#chap-intro}
+
+In the world of integrated circuit (IC) design, a strong understanding of linear circuits and semiconductor device is paramount. 
+
+This text revisits the essential characteristics of resistors, capacitors, and inductors as they are implemented in ICs using basic electrostatic and magnetostatic principles. 
+
+The chapter on linear circuits, introduces the basic laws and principles that is essential to many electronic systems. Linearity is defined, focusing on homogeneity (proportionality) and additivity (superposition), which are key for analysis. The voltage-current relationships in resistors, capacitors, and inductors are explored using idealized models, and ideal voltage and current sources are examined. Kirchhoff's Current Law (KCL) and Kirchhoff's Voltage Law (KVL), are explored as the foundation for circuit analysis. Nodal and mesh analysis, based on KCL and KVL, allow for solving voltages and currents in complex circuits. The superposition principle offers a method for analyzing multiple sources. Mastery of these concepts enables analysis of various linear circuits.
+Whether you're an electrical engineering graduate looking to brush up on the basics or a seasoned IC designer seeking to reinforce your fundamental knowledge, this chapter is for you. We bridge the gap between theoretical principles and practical applications, providing insights directly relevant to modern IC design challenges. Get ready to delve into the theory, work through practical examples, and solidify your understanding with targeted exercises.
+
+This book revisits the essential characteristics of passive resistors, capacitors, and inductors as they are implemented in ICs. Whether you're an electrical engineering graduate looking to brush up on the basics or a seasoned IC designer seeking to reinforce your fundamental knowledge, this chapter is for you. We bridge the gap between theoretical principles and practical applications, providing insights directly relevant to modern IC design challenges. Get ready to delve into the theory, work through practical examples, and solidify your understanding with targeted exercises.
+
 
 This is a book created from markdown and executable code.
 
-This is an exmaple of reference citation: @thomas_analysis_2016

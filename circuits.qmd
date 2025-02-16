@@ -21,6 +21,12 @@ TASKS:
 
 # Linear Circuits {#chap-linear-ckts}
 
+## Introduction {#sec-linear-ckts-intro}
+
+This chapter introduces linear circuits, essential to many electronic systems. We define linearity, focusing on homogeneity (proportionality) and additivity (superposition), which are key for analysis. We explore the voltage-current relationships in resistors, capacitors, and inductors using idealized models, and examine ideal voltage and current sources. We'll focus on Kirchhoff's Current Law (KCL) and Kirchhoff's Voltage Law (KVL), foundational for circuit analysis. Nodal and mesh analysis, based on KCL and KVL, allow for solving voltages and currents in complex circuits. The superposition principle offers a method for analyzing multiple sources. Mastery of these concepts enables analysis of various linear circuits.
+
+## What are Linear Circuits ? {#sec-linear-ckts-whatis}
+ 
 All the analysis techniques we will cover in this text are for linear circuits. Therefore, it's beneficial to understand the definition of linear circuits. Briefly, a linear circuit adheres to the principles of linearity, namely **homogeneity** and **additivity**. 
 Mathematically, these properties can be expressed as follows.
 

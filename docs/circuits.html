@@ -195,18 +195,20 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-linear-ckts-basics" id="toc-sec-linear-ckts-basics" class="nav-link active" data-scroll-target="#sec-linear-ckts-basics"><span class="header-section-number">3.1</span> Basic Circuit Analysis</a>
+  <li><a href="#sec-linear-ckts-intro" id="toc-sec-linear-ckts-intro" class="nav-link active" data-scroll-target="#sec-linear-ckts-intro"><span class="header-section-number">3.1</span> Introduction</a></li>
+  <li><a href="#sec-linear-ckts-whatis" id="toc-sec-linear-ckts-whatis" class="nav-link" data-scroll-target="#sec-linear-ckts-whatis"><span class="header-section-number">3.2</span> What are Linear Circuits ?</a></li>
+  <li><a href="#sec-linear-ckts-basics" id="toc-sec-linear-ckts-basics" class="nav-link" data-scroll-target="#sec-linear-ckts-basics"><span class="header-section-number">3.3</span> Basic Circuit Analysis</a>
   <ul class="collapse">
-  <li><a href="#kirchhoffs-current-law-kcl" id="toc-kirchhoffs-current-law-kcl" class="nav-link" data-scroll-target="#kirchhoffs-current-law-kcl"><span class="header-section-number">3.1.1</span> Kirchhoff‘s Current Law (KCL)</a></li>
-  <li><a href="#kirchhoffs-voltage-law-kvl" id="toc-kirchhoffs-voltage-law-kvl" class="nav-link" data-scroll-target="#kirchhoffs-voltage-law-kvl"><span class="header-section-number">3.1.2</span> Kirchhoff’s Voltage Law (KVL)</a></li>
+  <li><a href="#kirchhoffs-current-law-kcl" id="toc-kirchhoffs-current-law-kcl" class="nav-link" data-scroll-target="#kirchhoffs-current-law-kcl"><span class="header-section-number">3.3.1</span> Kirchhoff‘s Current Law (KCL)</a></li>
+  <li><a href="#kirchhoffs-voltage-law-kvl" id="toc-kirchhoffs-voltage-law-kvl" class="nav-link" data-scroll-target="#kirchhoffs-voltage-law-kvl"><span class="header-section-number">3.3.2</span> Kirchhoff’s Voltage Law (KVL)</a></li>
   </ul></li>
-  <li><a href="#circuit-analysis-techniques" id="toc-circuit-analysis-techniques" class="nav-link" data-scroll-target="#circuit-analysis-techniques"><span class="header-section-number">3.2</span> Circuit Analysis Techniques</a>
+  <li><a href="#circuit-analysis-techniques" id="toc-circuit-analysis-techniques" class="nav-link" data-scroll-target="#circuit-analysis-techniques"><span class="header-section-number">3.4</span> Circuit Analysis Techniques</a>
   <ul class="collapse">
-  <li><a href="#nodal-analysis" id="toc-nodal-analysis" class="nav-link" data-scroll-target="#nodal-analysis"><span class="header-section-number">3.2.1</span> Nodal Analysis</a></li>
-  <li><a href="#mesh-analysis" id="toc-mesh-analysis" class="nav-link" data-scroll-target="#mesh-analysis"><span class="header-section-number">3.2.2</span> Mesh Analysis</a></li>
-  <li><a href="#superposition-principle" id="toc-superposition-principle" class="nav-link" data-scroll-target="#superposition-principle"><span class="header-section-number">3.2.3</span> Superposition Principle</a></li>
-  <li><a href="#thevenin-and-norton-equivalent-circuits" id="toc-thevenin-and-norton-equivalent-circuits" class="nav-link" data-scroll-target="#thevenin-and-norton-equivalent-circuits"><span class="header-section-number">3.2.4</span> Thevenin and Norton Equivalent Circuits</a></li>
-  <li><a href="#max-power-transfer-and-interfacing-circuits" id="toc-max-power-transfer-and-interfacing-circuits" class="nav-link" data-scroll-target="#max-power-transfer-and-interfacing-circuits"><span class="header-section-number">3.2.5</span> Max Power Transfer and Interfacing Circuits</a></li>
+  <li><a href="#nodal-analysis" id="toc-nodal-analysis" class="nav-link" data-scroll-target="#nodal-analysis"><span class="header-section-number">3.4.1</span> Nodal Analysis</a></li>
+  <li><a href="#mesh-analysis" id="toc-mesh-analysis" class="nav-link" data-scroll-target="#mesh-analysis"><span class="header-section-number">3.4.2</span> Mesh Analysis</a></li>
+  <li><a href="#superposition-principle" id="toc-superposition-principle" class="nav-link" data-scroll-target="#superposition-principle"><span class="header-section-number">3.4.3</span> Superposition Principle</a></li>
+  <li><a href="#thevenin-and-norton-equivalent-circuits" id="toc-thevenin-and-norton-equivalent-circuits" class="nav-link" data-scroll-target="#thevenin-and-norton-equivalent-circuits"><span class="header-section-number">3.4.4</span> Thevenin and Norton Equivalent Circuits</a></li>
+  <li><a href="#max-power-transfer-and-interfacing-circuits" id="toc-max-power-transfer-and-interfacing-circuits" class="nav-link" data-scroll-target="#max-power-transfer-and-interfacing-circuits"><span class="header-section-number">3.4.5</span> Max Power Transfer and Interfacing Circuits</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -233,6 +235,12 @@ window.Quarto = {
 </header>
 
 
+<section id="sec-linear-ckts-intro" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-linear-ckts-intro"><span class="header-section-number">3.1</span> Introduction</h2>
+<p>This chapter introduces linear circuits, essential to many electronic systems. We define linearity, focusing on homogeneity (proportionality) and additivity (superposition), which are key for analysis. We explore the voltage-current relationships in resistors, capacitors, and inductors using idealized models, and examine ideal voltage and current sources. We’ll focus on Kirchhoff’s Current Law (KCL) and Kirchhoff’s Voltage Law (KVL), foundational for circuit analysis. Nodal and mesh analysis, based on KCL and KVL, allow for solving voltages and currents in complex circuits. The superposition principle offers a method for analyzing multiple sources. Mastery of these concepts enables analysis of various linear circuits.</p>
+</section>
+<section id="sec-linear-ckts-whatis" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sec-linear-ckts-whatis"><span class="header-section-number">3.2</span> What are Linear Circuits ?</h2>
 <p>All the analysis techniques we will cover in this text are for linear circuits. Therefore, it’s beneficial to understand the definition of linear circuits. Briefly, a linear circuit adheres to the principles of linearity, namely <strong>homogeneity</strong> and <strong>additivity</strong>. Mathematically, these properties can be expressed as follows.</p>
 <p><span class="math display">\[ f(Kx) = Kf(x) \text{  (homogeneity)}\]</span></p>
 <p>where <span class="math inline">\(K\)</span> is a scalar constant with the homogeneity property also known as <strong>proportionality</strong>, and</p>
@@ -251,8 +259,9 @@ Note
 <p>The superposition and proportionality principle is also employed to assess the linearity of a circuit. For instance, in the case of a two-terminal circuit whose linearity is uncertain, we can utilize linearity principles to ascertain this property.</p>
 </div>
 </div>
-<section id="sec-linear-ckts-basics" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="sec-linear-ckts-basics"><span class="header-section-number">3.1</span> Basic Circuit Analysis</h2>
+</section>
+<section id="sec-linear-ckts-basics" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="sec-linear-ckts-basics"><span class="header-section-number">3.3</span> Basic Circuit Analysis</h2>
 <p><strong>PASSIVE DEVICE</strong> (R,L,C) <span class="math inline">\(I-V\)</span> characteristics has been derived. Although these devices are often non-linear in practice, we will use their linear models, known as <em>circuit elements</em>, and apply the following linear equations:</p>
 <p><span class="math display">\[Resistor: v = iR\]</span></p>
 <p>also known as Ohm’s law,</p>
@@ -310,8 +319,8 @@ Excercise: Linear range calculation
 <p>where, <span class="math inline">\(s_s\)</span> is the current flowing through the source and <span class="math inline">\(v\)</span> is the voltage across it.</p>
 <p>In circuit analysis, the voltage or current from ideal sources is called a <strong>forcing</strong> or <strong>driving</strong> function, as it triggers a circuit response. Time-varying voltage or current is typically denoted as <span class="math inline">\(v(t)\)</span> or <span class="math inline">\(i(t)\)</span>.</p>
 <p><strong>CONNECTION CONSTRAINTS</strong> are activated when devices are connected within a circuit. Two essential principles governed by connection constraints are Kirchhoff’s current law (KCL) and Kirchhoff’s voltage law (KVL).</p>
-<section id="kirchhoffs-current-law-kcl" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="kirchhoffs-current-law-kcl"><span class="header-section-number">3.1.1</span> Kirchhoff‘s Current Law (KCL)</h3>
+<section id="kirchhoffs-current-law-kcl" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="kirchhoffs-current-law-kcl"><span class="header-section-number">3.3.1</span> Kirchhoff‘s Current Law (KCL)</h3>
 <p>Kirchhoff’s first law is founded on the conservation of charge principle. Kirchhoff’s current law (KCL) asserts that</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Kirchhoff‘s Current Law (KCL)">
 <div class="callout-header d-flex align-content-center">
@@ -370,8 +379,8 @@ Equivalent circuits
 </div>
 </div>
 </section>
-<section id="kirchhoffs-voltage-law-kvl" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="kirchhoffs-voltage-law-kvl"><span class="header-section-number">3.1.2</span> Kirchhoff’s Voltage Law (KVL)</h3>
+<section id="kirchhoffs-voltage-law-kvl" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="kirchhoffs-voltage-law-kvl"><span class="header-section-number">3.3.2</span> Kirchhoff’s Voltage Law (KVL)</h3>
 <p>Kirchhoff’s second circuit law is rooted in the energy conservation principle. According to the Kirchhoff voltage law (KVL),</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Kirchoff's Voltage Law (KVL)">
 <div class="callout-header d-flex align-content-center">
@@ -422,11 +431,11 @@ A note on assigning voltage polarities and current direction
 </div>
 </section>
 </section>
-<section id="circuit-analysis-techniques" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="circuit-analysis-techniques"><span class="header-section-number">3.2</span> Circuit Analysis Techniques</h2>
+<section id="circuit-analysis-techniques" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="circuit-analysis-techniques"><span class="header-section-number">3.4</span> Circuit Analysis Techniques</h2>
 <p>We can apply Ohm’s and Kirchhoff’s laws to develop two key circuit analysis techniques: nodal analysis, using Kirchhoff’s current law (KCL) and mesh analysis, using Kirchhoff’s voltage law (KVL). These techniques are crucial to any circuit analysis. By developing these methods, we can analyze almost any circuit by forming and solving simultaneous equations to find currents or voltages. One solution for these equations is Cramer’s rule, which calculates circuit variables using determinant quotients.</p>
-<section id="nodal-analysis" class="level3" data-number="3.2.1">
-<h3 data-number="3.2.1" class="anchored" data-anchor-id="nodal-analysis"><span class="header-section-number">3.2.1</span> Nodal Analysis</h3>
+<section id="nodal-analysis" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="nodal-analysis"><span class="header-section-number">3.4.1</span> Nodal Analysis</h3>
 <p>Nodal analysis, or node-voltage analysis, analyzes circuits by using node voltages as variables, simplifying the process and reducing the number of simultaneous equations. It focuses on determining node voltages and follows three steps for a circuit with n nodes without voltage sources.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Steps to determine node voltage">
 <div class="callout-header d-flex align-content-center">
@@ -492,8 +501,8 @@ Solving linear algebraic equations
 </div>
 </div>
 </section>
-<section id="mesh-analysis" class="level3" data-number="3.2.2">
-<h3 data-number="3.2.2" class="anchored" data-anchor-id="mesh-analysis"><span class="header-section-number">3.2.2</span> Mesh Analysis</h3>
+<section id="mesh-analysis" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="mesh-analysis"><span class="header-section-number">3.4.2</span> Mesh Analysis</h3>
 <p>Mesh analysis, the dual of node analysis, is a method for analyzing circuits using mesh currents as variables, simplifying equations by using these currents instead of element currents. A loop is a closed path passing each node once, while a mesh is a loop without any smaller loops inside. Nodal analysis uses KCL to find unknown voltages, while mesh analysis uses KVL to find unknown currents. Mesh analysis is less general than nodal analysis as it only applies to planar circuits, which can be drawn without crossing branches. Circuits with crossing branches may still be planar if they can be redrawn without them.</p>
 <p>A circuit with <span class="math inline">\(n\)</span> meshes can be analyzed using three steps:</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Steps to determine mesh current">
@@ -540,8 +549,8 @@ Mesh Analysis with current sources
 </div>
 </div>
 </section>
-<section id="superposition-principle" class="level3" data-number="3.2.3">
-<h3 data-number="3.2.3" class="anchored" data-anchor-id="superposition-principle"><span class="header-section-number">3.2.3</span> Superposition Principle</h3>
+<section id="superposition-principle" class="level3" data-number="3.4.3">
+<h3 data-number="3.4.3" class="anchored" data-anchor-id="superposition-principle"><span class="header-section-number">3.4.3</span> Superposition Principle</h3>
 <p>The linearity principle states that the output of a linear circuit with multiple inputs is a linear combination of scaled inputs:</p>
 <p><span class="math display">\[ y = \sum^n_{i=1} f(K_i x_i) = \sum^n_{i=1} K_i f(x_i) = \sum^n_{i=1} y_i\]</span></p>
 <p>where <span class="math inline">\(x_i\)</span> are the inputs of current or voltage and <span class="math inline">\(K_i\)</span> are the scalar constants that are circuit-dependent.</p>
@@ -602,8 +611,8 @@ Figure&nbsp;3.5: (a) Circuit used to demonstrate superposition. (b) Block diagra
 </div>
 </div>
 </section>
-<section id="thevenin-and-norton-equivalent-circuits" class="level3" data-number="3.2.4">
-<h3 data-number="3.2.4" class="anchored" data-anchor-id="thevenin-and-norton-equivalent-circuits"><span class="header-section-number">3.2.4</span> Thevenin and Norton Equivalent Circuits</h3>
+<section id="thevenin-and-norton-equivalent-circuits" class="level3" data-number="3.4.4">
+<h3 data-number="3.4.4" class="anchored" data-anchor-id="thevenin-and-norton-equivalent-circuits"><span class="header-section-number">3.4.4</span> Thevenin and Norton Equivalent Circuits</h3>
 <p>The Thevenin and Norton equivalent circuit theorems stand as foundational elements in circuit theory, often taken for granted. These theorems simplify circuit analysis significantly, and without them, circuit analysis would be difficult.</p>
 <p><strong>THE THEOREMS</strong></p>
 <div id="fig-circuits-linckt" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -663,8 +672,8 @@ Example
 </div>
 </div>
 </section>
-<section id="max-power-transfer-and-interfacing-circuits" class="level3" data-number="3.2.5">
-<h3 data-number="3.2.5" class="anchored" data-anchor-id="max-power-transfer-and-interfacing-circuits"><span class="header-section-number">3.2.5</span> Max Power Transfer and Interfacing Circuits</h3>
+<section id="max-power-transfer-and-interfacing-circuits" class="level3" data-number="3.4.5">
+<h3 data-number="3.4.5" class="anchored" data-anchor-id="max-power-transfer-and-interfacing-circuits"><span class="header-section-number">3.4.5</span> Max Power Transfer and Interfacing Circuits</h3>
 <p>In circuits where efficiency of power delivery is crucial, interfacing circuits have to be properly designed to ensure maximum power is delivered to the load. For example, an audio amplifier that delivers power to a speaker is typically between <span class="math inline">\(4-8 \Omega\)</span>. Or a power amplifier on a mobile phone that delivers power to the antenna which is typically <span class="math inline">\(50 \Omega\)</span>.</p>
 <div id="fig-circuits-maxpower" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
