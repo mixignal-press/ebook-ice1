@@ -5,12 +5,13 @@ project:
 book:
   title: "IC Engineering I"
   author: "Saroj Rout"
-  date: "1/11/2025"
+  date: "2/16/2025"
   chapters:
     - index.qmd
     - intro.qmd
     - passives.qmd
     - circuits.qmd
+    - devices.qmd
     - references.qmd
 
 bibliography: references.bib
