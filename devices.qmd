@@ -19,7 +19,7 @@ TASKS:
 
 # Semiconductor IC devices {#chap-semi-dev}
 
-## Introductiona {#sec-semi-dev-intro}
+## Introduction {#sec-semi-dev-intro}
 
 The large-scale integration of electronic circuits is rooted in the invention and evolution of semiconductor devices. We will discuss electronic materials to explain the fundamental properties of semiconductors in IC design and their role in the success of integrated circuits.
 
@@ -32,11 +32,16 @@ The large-scale integration of electronic circuits is rooted in the invention an
 :Specific resistance (at $20^\circ C$) of typical metals used in integrated circuits expressed in $\Omega cm$ and, the unit resistance of a height of $1\mu m$ metal expressed in $\Omega/\square$ {#tbl-devices-rho}
 
 The fundamental materials in integrated circuits include metals, dielectrics, and semiconductors. Metals are used as conductors for interconnects because of their extremely low specific resistivity. 
-\textit{Specific resistivity} ($\rho$) is a property of the material that can be defined as _resistance per unit volume_ expressed in SI units of $\Omega m$ but more conveniently as $\Omega cm$. The resistance of a rectangular piece of that material can be expressed as $R=\rho\cdot l/A$, where $l$ is the length and $A$ is the cross-sectional area.
+_Specific resistivity_ ($\rho$) is a property of the material that can be defined as _resistance per unit volume_ expressed in SI units of $\Omega m$ but more conveniently as $\Omega cm$. The resistance of a rectangular piece of that material can be expressed as $R=\rho\cdot l/A$, where $l$ is the length and $A$ is the cross-sectional area.
 In integrated circuit design, the height of the metal routing is fixed and is typically in the range of $0.1$ to $5$ micrometers ($\mu m, 10^{-6} m)$ and the resistance is measured in unit squares as \textit{ ohms per square} or $\Omega/\square$.
 The specific resistance (in $\Omega cm$) and unit resistance (in $\Omega/\square$) of typical metals used in integrated circuits such as aluminum (Al), copper (Cu) and gold (Au) are tabulated in @tbl-devices-rho. 
 Dielectric materials have extremely large specific resistances that provide electrical insulation for typical operating conditions. Specific resistances for semiconductors can vary enormously $-$ from $10^{-4} ~\Omega cm$ to $10^{12} ~\Omega cm$.
 
 
 
+The history of semiconductors began with Tomas Seebeck's observation of lead sulfur (PbS) properties in 1821. Michael Faraday noted that semiconductor resistance decreases with rising temperatures, unlike conductors. Early applications include Werner von Siemens' selenium photometer (1875) and Alexander Graham Bell's wireless device (1878). The pivotal discovery of the Bipolar Junction Transistor (BJT) by Shockley, Bardeen, and Brattain in 1947 led to today's integrated circuits with millions of devices in a single IC.
+
+Electronic systems operate using a power supply formed by non-electric forces that separate charges to create a **potential difference**. Chemical forces generate batteries, while turbines produce AC, which is converted to DC voltages. This potential difference forms an electric field, driving current in the circuit. Manipulating this current with semiconductor devices in an integrated circuit is essential for intelligent systems like modern computers..
+
+Semiconductor devices excel in integrated circuits due to their rapid conductivity changes, small size, and low energy use. They are manufactured at nanometer scales with switching speeds of 100 gigahertz, consuming nanowatts of power. Their conductivity can shift dramatically from insulator to conductor, representing digital _zeros_ and _ones_. Understanding semiconductors like silicon involves studying the physics of their conductivity changes, which vary significantly with temperature as well.
 
