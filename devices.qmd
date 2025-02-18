@@ -45,3 +45,13 @@ Electronic systems operate using a power supply formed by non-electric forces th
 
 Semiconductor devices excel in integrated circuits due to their rapid conductivity changes, small size, and low energy use. They are manufactured at nanometer scales with switching speeds of 100 gigahertz, consuming nanowatts of power. Their conductivity can shift dramatically from insulator to conductor, representing digital _zeros_ and _ones_. Understanding semiconductors like silicon involves studying the physics of their conductivity changes, which vary significantly with temperature as well.
 
+## Energy Band Model {#sec-semi-dev-band}
+
+The energy band model explains the conduction properties of matter easily that we will introduce now using _quantum mechanical properties of matter_. Instead of explaining the model for a semiconductor crystal such as silicon, the basic principles can be explained using a much simpler atomic system, the _isolated hydrogen atom_. During the 1900s, the emission spectrum of heated gases did not agree with the contemporary physical model of continuous electron energy. In order to reconcile the discrepancy, in 1913 Neils Bohr proposed that the electrons can have only certain discrete allowed energy levels, called **energy states**. 
+
+For hydrogen atom the quantization of energy states is $E_n = -E_B/n^2$ where $n = 1,2,3,4,\ldots$ is called the _energy quantum number_ and $E_B$ is called the _Bohr energy_ or the _electron binding energy_.
+
+For hydrogen atom, Bohr energy $E_B = 13.6 eV/n^2$
+
+Electron energies are expressed in _electronvolt_ (eV), the work done to move an electron across a potential difference of $1~V$. [$1~eV = q\times 1V = 1.602\times 10^{-19} Joule$]
+
