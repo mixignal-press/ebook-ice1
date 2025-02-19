@@ -67,11 +67,32 @@ Let us now study the many electron energies of a Si crystal (Si), which is more 
 ![Illustration of the distinction between (a) insulator, (b) semiconductor, and (c) metal.](figures/fig-semi-dev-class.png){#fig-semi-dev-class}
 
 Typically, for semiconductors, the energy band gap, $E_g$, varies between $0.1~eV$ and $3.5~eV$.
-\marginnote{At room temperature (T=300K), $E_G=1.42eV$  (GaAs), $E_G=1.12eV$ (Si), and $E_G=0.66eV$ (Ge)}
+
+At room temperature (T=300K), $E_G=1.42eV$  (GaAs), $E_G=1.12eV$ (Si), and $E_G=0.66eV$ (Ge).
+
 In dielectric, the energy band gap is large and so the valence bands are completely filled and the conduction band is totally void of electrons making them perfect insulators. Typically for dielectrics, $E_g$ is larger than $5~eV$ (diamond) to $8~eV~(SiO_2)$. In a metal, the lowest conduction band is partially filled with many electrons, making it an ideal conductor.
 
 ## Carriers
 
 Carriers are the current-carrying entities within the semiconductor material and we are now in a position to introduce them, the semiconductor model having been well established. Referring to our bonding model, there are no carriers or possible current flow if no bonds are broken in the semiconductor solid. In the energy band model, this refers to a valence band which is _completely_ filled with electrons and a conduction band which is completely devoid of electrons. This will be the case for a _pure_ semiconductor like a silicon crystal at temperature $T=0^\circ K$. Now, for an electron to carry current under the influence of an applied electric field, it has to break free from the bond, for example, the Si-Si bond. In terms of the energy band model, this refers to an electron from the valence band jumping over to the conduction band creating _carriers_; that is, _electrons in the conduction band are carriers_. Note that the energy required to break a bond is the same as the forbidden energy gap $E_G$.
+
+![Visualization of carriers using the bonding model (left) and the energy band model (right) (a) No-carrier situation; (b) visualization of an electron; (c ) visualization of a hole](figures/fig-semi-dev-carrierviz.png){#fig-semi-dev-carrierviz}
+
+The _average thermal energy of an electron_, in equilibrium, is equal to $3k_BT/2$ where, $k_B$ is the Boltzmann constant and $T$ is the temperature in degrees Kelvin. The generally accepted room temperature is $27^\circ C$ or $300~K$.
+
+$k_BT = 1.38\times 10^{-23} \frac{J}{K} \times 300~K = 0.026~eV$
+
+This energy is attributed to the electron's thermal motion inside the crystal lattice that can be explained accurately using quantum mechanics. But an _effective mass_ formulation is a simplified _classical_ way of explaining the same phenomenon. This allows us to formulate the carriers as _quasi-classical particles_ and employ classical particle relationships in most device analyzes. Using this formulation, the average thermal energy can be attributed to the average kinetic energy $m^*_n v_{th}^2/2$ where $m^*_n$ is the _effective electron mass_ and $v_{th}$ is called the electron _thermal velocity_. 
+
+The electron effective mass $m^*_n$ is different from the free electron mass $m^*_e$ which is $9.11\times 10^{-31}kg$. For example, in silicon, $m^*_n\approx 0.066~m_e$.
+
+However, $3k_BT/2$ is just the average energy, and the actual energies of an individual electron vary widely. A few electrons acquire enough thermal energy to jump into the conduction band.
+
+Energy gap $E_G$ of silicon (Si) is $\approx 1.12 ~eV$ which is approximately 45 times larger than $k_BT$ at room temperature!
+
+Since there can be no current in the absence of an electric field, the random motions of the electrons compensate for each other. In the presence of an electric field, in addition to random motions, the electrons seem to drift in the direction of the electric with a so-called _drift velocity_ which results in an electric current.
+
+Now let us look at a phenomenon, unique to semiconductors, when an electron breaks _free_ from a bond. It leaves a _vacancy_ for another electron to break free from its bond and occupy this vacancy which in turn leaves another vacancy and so on leading to an _appearance_ of a motion of a vacant electron of a _positive_ charge $q=-(-q)$ and an effective mass of $m^*_p$. This motion is typically represented as a fictitious particle called a _hole_. This phenomenon can be imagined as analogous to the _bubble in a fluid_. In terms of the energy band model, jumping an electron to the conduction band creates a _hole_ in an otherwise vast sea of filled states. This empty state, like a bubble in a fluid, moves about rather freely in the solid because of the cooperative motion of valence-band electrons that give room to this hole in motion. Like a free electron carrier, when an electric field is applied to this semiconductor, the hole, an apparent _positive electron_, will move in the direction of the electric field, giving rise to electric current.
+
 
 
