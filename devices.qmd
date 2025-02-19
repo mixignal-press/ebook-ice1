@@ -53,5 +53,11 @@ For hydrogen atom the quantization of energy states is $E_n = -E_B/n^2$ where $n
 
 For hydrogen atom, Bohr energy $E_B = 13.6 eV/n^2$
 
-Electron energies are expressed in _electronvolt_ (eV), the work done to move an electron across a potential difference of $1~V$. [$1~eV = q\times 1V = 1.602\times 10^{-19} Joule$]
+Electron energies are expressed in _electron volt_ (eV), the work done to move an electron across a potential difference of $1~V$. 
+
+[$1~eV = q\times 1V = 1.602\times 10^{-19} Joule$]
+
+![Conceptual development of the energy band model starting with N isolated Si atoms on the top left, then showing the split bands for Crytalline SI N-atoms and concluding, at bottom right, with the popular version of the energy band model.](figures/fig-semi-dev-band.png){#fig-semi-dev-band}
+
+Let us now study the many electron energies of a Si crystal (Si), which is more complicated, but the basic principles still apply. The concept of _band diagrams_ can be qualitatively conceived by starting with N-isolated Si atoms and observing the energy states as the atoms are brought closer and closer together (see Figure @fig-semi-dev-band). _Pauli exclusion principle_ plays an important role in determining energy states as the atoms are brought closer. The principle states that no more than two electrons can occupy each energy state. In a solid material, as many atoms (N) are brought closer, the energy states start to split to satisfy the exclusion principle. At the interatomic spacing of the lattice, the split energy levels form essentially continuous _energy bands_. However, these bands are separated by _forbidden energy gaps_ that cannot be occupied by any electron. The magnitude of the forbidden energy gaps determines primarily the electrical properties of different materials. In filling the allowed energy states, electrons tend to gravitate to the lowest possible states. At room temperature in semiconductors and dielectrics, almost all of the states in the lower energy bands are filled by electrons, and the higher energy states are mostly empty. The upper band of the allowed states is called the _conduction band_; the lower band of the allowed states is called the _valence band_; and the gap between the two bands without any allowed energy states, the _forbidden band_ or the _energy band gap_. An electron in the valence band needs energy equal to or greater than the energy band gap to transition from the valence band to the conduction band. 
 
