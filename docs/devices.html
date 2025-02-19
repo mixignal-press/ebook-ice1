@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -183,6 +203,7 @@ window.Quarto = {
   <ul>
   <li><a href="#sec-semi-dev-intro" id="toc-sec-semi-dev-intro" class="nav-link active" data-scroll-target="#sec-semi-dev-intro"><span class="header-section-number">4.1</span> Introduction</a></li>
   <li><a href="#sec-semi-dev-band" id="toc-sec-semi-dev-band" class="nav-link" data-scroll-target="#sec-semi-dev-band"><span class="header-section-number">4.2</span> Energy Band Model</a></li>
+  <li><a href="#carriers" id="toc-carriers" class="nav-link" data-scroll-target="#carriers"><span class="header-section-number">4.3</span> Carriers</a></li>
   </ul>
 </nav>
     </div>
@@ -250,6 +271,7 @@ Table&nbsp;4.1: Specific resistance (at <span class="math inline">\(20^\circ C\)
 <p>The history of semiconductors began with Tomas Seebeck’s observation of lead sulfur (PbS) properties in 1821. Michael Faraday noted that semiconductor resistance decreases with rising temperatures, unlike conductors. Early applications include Werner von Siemens’ selenium photometer (1875) and Alexander Graham Bell’s wireless device (1878). The pivotal discovery of the Bipolar Junction Transistor (BJT) by Shockley, Bardeen, and Brattain in 1947 led to today’s integrated circuits with millions of devices in a single IC.</p>
 <p>Electronic systems operate using a power supply formed by non-electric forces that separate charges to create a <strong>potential difference</strong>. Chemical forces generate batteries, while turbines produce AC, which is converted to DC voltages. This potential difference forms an electric field, driving current in the circuit. Manipulating this current with semiconductor devices in an integrated circuit is essential for intelligent systems like modern computers..</p>
 <p>Semiconductor devices excel in integrated circuits due to their rapid conductivity changes, small size, and low energy use. They are manufactured at nanometer scales with switching speeds of 100 gigahertz, consuming nanowatts of power. Their conductivity can shift dramatically from insulator to conductor, representing digital <em>zeros</em> and <em>ones</em>. Understanding semiconductors like silicon involves studying the physics of their conductivity changes, which vary significantly with temperature as well.</p>
+<p>Some excellent references for this subject matter are <span class="citation" data-cites="shur_introduction_1996">(<a href="references.html#ref-shur_introduction_1996" role="doc-biblioref">Shur 1996</a>)</span>, <span class="citation" data-cites="pierret_semiconductor_1996">(<a href="references.html#ref-pierret_semiconductor_1996" role="doc-biblioref">Pierret 1996</a>)</span>, and <span class="citation" data-cites="streetman_solid_2014">(<a href="references.html#ref-streetman_solid_2014" role="doc-biblioref">Streetman and Banerjee 2014</a>)</span>.</p>
 </section>
 <section id="sec-semi-dev-band" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="sec-semi-dev-band"><span class="header-section-number">4.2</span> Energy Band Model</h2>
@@ -269,8 +291,34 @@ Figure&nbsp;4.1: Conceptual development of the energy band model starting with N
 </figure>
 </div>
 <p>Let us now study the many electron energies of a Si crystal (Si), which is more complicated, but the basic principles still apply. The concept of <em>band diagrams</em> can be qualitatively conceived by starting with N-isolated Si atoms and observing the energy states as the atoms are brought closer and closer together (see Figure <a href="#fig-semi-dev-band" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>). <em>Pauli exclusion principle</em> plays an important role in determining energy states as the atoms are brought closer. The principle states that no more than two electrons can occupy each energy state. In a solid material, as many atoms (N) are brought closer, the energy states start to split to satisfy the exclusion principle. At the interatomic spacing of the lattice, the split energy levels form essentially continuous <em>energy bands</em>. However, these bands are separated by <em>forbidden energy gaps</em> that cannot be occupied by any electron. The magnitude of the forbidden energy gaps determines primarily the electrical properties of different materials. In filling the allowed energy states, electrons tend to gravitate to the lowest possible states. At room temperature in semiconductors and dielectrics, almost all of the states in the lower energy bands are filled by electrons, and the higher energy states are mostly empty. The upper band of the allowed states is called the <em>conduction band</em>; the lower band of the allowed states is called the <em>valence band</em>; and the gap between the two bands without any allowed energy states, the <em>forbidden band</em> or the <em>energy band gap</em>. An electron in the valence band needs energy equal to or greater than the energy band gap to transition from the valence band to the conduction band.</p>
+<div id="fig-semi-dev-class" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-semi-dev-class-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig-semi-dev-class.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-class-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.2: Illustration of the distinction between (a) insulator, (b) semiconductor, and (c) metal.
+</figcaption>
+</figure>
+</div>
+<p>Typically, for semiconductors, the energy band gap, <span class="math inline">\(E_g\)</span>, varies between <span class="math inline">\(0.1~eV\)</span> and <span class="math inline">\(3.5~eV\)</span>. In dielectric, the energy band gap is large and so the valence bands are completely filled and the conduction band is totally void of electrons making them perfect insulators. Typically for dielectrics, <span class="math inline">\(E_g\)</span> is larger than <span class="math inline">\(5~eV\)</span> (diamond) to <span class="math inline">\(8~eV~(SiO_2)\)</span>. In a metal, the lowest conduction band is partially filled with many electrons, making it an ideal conductor.</p>
+</section>
+<section id="carriers" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="carriers"><span class="header-section-number">4.3</span> Carriers</h2>
+<p>Carriers are the current-carrying entities within the semiconductor material and we are now in a position to introduce them, the semiconductor model having been well established. Referring to our bonding model, there are no carriers or possible current flow if no bonds are broken in the semiconductor solid. In the energy band model, this refers to a valence band which is <em>completely</em> filled with electrons and a conduction band which is completely devoid of electrons. This will be the case for a <em>pure</em> semiconductor like a silicon crystal at temperature <span class="math inline">\(T=0^\circ K\)</span>. Now, for an electron to carry current under the influence of an applied electric field, it has to break free from the bond, for example, the Si-Si bond. In terms of the energy band model, this refers to an electron from the valence band jumping over to the conduction band creating <em>carriers</em>; that is, <em>electrons in the conduction band are carriers</em>. Note that the energy required to break a bond is the same as the forbidden energy gap <span class="math inline">\(E_G\)</span>.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-pierret_semiconductor_1996" class="csl-entry" role="listitem">
+Pierret, Robert F. 1996. <em>Semiconductor <span>Device</span> <span>Fundamentals</span></em>. Addison-Wesley.
+</div>
+<div id="ref-shur_introduction_1996" class="csl-entry" role="listitem">
+Shur, Michael. 1996. <em>Introduction to <span>Electronic</span> <span>Devices</span></em>. Wiley.
+</div>
+<div id="ref-streetman_solid_2014" class="csl-entry" role="listitem">
+Streetman, Ben, and Sanjay Banerjee. 2014. <em>Solid <span>State</span> <span>Electronic</span> <span>Devices</span></em>. Pearson Education.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
