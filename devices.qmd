@@ -147,7 +147,7 @@ Using basic electrostatic laws, the relationship between the potential $V$ and e
 A pure semiconductor that contains an insignificant amount of impurity atoms is commonly referred to as _an intra-intrinsic semiconductor_. In other words, it is a semiconductor whose properties are native to the material without any external additives. In an intrinsic semiconductor, the electron concentration in the conduction band and the holes in the valence band are negligible compared to the number of available energy states within $k_B T$ from the edges of the band.
 
 
-| Material | $n_i$ cm |
+| Material | $n_i$ |
 |----------|---------|
 | Si | $1\times 10^{10}/cm^3$ | 
 | Ge | $2\times 10^{13}/cm^3$ | 
@@ -163,5 +163,5 @@ In general, the number of electrons and holes per cubic-centimeter are defined a
 | $As^*$ | $Ga$ |
 | $Sb$ | $In$ |
 |  | $Al$ |
-:Common Silicon (Si) dopants. (*) Commonly used dopants. Donors and acceptors are all from the Column V and III of the Periodic Table of Elements respectively.{#tbl-semi-dev-si-dopants}
+:Common Silicon (Si) dopants. (*) Commonly used dopants. Donors and acceptors are all from the Column V and III of the Periodic Table of Elements respectively. {#tbl-semi-dev-si-dopants}
 
