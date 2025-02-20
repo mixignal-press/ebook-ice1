@@ -94,5 +94,41 @@ Since there can be no current in the absence of an electric field, the random mo
 
 Now let us look at a phenomenon, unique to semiconductors, when an electron breaks _free_ from a bond. It leaves a _vacancy_ for another electron to break free from its bond and occupy this vacancy which in turn leaves another vacancy and so on leading to an _appearance_ of a motion of a vacant electron of a _positive_ charge $q=-(-q)$ and an effective mass of $m^*_p$. This motion is typically represented as a fictitious particle called a _hole_. This phenomenon can be imagined as analogous to the _bubble in a fluid_. In terms of the energy band model, jumping an electron to the conduction band creates a _hole_ in an otherwise vast sea of filled states. This empty state, like a bubble in a fluid, moves about rather freely in the solid because of the cooperative motion of valence-band electrons that give room to this hole in motion. Like a free electron carrier, when an electric field is applied to this semiconductor, the hole, an apparent _positive electron_, will move in the direction of the electric field, giving rise to electric current.
 
+![Electrons move in an electric field. The band diagrams are like figure @fig-semi-dev-class, but with an expanded energy scale showing closely packed levels, each accommodating two electrons. Solid circles show electrons in a level; open circles indicate available levels.](figures/fig-semi-dev-carrier-efield){#fig-semi-dev-carrier-efield}
+
+## Band Diagrams
+
+Band diagrams are a very efficient way of illustrating electrical properties of semiconductor materials and devices without going into the detail atomic or molecular structure of the material. As shown in Figure @fig-semi-dev-carrier-efield, the band diagram represents the electrical energies allowed within the semiconductor as a function of position, where the increase in energy $E$ upward represents the total energy of electrons. The _charge carriers_ or _free charge carriers_ start to occupy the lowest energy states in the conduction band which are _lower edge of the conduction band_ ($E_C$) and _upper edge of the valence band_ ($E_V$) for _electrons_ and _holes_, respectively.
+
+Therefore, to analyze or understand the electrical behavior of a _uniform_ semiconductor material it is typically sufficient to study the material properties with the _band edges_ only. Normal operation is assumed here without any external disturbances, where the electric field, magnetic field, temperature gradient, and stress-induced effects are negligible.
+
+ On careful examination of the band diagram, we can show that an energy equal to the _bandgap_, $E_G = E_C-E_V$, is required to break an atomic bond to create _motionless_ electrons and holes occupying $E_C$ and $E_V$, respectively. Therefore, we can interpret the edges of the band $E_C$ and $E_V$ as the potential energy of the electron and hole, respectively, with reference to an arbitrary energy level $E_{ref}$.
+ 
+ Potential Energy: $P.E.=E_C-E_{ref}$ NOTE: Show PE and KE on the diagram itself.
+ 
+ Any energy in excess of $E_G$ will result in the kinetic energy shown in figure @fig-semi-dev-carrier-efield, with the carriers moving rapidly in the lattice. The potential energy is the key to relating the positional variations in the energy band with the electric field within the semiconductor. The potential energy ($P.E.$) of an electron ($-q$) can be expressed as $-qV$, where $V$ is the electrostatic potential at a given point with reference to an arbitrary constant. The potential can be expressed in terms of $E_C$ using the relationship shown previously between $P.E.$ and $E_C$.
+
+ $$
+ P.E. = -qV = E_C - E_{ref}
+ 
+ V=-1/q(E_C - E_{ref}
+ $$
+
+![Energy band diagrams for an uniform semiconductor sample in (a) zero and (b) non-zero electric field.](figures/fig-semi-dev-band-efield){#fig-semi-dev-band-efield}
+ 
+The band diagram of a piece of semiconductor with the presence of an electric field $\Vec{E}$ is shown as an example in Figure @fig-semi-dev-band-efield (b). The bands are _tilted_ with a slope of $-q\Vec{E}$ popularly known as _band bending_. Since electrons are negatively charged, the direction of the forces on electrons is opposite to that of the electric field. The forces on the holes are in the same direction as the electric field. Consequently, the electrons and holes move in opposite directions.
+
+$$
+\Vec{E}=-\nabla V$ or, $E_x = -dV/dx
+
+E_x = \frac{1}{q}\frac{dE_C}{dx} \text{ or,}
+
+E_x = \frac{1}{q}\frac{dE_V}{dx}  \text{ or,}
+
+E_x = \frac{1}{q}\frac{dE_i}{dx}
+$$
+
+Using basic electrostatic laws, the relationship between the potential $V$ and electric field $\vec{E}$ can be established. For quick analysis by inspection, the $V$ and $x$ relationship can be found simply by "inverting" $E_C$ (or $E_V$) and to determine the $\Vec{E}$ versus $x$ relationship, simply note the slope of $E_C$ (or $E_V$).
+
 
 

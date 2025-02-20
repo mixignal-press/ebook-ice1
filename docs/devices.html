@@ -204,6 +204,7 @@ window.Quarto = {
   <li><a href="#sec-semi-dev-intro" id="toc-sec-semi-dev-intro" class="nav-link active" data-scroll-target="#sec-semi-dev-intro"><span class="header-section-number">4.1</span> Introduction</a></li>
   <li><a href="#sec-semi-dev-band" id="toc-sec-semi-dev-band" class="nav-link" data-scroll-target="#sec-semi-dev-band"><span class="header-section-number">4.2</span> Energy Band Model</a></li>
   <li><a href="#carriers" id="toc-carriers" class="nav-link" data-scroll-target="#carriers"><span class="header-section-number">4.3</span> Carriers</a></li>
+  <li><a href="#band-diagrams" id="toc-band-diagrams" class="nav-link" data-scroll-target="#band-diagrams"><span class="header-section-number">4.4</span> Band Diagrams</a></li>
   </ul>
 </nav>
     </div>
@@ -326,6 +327,42 @@ Figure&nbsp;4.3: Visualization of carriers using the bonding model (left) and th
 <p>Energy gap <span class="math inline">\(E_G\)</span> of silicon (Si) is <span class="math inline">\(\approx 1.12 ~eV\)</span> which is approximately 45 times larger than <span class="math inline">\(k_BT\)</span> at room temperature!</p>
 <p>Since there can be no current in the absence of an electric field, the random motions of the electrons compensate for each other. In the presence of an electric field, in addition to random motions, the electrons seem to drift in the direction of the electric with a so-called <em>drift velocity</em> which results in an electric current.</p>
 <p>Now let us look at a phenomenon, unique to semiconductors, when an electron breaks <em>free</em> from a bond. It leaves a <em>vacancy</em> for another electron to break free from its bond and occupy this vacancy which in turn leaves another vacancy and so on leading to an <em>appearance</em> of a motion of a vacant electron of a <em>positive</em> charge <span class="math inline">\(q=-(-q)\)</span> and an effective mass of <span class="math inline">\(m^*_p\)</span>. This motion is typically represented as a fictitious particle called a <em>hole</em>. This phenomenon can be imagined as analogous to the <em>bubble in a fluid</em>. In terms of the energy band model, jumping an electron to the conduction band creates a <em>hole</em> in an otherwise vast sea of filled states. This empty state, like a bubble in a fluid, moves about rather freely in the solid because of the cooperative motion of valence-band electrons that give room to this hole in motion. Like a free electron carrier, when an electric field is applied to this semiconductor, the hole, an apparent <em>positive electron</em>, will move in the direction of the electric field, giving rise to electric current.</p>
+<div id="fig-semi-dev-carrier-efield" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-semi-dev-carrier-efield-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig-semi-dev-carrier-efield.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-carrier-efield-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.4: Electrons move in an electric field. The band diagrams are like figure <a href="#fig-semi-dev-class" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>, but with an expanded energy scale showing closely packed levels, each accommodating two electrons. Solid circles show electrons in a level; open circles indicate available levels.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="band-diagrams" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="band-diagrams"><span class="header-section-number">4.4</span> Band Diagrams</h2>
+<p>Band diagrams are a very efficient way of illustrating electrical properties of semiconductor materials and devices without going into the detail atomic or molecular structure of the material. As shown in Figure <a href="#fig-semi-dev-carrier-efield" class="quarto-xref">Figure&nbsp;<span>4.4</span></a>, the band diagram represents the electrical energies allowed within the semiconductor as a function of position, where the increase in energy <span class="math inline">\(E\)</span> upward represents the total energy of electrons. The <em>charge carriers</em> or <em>free charge carriers</em> start to occupy the lowest energy states in the conduction band which are <em>lower edge of the conduction band</em> (<span class="math inline">\(E_C\)</span>) and <em>upper edge of the valence band</em> (<span class="math inline">\(E_V\)</span>) for <em>electrons</em> and <em>holes</em>, respectively.</p>
+<p>Therefore, to analyze or understand the electrical behavior of a <em>uniform</em> semiconductor material it is typically sufficient to study the material properties with the <em>band edges</em> only. Normal operation is assumed here without any external disturbances, where the electric field, magnetic field, temperature gradient, and stress-induced effects are negligible.</p>
+<p>On careful examination of the band diagram, we can show that an energy equal to the <em>bandgap</em>, <span class="math inline">\(E_G = E_C-E_V\)</span>, is required to break an atomic bond to create <em>motionless</em> electrons and holes occupying <span class="math inline">\(E_C\)</span> and <span class="math inline">\(E_V\)</span>, respectively. Therefore, we can interpret the edges of the band <span class="math inline">\(E_C\)</span> and <span class="math inline">\(E_V\)</span> as the potential energy of the electron and hole, respectively, with reference to an arbitrary energy level <span class="math inline">\(E_{ref}\)</span>.</p>
+<p>Potential Energy: <span class="math inline">\(P.E.=E_C-E_{ref}\)</span> NOTE: Show PE and KE on the diagram itself.</p>
+<p>Any energy in excess of <span class="math inline">\(E_G\)</span> will result in the kinetic energy shown in figure <a href="#fig-semi-dev-carrier-efield" class="quarto-xref">Figure&nbsp;<span>4.4</span></a>, with the carriers moving rapidly in the lattice. The potential energy is the key to relating the positional variations in the energy band with the electric field within the semiconductor. The potential energy (<span class="math inline">\(P.E.\)</span>) of an electron (<span class="math inline">\(-q\)</span>) can be expressed as <span class="math inline">\(-qV\)</span>, where <span class="math inline">\(V\)</span> is the electrostatic potential at a given point with reference to an arbitrary constant. The potential can be expressed in terms of <span class="math inline">\(E_C\)</span> using the relationship shown previously between <span class="math inline">\(P.E.\)</span> and <span class="math inline">\(E_C\)</span>.</p>
+<p>$$ P.E. = -qV = E_C - E_{ref}</p>
+<p>V=-1/q(E_C - E_{ref} $$</p>
+<div id="fig-semi-dev-band-efield" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-semi-dev-band-efield-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig-semi-dev-band-efield.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-band-efield-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.5: Energy band diagrams for an uniform semiconductor sample in (a) zero and (b) non-zero electric field.
+</figcaption>
+</figure>
+</div>
+<p>The band diagram of a piece of semiconductor with the presence of an electric field <span class="math inline">\(\Vec{E}\)</span> is shown as an example in Figure <a href="#fig-semi-dev-band-efield" class="quarto-xref">Figure&nbsp;<span>4.5</span></a> (b). The bands are <em>tilted</em> with a slope of <span class="math inline">\(-q\Vec{E}\)</span> popularly known as <em>band bending</em>. Since electrons are negatively charged, the direction of the forces on electrons is opposite to that of the electric field. The forces on the holes are in the same direction as the electric field. Consequently, the electrons and holes move in opposite directions.</p>
+<p>$$ =-V$ or, $E_x = -dV/dx</p>
+<p>E_x = </p>
+<p>E_x = </p>
+<p>E_x = $$</p>
+<p>Using basic electrostatic laws, the relationship between the potential <span class="math inline">\(V\)</span> and electric field <span class="math inline">\(\vec{E}\)</span> can be established. For quick analysis by inspection, the <span class="math inline">\(V\)</span> and <span class="math inline">\(x\)</span> relationship can be found simply by “inverting” <span class="math inline">\(E_C\)</span> (or <span class="math inline">\(E_V\)</span>) and to determine the <span class="math inline">\(\Vec{E}\)</span> versus <span class="math inline">\(x\)</span> relationship, simply note the slope of <span class="math inline">\(E_C\)</span> (or <span class="math inline">\(E_V\)</span>).</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
