@@ -109,9 +109,11 @@ Therefore, to analyze or understand the electrical behavior of a _uniform_ semic
  Any energy in excess of $E_G$ will result in the kinetic energy shown in figure @fig-semi-dev-carrier-efield, with the carriers moving rapidly in the lattice. The potential energy is the key to relating the positional variations in the energy band with the electric field within the semiconductor. The potential energy ($P.E.$) of an electron ($-q$) can be expressed as $-qV$, where $V$ is the electrostatic potential at a given point with reference to an arbitrary constant. The potential can be expressed in terms of $E_C$ using the relationship shown previously between $P.E.$ and $E_C$.
 
  $$
+
  P.E. = -qV = E_C - E_{ref}
  
  V=-1/q(E_C - E_{ref}
+
  $$
 
 ![Energy band diagrams for an uniform semiconductor sample in (a) zero and (b) non-zero electric field.](figures/fig-semi-dev-band-efield){#fig-semi-dev-band-efield}
@@ -119,6 +121,7 @@ Therefore, to analyze or understand the electrical behavior of a _uniform_ semic
 The band diagram of a piece of semiconductor with the presence of an electric field $\Vec{E}$ is shown as an example in Figure @fig-semi-dev-band-efield (b). The bands are _tilted_ with a slope of $-q\Vec{E}$ popularly known as _band bending_. Since electrons are negatively charged, the direction of the forces on electrons is opposite to that of the electric field. The forces on the holes are in the same direction as the electric field. Consequently, the electrons and holes move in opposite directions.
 
 $$
+
 \Vec{E}=-\nabla V$ or, $E_x = -dV/dx
 
 E_x = \frac{1}{q}\frac{dE_C}{dx} \text{ or,}
@@ -126,6 +129,7 @@ E_x = \frac{1}{q}\frac{dE_C}{dx} \text{ or,}
 E_x = \frac{1}{q}\frac{dE_V}{dx}  \text{ or,}
 
 E_x = \frac{1}{q}\frac{dE_i}{dx}
+
 $$
 
 Using basic electrostatic laws, the relationship between the potential $V$ and electric field $\vec{E}$ can be established. For quick analysis by inspection, the $V$ and $x$ relationship can be found simply by "inverting" $E_C$ (or $E_V$) and to determine the $\Vec{E}$ versus $x$ relationship, simply note the slope of $E_C$ (or $E_V$).
