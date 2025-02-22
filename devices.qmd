@@ -165,3 +165,41 @@ In general, the number of electrons and holes per cubic-centimeter are defined a
 |  | $Al$ |
 :Common Silicon (Si) dopants. (*) Commonly used dopants. Donors and acceptors are all from the Column V and III of the Periodic Table of Elements respectively. {#tbl-semi-dev-si-dopants}
 
+
+## Doping 
+
+Doping is a semiconductor engineering method to change the electron or hole concentration of the native material by many orders of magnitude. As a result, the conductance of the semiconductor varies by a large magnitude. Doping is a routine method in IC fabrication in which semiconductor impurity atoms called _dopants_ are added to the pure semiconductor material. Dopants that increase the electron concentration of the native semiconductor material are called _donors_. Consequently, _acceptors_ are dopants that increase hole concentration.
+
+![Visualization of (a) donor and (b) acceptor actions via the bonding model. In (a), _Column V_ element P replaces a Si atom; in (b), Column III element B replaces a Si atom.](figures/fig-semi-dev-viz-doping){#fig-semi-dev-viz-doping}
+
+
+Commonly used silicon dopants are listed in @tbl-semi-dev-si-dopants. Phosphorous dopants, closely followed by arsenic, are the most commonly used donor dopants to increase the electron concentration. Boron is the most commonly used acceptor dopant for increasing hole concentration. 
+
+The donors are all from the Column-V of the Periodic Table of Elements and correspondingly, the acceptors are from Column-III. 
+
+As shown in @fig-semi-dev-viz-doping, using the bonding model, when a Column-V element replaces a silicon atom, four valence electrons bond with nearby silicon atoms, while the fifth is _weakly_ bound to the donor site. At room temperature, this electron gains enough energy to become a conduction band carrier without increasing hole concentration, leaving an immobile ion. 
+
+The binding energy of a Phosphorous donor electron in silicon is about $0.045~eV$ compared to $1~eV$ for Si-Si atom.
+
+A semiconductor doped with donors is called an _n-type_ semiconductor.
+
+$n+$ and $n-$ refers to _heavily_ and _lightly_ doped n-type semiconductor. 
+
+At room temperature or above, each donor atom in an n-type semiconductor contributes one electron to the conduction band, making the electron concentration in the conduction band approximately equal to the donor concentration, typically expressed in $atoms/cm^3$.
+
+A Column-III acceptor element replaces a silicon atom, accepting an electron from a neighboring Si-Si bond to complete its bonding. This creates a hole that can move through the lattice, depicted as a hole weakly bound to the acceptor site.
+
+The binding energy of a Boron  acceptor hole in silicon is about $0.045~eV$.
+
+ A semiconductor doped with an acceptor is called an _p-type_ semiconductor. At room temperature or hotter temperatures, each acceptor atom in an p-type semiconductor supplies one hole to the valence band and therefore the hole concentration, $p$, in the valence band is approximately equal to the acceptor concentration, $N_A$, typically expressed in $atoms/cm^3$.
+ 
+$p+$ and $p-$ refer to _heavily_ and _lightly_ doped n-type semiconductor, respectively.
+
+ 
+ An important relation used in the analysis of semiconductor devices is the _constant_ product of hole and electron concentration, $p$ and $n$, for a given temperature, which can be conveniently written as 
+
+$$
+    np = n_i^2
+$$
+
+where, $n_i$ is the electron or hole concentration in an intrinsic semiconductor material at that temperature.
