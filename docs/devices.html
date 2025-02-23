@@ -206,6 +206,7 @@ window.Quarto = {
   <li><a href="#carriers" id="toc-carriers" class="nav-link" data-scroll-target="#carriers"><span class="header-section-number">4.3</span> Carriers</a></li>
   <li><a href="#band-diagrams" id="toc-band-diagrams" class="nav-link" data-scroll-target="#band-diagrams"><span class="header-section-number">4.4</span> Band Diagrams</a></li>
   <li><a href="#doping" id="toc-doping" class="nav-link" data-scroll-target="#doping"><span class="header-section-number">4.5</span> Doping</a></li>
+  <li><a href="#electric-current" id="toc-electric-current" class="nav-link" data-scroll-target="#electric-current"><span class="header-section-number">4.6</span> Electric Current</a></li>
   </ul>
 </nav>
     </div>
@@ -499,7 +500,50 @@ Figure&nbsp;4.8: (a) Typical temperature dependence of majority-carrier concentr
 </figure>
 </div>
 <p><a href="#fig-semi-dev-carrier-vs-t" class="quarto-xref">Figure&nbsp;<span>4.8</span></a> illustrates a carrier concentration vs.&nbsp;temperature plot for Si doped with phosphorus <span class="math inline">\(N_D = 10^{15}/cm^3\)</span>, highlighting the dependence of carrier concentration on temperature. The majority carrier concentration <span class="math inline">\(n\)</span> remains near the donor concentration <span class="math inline">\(N_D\)</span> from <span class="math inline">\(-125^\circ~C\)</span> to <span class="math inline">\(175^\circ~C\)</span> (<span class="math inline">\(\approx~150~K\text{ to } 450~K\)</span>), known as the <em>extrinsic temperature range</em>, which is typical for integrated circuits’ operating temperatures.</p>
-<p>% The carrier concentration varies with temperature. Below the extrinsic range, donor electrons lack energy to enter the conduction band. Around temperature <span class="math inline">\(150~K\)</span>, most donor electrons are in the conduction band. As temperature rises, electrons from Si-Si bonds are excited but remain below <span class="math inline">\(N_D\)</span>. Beyond the extrinsic range, Si-Si bond electrons surpass donor electrons, equating carrier concentration to an intrinsic semiconductor in the intrinsic range.</p>
+<p>The carrier concentration varies with temperature. Below the extrinsic range, donor electrons lack energy to enter the conduction band. Around temperature <span class="math inline">\(150~K\)</span>, most donor electrons are in the conduction band. As temperature rises, electrons from Si-Si bonds are excited but remain below <span class="math inline">\(N_D\)</span>. Beyond the extrinsic range, Si-Si bond electrons surpass donor electrons, equating carrier concentration to an intrinsic semiconductor in the intrinsic range.</p>
+</section>
+<section id="electric-current" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="electric-current"><span class="header-section-number">4.6</span> Electric Current</h2>
+<div id="fig-semi-dev-carrier-drift" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-semi-dev-carrier-drift-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig-semi-dev-carrier-drift.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-carrier-drift-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.9: Visualization of carrier drift: (a) motion of carriers within a biased semiconductor bar; (b) <em>drifting</em> hole on a microscopic or atomic scale; (c) carrier drift on a macroscopic scale.
+</figcaption>
+</figure>
+</div>
+<p>The electric current through a <em>uniform semiconductor</em> can now be studied in it’s simplest form using basic electrostatic laws. When a <em>weak electric field</em> is applied across a semiconductor material, a so-called <em>drift velocity</em> is superimposed on top of the chaotic thermal motion of electrons in the conduction band and holes in the valence band.</p>
+<div id="fig-semi-dev-current-drift" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-semi-dev-current-drift-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig-semi-dev-current-drift.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-current-drift-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.10: Expanded view of a biased <span class="math inline">\(p\)</span>-type semiconductor bar of cross-sectional area <span class="math inline">\(A\)</span>.
+</figcaption>
+</figure>
+</div>
+<p>The drift velocities, <span class="math inline">\(v_n\)</span> and <span class="math inline">\(v_p\)</span>, of the electrons and holes are proportional to the electric field, <span class="math inline">\(\vec{E}\)</span></p>
+<p><span class="math display">\[
+v_n = -\mu_n\vec{E}
+\]</span></p>
+<p><span class="math display">\[
+v_p = \mu_p\vec{E}
+\]</span></p>
+<p>where, <span class="math inline">\(\mu_n\)</span> and <span class="math inline">\(\mu_p\)</span> are called the <em>electron mobility</em> and the <em>hole mobility</em>, respectively. Note that <span class="math inline">\(v_p\)</span> and <span class="math inline">\(v_n\)</span> are proportional to <span class="math inline">\(\vec{E}\)</span> for <em>weak</em> electric fields. At <em>strong</em> electric fields <span class="math inline">\(v_p\)</span> and <span class="math inline">\(v_n\)</span> become independent of <span class="math inline">\(\vec{E}\)</span> (See <a href="#fig-semi-dev-drift-vs-efield" class="quarto-xref">Figure&nbsp;<span>4.11</span></a>).</p>
+<div id="fig-semi-dev-drift-vs-efield" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-semi-dev-drift-vs-efield-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig-semi-dev-drift-vs-efield.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-drift-vs-efield-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.11: Measured carrier drift velocity within ultrapure silicon kept at ambient temperature, analyzing its relationship with the imposed electric field.
+</figcaption>
+</figure>
+</div>
+<p>Notice that the direction of the current: <span class="math inline">\(v_p\)</span> coincides with the direction of the electric field and <span class="math inline">\(v_n\)</span> is opposite to the direction of the electric field because of the carriers charged opposite.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">

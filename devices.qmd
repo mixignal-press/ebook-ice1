@@ -211,6 +211,32 @@ Integrated circuits for commercial, industrial, or military use must perform acr
 
 @fig-semi-dev-carrier-vs-t illustrates a carrier concentration vs. temperature plot for Si doped with phosphorus $N_D = 10^{15}/cm^3$, highlighting the dependence of carrier concentration on temperature. The majority carrier concentration $n$ remains near the donor concentration $N_D$ from $-125^\circ~C$ to $175^\circ~C$ ($\approx~150~K\text{ to } 450~K$), known as the _extrinsic temperature range_, which is typical for integrated circuits' operating temperatures. 
 
-%
 The carrier concentration varies with temperature. Below the extrinsic range, donor electrons lack energy to enter the conduction band. Around temperature $150~K$, most donor electrons are in the conduction band. As temperature rises, electrons from Si-Si bonds are excited but remain below $N_D$. Beyond the extrinsic range, Si-Si bond electrons surpass donor electrons, equating carrier concentration to an intrinsic semiconductor in the intrinsic range.
+
+## Electric Current 
+
+![Visualization of carrier drift: (a) motion of carriers within a biased semiconductor bar; (b) _drifting_ hole on a microscopic or atomic scale; (c) carrier drift on a macroscopic scale.](figures/fig-semi-dev-carrier-drift.png){#fig-semi-dev-carrier-drift}
+
+The electric current through a _uniform semiconductor_ can now be studied in it's simplest form using basic electrostatic laws. When a _weak electric field_ is applied across a semiconductor material, a so-called _drift velocity_ is superimposed on top of the chaotic thermal motion of electrons in the conduction band and holes in the valence band.
+
+![Expanded view of a biased $p$-type semiconductor bar of cross-sectional area $A$.](figures/fig-semi-dev-current-drift.png){#fig-semi-dev-current-drift}
+
+The drift velocities, $v_n$ and $v_p$, of the electrons and holes are proportional to the electric field, $\vec{E}$
+
+$$
+v_n = -\mu_n\vec{E}
+$$
+
+$$
+ v_p = \mu_p\vec{E} 
+$$
+
+where, $\mu_n$ and $\mu_p$ are called the _electron mobility_ and the _hole mobility_, respectively.
+Note that $v_p$ and $v_n$ are proportional to $\vec{E}$ for _weak_ electric fields. At _strong_ electric fields $v_p$ and $v_n$ become independent of $\vec{E}$ (See @fig-semi-dev-drift-vs-efield).
+
+![Measured carrier drift velocity within ultrapure silicon kept at ambient temperature, analyzing its relationship with the imposed electric field.](figures/fig-semi-dev-drift-vs-efield.png){#fig-semi-dev-drift-vs-efield}
+
+Notice that the direction of the current: $v_p$ coincides with the direction of the electric field and $v_n$ is opposite to the direction of the electric field because of the carriers charged opposite. 
+
+
 
