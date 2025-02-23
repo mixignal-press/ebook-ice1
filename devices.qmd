@@ -203,3 +203,14 @@ $$
 $$
 
 where, $n_i$ is the electron or hole concentration in an intrinsic semiconductor material at that temperature.
+
+
+Integrated circuits for commercial, industrial, or military use must perform across a wide temperature range, $-40^\circ~C$ to $125^\circ~C$. Understanding carrier concentration's temperature dependence is crucial for semiconductors.
+
+![(a) Typical temperature dependence of majority-carrier concentration in a phosphorus-doped semiconductor. The plot includes $n_i/N_D$ vs. T (dashed line) for comparison. (b) Qualitative explanation of the concentration-temperature relationship shown in (a).](figures/fig-semi-dev-carrier-vs-t.png){#fig-semi-dev-carrier-vs-t}
+
+@fig-semi-dev-carrier-vs-t illustrates a carrier concentration vs. temperature plot for Si doped with phosphorus $N_D = 10^{15}/cm^3$, highlighting the dependence of carrier concentration on temperature. The majority carrier concentration $n$ remains near the donor concentration $N_D$ from $-125^\circ~C$ to $175^\circ~C$ ($\approx~150~K\text{ to } 450~K$), known as the _extrinsic temperature range_, which is typical for integrated circuits' operating temperatures. 
+
+%
+The carrier concentration varies with temperature. Below the extrinsic range, donor electrons lack energy to enter the conduction band. Around temperature $150~K$, most donor electrons are in the conduction band. As temperature rises, electrons from Si-Si bonds are excited but remain below $N_D$. Beyond the extrinsic range, Si-Si bond electrons surpass donor electrons, equating carrier concentration to an intrinsic semiconductor in the intrinsic range.
+
