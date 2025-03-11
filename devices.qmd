@@ -239,4 +239,50 @@ Note that $v_p$ and $v_n$ are proportional to $\vec{E}$ for _weak_ electric fiel
 Notice that the direction of the current: $v_p$ coincides with the direction of the electric field and $v_n$ is opposite to the direction of the electric field because of the carriers charged opposite. 
 
 
+The flow of electric current in a uniform semiconductor material can be determined by evaluating the number of charge carriers passing through a unit cross-section each second. For the _p-type_ semiconductor bar with a unit cross-sectional area depicted in @fig-semi-dev-drift-vs-efield, the hole current density, $J_P$, can be straightforwardly defined as:
+
+$$
+    J_P = qp v_p
+$$
+
+In order to relate the current to the applied electric field, one can substitute the hole drift velocity $v_p$ with the formula $\mu_p\vec{E}$.
+
+$$
+    J_P = qp\mu_p\vec{E}
+$$
+
+In a similar way, the current density for electrons can be represented as
+
+$$
+J_N = qn\mu_n\vec{E}
+$$ {#eq-semi-dev-drift}
+
+
+Observe that the electrons move in the opposite direction to the applied electric field ($v_n = -\mu_n\vec{E}$). However, the current density flows in the opposite direction of this drift velocity due to the negative charge of the electrons ($J_N = -qn v_n$). Consequently, as stated in @eq-semi-dev-drift, the resulting electron current aligns with the direction of the applied electric field.
+
+In semiconductors where both electrons and holes function as charge carriers, the overall current density is represented by
+
+$$
+    J = q\vec{E}\left({n\mu_n + p\mu_p}\right)
+$$ {#eq-semi-dev-drift-total}
+
+
+In n-type materials, the contribution from _hole-current_ can often be overlooked since the hole concentration, $p$, is significantly smaller in comparison to the electron concentration, $n$. Similarly, in p-type semiconductors, the _electron current_ can be disregarded.
+
+
+@eq-semi-dev-drift-total is commonly referred to as Ohm's Law and can be expressed in its well-known format.
+
+$$
+  I = \frac{V}{R}
+$$ {#eq-semi-dev-ohms-law}
+
+where $I=J \cdot A$ represents the overall current passing through a cross-sectional area $A$ of the sample. With the electric field magnitude $E$ being constant, the voltage differential over the semiconductor length $L$ is given by $V = E \cdot L$, and the resistance of the sample can be written as
+
+$$
+  R=\frac{L}{\sigma \cdot A}
+$$ {#eq-semi-dev-resistance}
+
+where $\sigma=q\left({n\mu_n + p\mu_p}\right)$ (see @eq-semi-dev-drift-total). Keep in mind that Ohm's law generally applies to weak electric fields, a condition seldom met in contemporary integrated circuits with feature sizes below a micrometer. Nonetheless, it remains a valuable expression for grasping the basic principles of current transport in semiconductors.
+
+![Diffusion of electrons and holes at a macroscopic level.](figures/fig-semi-dev-diffusion.png){#fig-semi-dev-diffusion}
 

@@ -544,6 +544,43 @@ Figure&nbsp;4.11: Measured carrier drift velocity within ultrapure silicon kept 
 </figure>
 </div>
 <p>Notice that the direction of the current: <span class="math inline">\(v_p\)</span> coincides with the direction of the electric field and <span class="math inline">\(v_n\)</span> is opposite to the direction of the electric field because of the carriers charged opposite.</p>
+<p>The flow of electric current in a uniform semiconductor material can be determined by evaluating the number of charge carriers passing through a unit cross-section each second. For the <em>p-type</em> semiconductor bar with a unit cross-sectional area depicted in <a href="#fig-semi-dev-drift-vs-efield" class="quarto-xref">Figure&nbsp;<span>4.11</span></a>, the hole current density, <span class="math inline">\(J_P\)</span>, can be straightforwardly defined as:</p>
+<p><span class="math display">\[
+    J_P = qp v_p
+\]</span></p>
+<p>In order to relate the current to the applied electric field, one can substitute the hole drift velocity <span class="math inline">\(v_p\)</span> with the formula <span class="math inline">\(\mu_p\vec{E}\)</span>.</p>
+<p><span class="math display">\[
+    J_P = qp\mu_p\vec{E}
+\]</span></p>
+<p>In a similar way, the current density for electrons can be represented as</p>
+<p><span id="eq-semi-dev-drift"><span class="math display">\[
+J_N = qn\mu_n\vec{E}
+\tag{4.1}\]</span></span></p>
+<p>Observe that the electrons move in the opposite direction to the applied electric field (<span class="math inline">\(v_n = -\mu_n\vec{E}\)</span>). However, the current density flows in the opposite direction of this drift velocity due to the negative charge of the electrons (<span class="math inline">\(J_N = -qn v_n\)</span>). Consequently, as stated in <a href="#eq-semi-dev-drift" class="quarto-xref">Equation&nbsp;<span>4.1</span></a>, the resulting electron current aligns with the direction of the applied electric field.</p>
+<p>In semiconductors where both electrons and holes function as charge carriers, the overall current density is represented by</p>
+<p><span id="eq-semi-dev-drift-total"><span class="math display">\[
+    J = q\vec{E}\left({n\mu_n + p\mu_p}\right)
+\tag{4.2}\]</span></span></p>
+<p>In n-type materials, the contribution from <em>hole-current</em> can often be overlooked since the hole concentration, <span class="math inline">\(p\)</span>, is significantly smaller in comparison to the electron concentration, <span class="math inline">\(n\)</span>. Similarly, in p-type semiconductors, the <em>electron current</em> can be disregarded.</p>
+<p><a href="#eq-semi-dev-drift-total" class="quarto-xref">Equation&nbsp;<span>4.2</span></a> is commonly referred to as Ohm’s Law and can be expressed in its well-known format.</p>
+<p><span id="eq-semi-dev-ohms-law"><span class="math display">\[
+  I = \frac{V}{R}
+\tag{4.3}\]</span></span></p>
+<p>where <span class="math inline">\(I=J \cdot A\)</span> represents the overall current passing through a cross-sectional area <span class="math inline">\(A\)</span> of the sample. With the electric field magnitude <span class="math inline">\(E\)</span> being constant, the voltage differential over the semiconductor length <span class="math inline">\(L\)</span> is given by <span class="math inline">\(V = E \cdot L\)</span>, and the resistance of the sample can be written as</p>
+<p><span id="eq-semi-dev-resistance"><span class="math display">\[
+  R=\frac{L}{\sigma \cdot A}
+\tag{4.4}\]</span></span></p>
+<p>where <span class="math inline">\(\sigma=q\left({n\mu_n + p\mu_p}\right)\)</span> (see <a href="#eq-semi-dev-drift-total" class="quarto-xref">Equation&nbsp;<span>4.2</span></a>). Keep in mind that Ohm’s law generally applies to weak electric fields, a condition seldom met in contemporary integrated circuits with feature sizes below a micrometer. Nonetheless, it remains a valuable expression for grasping the basic principles of current transport in semiconductors.</p>
+<div id="fig-semi-dev-diffusion" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-semi-dev-diffusion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig-semi-dev-diffusion.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-diffusion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.12: Diffusion of electrons and holes at a macroscopic level.
+</figcaption>
+</figure>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
