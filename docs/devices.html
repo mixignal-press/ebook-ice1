@@ -207,6 +207,8 @@ window.Quarto = {
   <li><a href="#band-diagrams" id="toc-band-diagrams" class="nav-link" data-scroll-target="#band-diagrams"><span class="header-section-number">4.4</span> Band Diagrams</a></li>
   <li><a href="#doping" id="toc-doping" class="nav-link" data-scroll-target="#doping"><span class="header-section-number">4.5</span> Doping</a></li>
   <li><a href="#electric-current" id="toc-electric-current" class="nav-link" data-scroll-target="#electric-current"><span class="header-section-number">4.6</span> Electric Current</a></li>
+  <li><a href="#diffusion" id="toc-diffusion" class="nav-link" data-scroll-target="#diffusion"><span class="header-section-number">4.7</span> Diffusion</a></li>
+  <li><a href="#diffusion-1" id="toc-diffusion-1" class="nav-link" data-scroll-target="#diffusion-1"><span class="header-section-number">4.8</span> Diffusion</a></li>
   </ul>
 </nav>
     </div>
@@ -571,6 +573,9 @@ J_N = qn\mu_n\vec{E}
   R=\frac{L}{\sigma \cdot A}
 \tag{4.4}\]</span></span></p>
 <p>where <span class="math inline">\(\sigma=q\left({n\mu_n + p\mu_p}\right)\)</span> (see <a href="#eq-semi-dev-drift-total" class="quarto-xref">Equation&nbsp;<span>4.2</span></a>). Keep in mind that Ohm’s law generally applies to weak electric fields, a condition seldom met in contemporary integrated circuits with feature sizes below a micrometer. Nonetheless, it remains a valuable expression for grasping the basic principles of current transport in semiconductors.</p>
+</section>
+<section id="diffusion" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="diffusion"><span class="header-section-number">4.7</span> Diffusion</h2>
 <div id="fig-semi-dev-diffusion" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-semi-dev-diffusion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -581,6 +586,24 @@ Figure&nbsp;4.12: Diffusion of electrons and holes at a macroscopic level.
 </figcaption>
 </figure>
 </div>
+</section>
+<section id="diffusion-1" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="diffusion-1"><span class="header-section-number">4.8</span> Diffusion</h2>
+<p>The second mechanism influencing the overall current in a semiconductor is diffusion. This process involves the distribution of particles due to random thermal motion, moving from areas of <em>higher particle concentration</em> to areas of <em>lower particle concentration</em>, ultimately achieving an even distribution. This can be likened to a drop of ink dispersing in a glass of water, where the ink gradually <em>spreads out</em> uniformly across the water.</p>
+<p>In a general three-dimensional case the concentration profiles will be expressed as gradients:</p>
+<p><span id="eq-semi-dev-diffp"><span class="math display">\[
+J_{P|diff} = -qD_P\nabla p
+\tag{4.5}\]</span></span></p>
+<p><span id="eq-semi-dev-diffn"><span class="math display">\[
+J_{N|diff} = qD_N\nabla n
+\tag{4.6}\]</span></span></p>
+<p>In a one-dimensional scenario, the overall current can now be described as</p>
+<p><span class="math display">\[
+   J =
+        \underbrace{q\vec{E}\left({n\mu_n + p\mu_p}\right)}_{drift} +
+        \underbrace{q\left({D_N\frac{dn}{dx}  - D_P\frac{dp}{dx}}\right)}_{diffusion}
+\]</span></p>
+<p>where <span class="math inline">\(D_N\)</span> and <span class="math inline">\(D_P\)</span> are the <em>diffusion constants</em> for electrons and holes respectively. For a positive concentration gradient (<span class="math inline">\(dp/dx &gt; 0\)</span> and <span class="math inline">\(dn/dx &gt; 0\)</span>), as shown in <a href="#fig-semi-dev-diffusion" class="quarto-xref">Figure&nbsp;<span>4.12</span></a>, both holes and electrons will diffuse in the <em>negative-x</em> direction. Therefore, <span class="math inline">\(J_{P|diff}\)</span> will be in the negative x direction and <span class="math inline">\(J_{N|diff}\)</span> in the positive x direction.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">

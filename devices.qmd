@@ -284,5 +284,31 @@ $$ {#eq-semi-dev-resistance}
 
 where $\sigma=q\left({n\mu_n + p\mu_p}\right)$ (see @eq-semi-dev-drift-total). Keep in mind that Ohm's law generally applies to weak electric fields, a condition seldom met in contemporary integrated circuits with feature sizes below a micrometer. Nonetheless, it remains a valuable expression for grasping the basic principles of current transport in semiconductors.
 
+## Diffusion 
+
 ![Diffusion of electrons and holes at a macroscopic level.](figures/fig-semi-dev-diffusion.png){#fig-semi-dev-diffusion}
+
+## Diffusion
+
+The second mechanism influencing the overall current in a semiconductor is diffusion. This process involves the distribution of particles due to random thermal motion, moving from areas of _higher particle concentration_ to areas of _lower particle concentration_, ultimately achieving an even distribution. This can be likened to a drop of ink dispersing in a glass of water, where the ink gradually _spreads out_ uniformly across the water.
+
+In a general three-dimensional case the concentration profiles will be expressed as gradients:
+
+$$
+J_{P|diff} = -qD_P\nabla p
+$$ {#eq-semi-dev-diffp}
+
+$$
+J_{N|diff} = qD_N\nabla n
+$$ {#eq-semi-dev-diffn}
+
+In a one-dimensional scenario, the overall current can now be described as  
+
+$$
+   J =
+        \underbrace{q\vec{E}\left({n\mu_n + p\mu_p}\right)}_{drift} + 
+        \underbrace{q\left({D_N\frac{dn}{dx}  - D_P\frac{dp}{dx}}\right)}_{diffusion}
+$$
+
+where $D_N$ and $D_P$ are the _diffusion constants_ for electrons and holes respectively. For a positive concentration gradient ($dp/dx > 0$ and $dn/dx > 0$), as shown in @fig-semi-dev-diffusion, both holes and electrons will diffuse in the _negative-x_ direction. Therefore, $J_{P|diff}$ will be in the negative x direction and $J_{N|diff}$ in the positive x direction.
 
