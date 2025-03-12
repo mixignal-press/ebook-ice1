@@ -288,8 +288,6 @@ where $\sigma=q\left({n\mu_n + p\mu_p}\right)$ (see @eq-semi-dev-drift-total). K
 
 ![Diffusion of electrons and holes at a macroscopic level.](figures/fig-semi-dev-diffusion.png){#fig-semi-dev-diffusion}
 
-## Diffusion
-
 The second mechanism influencing the overall current in a semiconductor is diffusion. This process involves the distribution of particles due to random thermal motion, moving from areas of _higher particle concentration_ to areas of _lower particle concentration_, ultimately achieving an even distribution. This can be likened to a drop of ink dispersing in a glass of water, where the ink gradually _spreads out_ uniformly across the water.
 
 In a general three-dimensional case the concentration profiles will be expressed as gradients:
