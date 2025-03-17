@@ -320,6 +320,8 @@ Einstein relations ref: p-73 Gray Searles , p-101 Pierret
 See Fig I.4 p-10 Shur AND/OR Fig 6.1 p-236 Pierret
 :::
 
+## pn Junctions
+
 ![Distribution of charge, electric field, and potential for a $p-n$ junction diode (a) when unbiased, and (b) contrast of potential distributions under zero, forward, and reverse bias conditions.](figures/fig-semi-dev-pnjunc.png){#fig-semi-dev-pnjunc}
 
 Junctions are fundamental to understanding any semiconductor device since these junctions are formed when two different materials come into contact or the same semiconductor material with different doping. 
