@@ -343,7 +343,7 @@ See Chap5 p-178 Streetman
 :::
 
 Under equilibrium conditions, the overall current resulting from both drift and diffusion processes, such as for holes, sums to zero.
-%% Refer Ch-5 p-178 streetman/banerjee
+
 $$
 \frac{J_{P_x}}{q} = \mu_{p_x}  E_x - D_p \frac{d p_x}{dx} = 0
 $$ {#eq-semi-dev-total-curr}
@@ -356,10 +356,10 @@ $$ {#eq-semi-dev-contact-v}
 
 assuming the doping concentration dominates on both sides. Then, applying the equilibrium condition $p_pn_p = n_i^2 = n_nn_p$, the #eq-semi-dev-contact-v can be reformulated into a more advantageous form as:
 
-%% Contact potential -- useful form
 $$
 \frac{p_p}{p_n} = \frac{n_n}{n_p} = e^{qV_0/kT}
-$$
+$$ {#eq-semi-dev-contact-v2}
+
 where $p_p$ and $p_n$ signify the hole densities on the $p$ and $n$ regions, respectively, while $n_n$ and $n_p$ indicate the electron densities on the $n$ and $p$ regions, respectively.
 
 Evaluate the situation of _forward bias_, where a voltage $V_F$ is applied across the p-side relative to the n-side. This causes a _linear reduction_ in the potential barrier by $V_F$. However, the count of electrons at the junction capable of overcoming the barrier _grows exponentially_ with $V_F$. As electrons constitute minority carriers in the $p$ region, the carrier concentration near the contact reduces due to a _recombination_ process, resulting in forward current driven by _diffusion_.
