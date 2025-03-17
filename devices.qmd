@@ -336,3 +336,41 @@ Junctions are fundamental to understanding any semiconductor device since these 
 p-n junctions occur where an $n$-type semiconductor meets a $p$-type semiconductor. In equilibrium, holes migrate from the $p$ region to the $n$ region, moving from an area of higher concentration to one of lower concentration. This movement leaves behind a zone of immobile, negatively charged acceptor ions near the junction. Similarly, electrons move from the $n$ region to the $p$ region, resulting in an accumulation of positively charged donor ions near the junction (see @fig-semi-dev-pnjunc). The interface thus forms a _space charge region_ or _depletion region_, characterized by the absence of holes in the $p$-region and electrons in the $n$-region. These immobile charges on either side generate a potential barrier known as the _contact potential_ $V_0$, also referred to as a _built-in potential_, which ultimately inhibits further crossing of electrons and holes across the interface. 
 
 In the n-region, the majority of electrons reside in energy states near the conduction band edge $E_C$, having minimal thermal energy. As energy levels rise from the band edge, the quantity of electrons _diminishes exponentially_, leaving only a small number able to surpass the built-in potential barrier. Upon crossing, the built-in electric field moves them to the p-side. Likewise, on the p-side, a similar process occurs with holes, maintaining a net current of zero.
+
+
+::: {.content-hidden}
+See Chap5 p-178 Streetman
+:::
+
+Under equilibrium conditions, the overall current resulting from both drift and diffusion processes, such as for holes, sums to zero.
+%% Refer Ch-5 p-178 streetman/banerjee
+$$
+\frac{J_{P_x}}{q} = \mu_{p_x}  E_x - D_p \frac{d p_x}{dx} = 0
+$$ {#eq-semi-dev-total-curr}
+
+By applying this condition, the relationship between the contact potential and the doping concentrations on each side of the junction can be determined as:
+
+$$
+ V_0 = \frac{kT}{q}\ln{\frac{N_A N_D}{n_i^2}}
+$$ {#eq-semi-dev-contact-v}
+
+assuming the doping concentration dominates on both sides. Then, applying the equilibrium condition $p_pn_p = n_i^2 = n_nn_p$, the #eq-semi-dev-contact-v can be reformulated into a more advantageous form as:
+
+%% Contact potential -- useful form
+$$
+\frac{p_p}{p_n} = \frac{n_n}{n_p} = e^{qV_0/kT}
+$$
+where $p_p$ and $p_n$ signify the hole densities on the $p$ and $n$ regions, respectively, while $n_n$ and $n_p$ indicate the electron densities on the $n$ and $p$ regions, respectively.
+
+Evaluate the situation of _forward bias_, where a voltage $V_F$ is applied across the p-side relative to the n-side. This causes a _linear reduction_ in the potential barrier by $V_F$. However, the count of electrons at the junction capable of overcoming the barrier _grows exponentially_ with $V_F$. As electrons constitute minority carriers in the $p$ region, the carrier concentration near the contact reduces due to a _recombination_ process, resulting in forward current driven by _diffusion_.
+
+Therefore, the forward current $I$ is anticipated to be an exponentially increasing function relative to the applied forward voltage $V_F$. The overall relationship between $I$ and $V$ can be represented in its general expression.
+
+
+$$  
+I = I_S(e^{qV_F/kT} - 1 )
+$$ {#eq-semi-dev-diode-IV}
+
+@eq-semi-dev-diode-IV represents the ideal diode equation, which forecasts that the minor reverse-bias current will settle at $-I_S$. This saturation persists even at low reverse bias voltages exceeding several $kT/q$. The current arises from a limited number of _bias-independent_ minority carriers being driven by the electric field upon entering the depletion region.
+
+
