@@ -310,3 +310,20 @@ $$
 
 where $D_N$ and $D_P$ are the _diffusion constants_ for electrons and holes respectively. For a positive concentration gradient ($dp/dx > 0$ and $dn/dx > 0$), as shown in @fig-semi-dev-diffusion, both holes and electrons will diffuse in the _negative-x_ direction. Therefore, $J_{P|diff}$ will be in the negative x direction and $J_{N|diff}$ in the positive x direction.
 
+
+
+::: {.content-hidden}
+Einstein relations ref: p-73 Gray Searles , p-101 Pierret
+:::
+
+::: {.content-hidden}
+
+:::
+
+![Distribution of charge, electric field, and potential for a $p-n$ junction diode (a) when unbiased, and (b) contrast of potential distributions under zero, forward, and reverse bias conditions.](figures/fig-semi-dev-pnjunc.png){#fig-semi-dev-pnjunc}
+
+Junctions are fundamental to understanding any semiconductor device since these junctions are formed when two different materials come into contact or the same semiconductor material with different doping. 
+
+p-n junctions are the contact between an $n$-type semiconductor and a $p$-type semiconductor. When the p-n junction is in equilibrium, the holes _diffuse_ from the $p$ region to the $n$ region, that is, from a region of higher to lower hole concentrations. The deficit of positively charged holes creates a space of _immobile_ negatively charged acceptors near the junction. Likewise, electrons diffuse from $n$-region to $p$-region creating a space of positively charged donors near the junction (see @fig-semi-dev-pnjunc). This charged region at the interface, _depleted_ of holes in the $p$-region and _depleted_ of electrons in the $n$-region, is called a _space charge region_ or _depletion region_. This fixed and _immobile_ charges on both sides of the interface create a potential barrier called the _contact potential_ $V_0$ which is a _built-in potential_ that eventually prevents any more electrons and holes from crossing the interface. 
+Most of the electrons in the n-region are occupying energy states very close to the edge of the conduction band $E_C$ with very small or no thermal energy. As you move toward higher energy from the band edge, the number of electrons 
+ _decreases exponentially_ with very few electrons having sufficient energy to cross the built-in potential barrier. As they cross the barrier, they are swept by the built-in electric field to the p-side. A similar event takes place on the p-side with holes, resulting in a zero net current.
