@@ -45,8 +45,7 @@ Electronic systems operate using a power supply formed by non-electric forces th
 
 Semiconductor devices excel in integrated circuits due to their rapid conductivity changes, small size, and low energy use. They are manufactured at nanometer scales with switching speeds of 100 gigahertz, consuming nanowatts of power. Their conductivity can shift dramatically from insulator to conductor, representing digital _zeros_ and _ones_. Understanding semiconductors like silicon involves studying the physics of their conductivity changes, which vary significantly with temperature as well.
 
-Some excellent references for this subject matter are [@shur_introduction_1996], [@pierret_semiconductor_1996], and [@streetman_solid_2014]. 
-
+Some excellent references for this subject matter are [@shur_introduction_1996], [@pierret_semiconductor_1996], [@streetman_solid_2014], and  [@gray_electronic_1969] 
 
 ## Energy Band Model {#sec-semi-dev-band}
 
@@ -374,3 +373,6 @@ $$ {#eq-semi-dev-diode-IV}
 @eq-semi-dev-diode-IV represents the ideal diode equation, which forecasts that the minor reverse-bias current will settle at $-I_S$. This saturation persists even at low reverse bias voltages exceeding several $kT/q$. The current arises from a limited number of _bias-independent_ minority carriers being driven by the electric field upon entering the depletion region.
 
 
+::: {.callout-note title="Further Reading"}
+See [@pierret_semiconductor_1996] (p-239) for a treatment on _Recombination-Generation (RG)_ process. Minor concentration at the edge of the depletion can be derived using the linear profile and the current equation can be derived from it [@pierret_semiconductor_1996] (p-245) [@gray_electronic_1969] (p-134)
+:::

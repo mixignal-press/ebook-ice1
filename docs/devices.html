@@ -276,7 +276,7 @@ Table&nbsp;4.1: Specific resistance (at <span class="math inline">\(20^\circ C\)
 <p>The history of semiconductors began with Tomas Seebeck’s observation of lead sulfur (PbS) properties in 1821. Michael Faraday noted that semiconductor resistance decreases with rising temperatures, unlike conductors. Early applications include Werner von Siemens’ selenium photometer (1875) and Alexander Graham Bell’s wireless device (1878). The pivotal discovery of the Bipolar Junction Transistor (BJT) by Shockley, Bardeen, and Brattain in 1947 led to today’s integrated circuits with millions of devices in a single IC.</p>
 <p>Electronic systems operate using a power supply formed by non-electric forces that separate charges to create a <strong>potential difference</strong>. Chemical forces generate batteries, while turbines produce AC, which is converted to DC voltages. This potential difference forms an electric field, driving current in the circuit. Manipulating this current with semiconductor devices in an integrated circuit is essential for intelligent systems like modern computers..</p>
 <p>Semiconductor devices excel in integrated circuits due to their rapid conductivity changes, small size, and low energy use. They are manufactured at nanometer scales with switching speeds of 100 gigahertz, consuming nanowatts of power. Their conductivity can shift dramatically from insulator to conductor, representing digital <em>zeros</em> and <em>ones</em>. Understanding semiconductors like silicon involves studying the physics of their conductivity changes, which vary significantly with temperature as well.</p>
-<p>Some excellent references for this subject matter are <span class="citation" data-cites="shur_introduction_1996">(<a href="references.html#ref-shur_introduction_1996" role="doc-biblioref">Shur 1996</a>)</span>, <span class="citation" data-cites="pierret_semiconductor_1996">(<a href="references.html#ref-pierret_semiconductor_1996" role="doc-biblioref">Pierret 1996</a>)</span>, and <span class="citation" data-cites="streetman_solid_2014">(<a href="references.html#ref-streetman_solid_2014" role="doc-biblioref">Streetman and Banerjee 2014</a>)</span>.</p>
+<p>Some excellent references for this subject matter are <span class="citation" data-cites="shur_introduction_1996">(<a href="references.html#ref-shur_introduction_1996" role="doc-biblioref">Shur 1996</a>)</span>, <span class="citation" data-cites="pierret_semiconductor_1996">(<a href="references.html#ref-pierret_semiconductor_1996" role="doc-biblioref">Pierret 1996</a>)</span>, <span class="citation" data-cites="streetman_solid_2014">(<a href="references.html#ref-streetman_solid_2014" role="doc-biblioref">Streetman and Banerjee 2014</a>)</span>, and <span class="citation" data-cites="gray_electronic_1969">(<a href="references.html#ref-gray_electronic_1969" role="doc-biblioref">Gray and Searle 1969</a>)</span></p>
 </section>
 <section id="sec-semi-dev-band" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="sec-semi-dev-band"><span class="header-section-number">4.2</span> Energy Band Model</h2>
@@ -641,9 +641,25 @@ V_0 = \frac{kT}{q}\ln{\frac{N_A N_D}{n_i^2}}
 I = I_S(e^{qV_F/kT} - 1 )
 \tag{4.11}\]</span></span></p>
 <p><a href="#eq-semi-dev-diode-IV" class="quarto-xref">Equation&nbsp;<span>4.11</span></a> represents the ideal diode equation, which forecasts that the minor reverse-bias current will settle at <span class="math inline">\(-I_S\)</span>. This saturation persists even at low reverse bias voltages exceeding several <span class="math inline">\(kT/q\)</span>. The current arises from a limited number of <em>bias-independent</em> minority carriers being driven by the electric field upon entering the depletion region.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Further Reading">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Further Reading
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>See <span class="citation" data-cites="pierret_semiconductor_1996">(<a href="references.html#ref-pierret_semiconductor_1996" role="doc-biblioref">Pierret 1996</a>)</span> (p-239) for a treatment on <em>Recombination-Generation (RG)</em> process. Minor concentration at the edge of the depletion can be derived using the linear profile and the current equation can be derived from it <span class="citation" data-cites="pierret_semiconductor_1996">(<a href="references.html#ref-pierret_semiconductor_1996" role="doc-biblioref">Pierret 1996</a>)</span> (p-245) <span class="citation" data-cites="gray_electronic_1969">(<a href="references.html#ref-gray_electronic_1969" role="doc-biblioref">Gray and Searle 1969</a>)</span> (p-134)</p>
+</div>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-gray_electronic_1969" class="csl-entry" role="listitem">
+Gray, Paul E., and Campbell L. Searle. 1969. <em>Electronic <span>Principles</span>: <span>Physics</span>, <span>Models</span> and <span>Circuits</span></em>. Wiley.
+</div>
 <div id="ref-pierret_semiconductor_1996" class="csl-entry" role="listitem">
 Pierret, Robert F. 1996. <em>Semiconductor <span>Device</span> <span>Fundamentals</span></em>. Addison-Wesley.
 </div>
