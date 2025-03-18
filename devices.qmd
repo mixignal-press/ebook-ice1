@@ -376,3 +376,58 @@ $$ {#eq-semi-dev-diode-IV}
 ::: {.callout-note title="Further Reading"}
 See [@pierret_semiconductor_1996] (p-239) for a treatment on _Recombination-Generation (RG)_ process. Minor concentration at the edge of the depletion can be derived using the linear profile and the current equation can be derived from it [@pierret_semiconductor_1996] (p-245) [@gray_electronic_1969] (p-134)
 :::
+
+
+## pn Junction Current
+
+To enhance our comprehension of the current flow through the pn junction, we can now incorporate some _quantitative_ analysis. Staying true to the approach of this text, the quantitative explanation will be kept quite brief, primarily by presenting key principles as given assumptions or as _a priori_ knowledge sourced from references. 
+
+![Forward-biased junction: (a) distribution of minority carriers on both sides of the transition region, alongside the definitions for distances $x_n$ and $x_p$ measured from the edges of the transition zone; (b) positional variation of the quasi-Fermi levels](figures/fig-semi-dev-pn-current.png){#fig-semi-dev-pn-cuurent}
+ 
+% 
+The present derivation can be arranged by considering three separate electrostatic regions of a pn junction as illustrated in @fig-semi-dev-pn-cuurent. These regions include: the _quasi-neutral_ p-region characterized by a zero electric field, the space charge region with a nonzero electric field, and the quasineutral n-region also with a zero electric field.
+Previous studies have elaborated extensively that the ideal forward bias current can be determined by examining the current within the quasi-neutral region, attributable to the _low-level injection_ of minority carriers at the boundaries of the depletion region, $x_{p0}$ and $x_{n0}$. Under forward bias $V_F$, the equilibrium ratio of hole concentrations (@eq-semi-dev-contact-v2) transforms into:
+
+$$
+  p(x_{p0}) = p(x_{n0}) e^{q(V_0-V_F)/kT}
+$$ {#eq-semi-dev-hole-conc-vf}
+
+In low-level injection scenarios, the alteration in the majority carrier concentration is generally negligible ($p(x_{p0}) = p_p$). By substituting @eq-semi-dev-contact-v2 into @eq-semi-dev-hole-conc-vf, the concentration of minority holes at $x_{n0}$ can be represented as follows:
+
+$$
+  p(x_{n0}) = p_n e^{qV_F/kT}
+$$ {#eq-semi-dev-hole-conc-xn}
+
+Take into consideration that @eq-semi-dev-hole-conc-xn is originally formulated for a forward-biased junction, but it remains applicable for reverse bias by altering the sign of the voltage to negative. Under this condition, the carrier concentration falls below the equilibrium level. The concentration of _excess_ minority carriers on both the p-side and n-side is given by:
+
+$$
+\Delta p_n = p(x_{n0}) - p_n = p_n \left({e^{qV_F/kT} - 1}\right)
+$$
+
+$$
+    \Delta n_p = n(x_{p0}) - n_p = n_p\left({e^{qV_F/kT} - 1}\right)
+$$ {#eq-semi-dev-minority-xs-inj}
+
+The diffusion theory suggests that minority carriers are injected at the boundaries of the space charge region, resulting in a stable concentration of $\Delta p_n$ holes in the $n$-type material at $x_{n0}$ and $\Delta n_p$ electrons in the $p$-type material at $x_{p0}$. This injection initiates a _distribution_ of minority carriers, which follows the diffusion equation.
+
+$$
+\delta p(x_p) = \Delta p e^{-x_p/L_p} 
+$$
+
+$$
+\delta n(x_n) = \Delta n e^{-x_n/L_n}
+$$ {#eq-semi-dev-diffusion-dist}
+  
+where $L_p$ and $L_n$ represent the diffusion lengths for holes and electrons, respectively. It is also presumed that the dimensions of the $p$ and $n$ materials exceed their corresponding diffusion lengths.
+By incorporating @eq-semi-dev-minority-xs-inj into the diffusion equation, the distribution of minority carriers can be represented as follows:
+
+$$
+\delta p(x_p) = p_n\left({e^{qV_F/kT} - 1}\right) e^{-x_p/L_p}
+$$
+
+$$
+\delta n(x_n) = n_p\left({e^{qV_F/kT} - 1}\right) e^{-x_n/L_n}
+$$ {#eq-semi-dev-diffusion-dist2}
+
+
+

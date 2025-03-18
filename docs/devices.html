@@ -209,6 +209,7 @@ window.Quarto = {
   <li><a href="#electric-current" id="toc-electric-current" class="nav-link" data-scroll-target="#electric-current"><span class="header-section-number">4.6</span> Electric Current</a></li>
   <li><a href="#diffusion" id="toc-diffusion" class="nav-link" data-scroll-target="#diffusion"><span class="header-section-number">4.7</span> Diffusion</a></li>
   <li><a href="#pn-junctions" id="toc-pn-junctions" class="nav-link" data-scroll-target="#pn-junctions"><span class="header-section-number">4.8</span> pn Junctions</a></li>
+  <li><a href="#pn-junction-current" id="toc-pn-junction-current" class="nav-link" data-scroll-target="#pn-junction-current"><span class="header-section-number">4.9</span> pn Junction Current</a></li>
   </ul>
 </nav>
     </div>
@@ -654,6 +655,49 @@ Further Reading
 <p>See <span class="citation" data-cites="pierret_semiconductor_1996">(<a href="references.html#ref-pierret_semiconductor_1996" role="doc-biblioref">Pierret 1996</a>)</span> (p-239) for a treatment on <em>Recombination-Generation (RG)</em> process. Minor concentration at the edge of the depletion can be derived using the linear profile and the current equation can be derived from it <span class="citation" data-cites="pierret_semiconductor_1996">(<a href="references.html#ref-pierret_semiconductor_1996" role="doc-biblioref">Pierret 1996</a>)</span> (p-245) <span class="citation" data-cites="gray_electronic_1969">(<a href="references.html#ref-gray_electronic_1969" role="doc-biblioref">Gray and Searle 1969</a>)</span> (p-134)</p>
 </div>
 </div>
+</section>
+<section id="pn-junction-current" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="pn-junction-current"><span class="header-section-number">4.9</span> pn Junction Current</h2>
+<p>To enhance our comprehension of the current flow through the pn junction, we can now incorporate some <em>quantitative</em> analysis. Staying true to the approach of this text, the quantitative explanation will be kept quite brief, primarily by presenting key principles as given assumptions or as <em>a priori</em> knowledge sourced from references.</p>
+<div id="fig-semi-dev-pn-cuurent" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-semi-dev-pn-cuurent-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig-semi-dev-pn-current.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-pn-cuurent-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.14: Forward-biased junction: (a) distribution of minority carriers on both sides of the transition region, alongside the definitions for distances <span class="math inline">\(x_n\)</span> and <span class="math inline">\(x_p\)</span> measured from the edges of the transition zone; (b) positional variation of the quasi-Fermi levels
+</figcaption>
+</figure>
+</div>
+<p>% The present derivation can be arranged by considering three separate electrostatic regions of a pn junction as illustrated in <a href="#fig-semi-dev-pn-cuurent" class="quarto-xref">Figure&nbsp;<span>4.14</span></a>. These regions include: the <em>quasi-neutral</em> p-region characterized by a zero electric field, the space charge region with a nonzero electric field, and the quasineutral n-region also with a zero electric field. Previous studies have elaborated extensively that the ideal forward bias current can be determined by examining the current within the quasi-neutral region, attributable to the <em>low-level injection</em> of minority carriers at the boundaries of the depletion region, <span class="math inline">\(x_{p0}\)</span> and <span class="math inline">\(x_{n0}\)</span>. Under forward bias <span class="math inline">\(V_F\)</span>, the equilibrium ratio of hole concentrations (<a href="#eq-semi-dev-contact-v2" class="quarto-xref">Equation&nbsp;<span>4.10</span></a>) transforms into:</p>
+<p><span id="eq-semi-dev-hole-conc-vf"><span class="math display">\[
+  p(x_{p0}) = p(x_{n0}) e^{q(V_0-V_F)/kT}
+\tag{4.12}\]</span></span></p>
+<p>In low-level injection scenarios, the alteration in the majority carrier concentration is generally negligible (<span class="math inline">\(p(x_{p0}) = p_p\)</span>). By substituting <a href="#eq-semi-dev-contact-v2" class="quarto-xref">Equation&nbsp;<span>4.10</span></a> into <a href="#eq-semi-dev-hole-conc-vf" class="quarto-xref">Equation&nbsp;<span>4.12</span></a>, the concentration of minority holes at <span class="math inline">\(x_{n0}\)</span> can be represented as follows:</p>
+<p><span id="eq-semi-dev-hole-conc-xn"><span class="math display">\[
+  p(x_{n0}) = p_n e^{qV_F/kT}
+\tag{4.13}\]</span></span></p>
+<p>Take into consideration that <a href="#eq-semi-dev-hole-conc-xn" class="quarto-xref">Equation&nbsp;<span>4.13</span></a> is originally formulated for a forward-biased junction, but it remains applicable for reverse bias by altering the sign of the voltage to negative. Under this condition, the carrier concentration falls below the equilibrium level. The concentration of <em>excess</em> minority carriers on both the p-side and n-side is given by:</p>
+<p><span class="math display">\[
+\Delta p_n = p(x_{n0}) - p_n = p_n \left({e^{qV_F/kT} - 1}\right)
+\]</span></p>
+<p><span id="eq-semi-dev-minority-xs-inj"><span class="math display">\[
+    \Delta n_p = n(x_{p0}) - n_p = n_p\left({e^{qV_F/kT} - 1}\right)
+\tag{4.14}\]</span></span></p>
+<p>The diffusion theory suggests that minority carriers are injected at the boundaries of the space charge region, resulting in a stable concentration of <span class="math inline">\(\Delta p_n\)</span> holes in the <span class="math inline">\(n\)</span>-type material at <span class="math inline">\(x_{n0}\)</span> and <span class="math inline">\(\Delta n_p\)</span> electrons in the <span class="math inline">\(p\)</span>-type material at <span class="math inline">\(x_{p0}\)</span>. This injection initiates a <em>distribution</em> of minority carriers, which follows the diffusion equation.</p>
+<p><span class="math display">\[
+\delta p(x_p) = \Delta p e^{-x_p/L_p}
+\]</span></p>
+<p><span id="eq-semi-dev-diffusion-dist"><span class="math display">\[
+\delta n(x_n) = \Delta n e^{-x_n/L_n}
+\tag{4.15}\]</span></span></p>
+<p>where <span class="math inline">\(L_p\)</span> and <span class="math inline">\(L_n\)</span> represent the diffusion lengths for holes and electrons, respectively. It is also presumed that the dimensions of the <span class="math inline">\(p\)</span> and <span class="math inline">\(n\)</span> materials exceed their corresponding diffusion lengths. By incorporating <a href="#eq-semi-dev-minority-xs-inj" class="quarto-xref">Equation&nbsp;<span>4.14</span></a> into the diffusion equation, the distribution of minority carriers can be represented as follows:</p>
+<p><span class="math display">\[
+\delta p(x_p) = p_n\left({e^{qV_F/kT} - 1}\right) e^{-x_p/L_p}
+\]</span></p>
+<p><span id="eq-semi-dev-diffusion-dist2"><span class="math display">\[
+\delta n(x_n) = n_p\left({e^{qV_F/kT} - 1}\right) e^{-x_n/L_n}
+\tag{4.16}\]</span></span></p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
