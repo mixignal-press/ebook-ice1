@@ -384,7 +384,6 @@ To enhance our comprehension of the current flow through the pn junction, we can
 
 ![Forward-biased junction: (a) distribution of minority carriers on both sides of the transition region, alongside the definitions for distances $x_n$ and $x_p$ measured from the edges of the transition zone; (b) positional variation of the quasi-Fermi levels](figures/fig-semi-dev-pn-current.png){#fig-semi-dev-pn-cuurent}
  
-% 
 The present derivation can be arranged by considering three separate electrostatic regions of a pn junction as illustrated in @fig-semi-dev-pn-cuurent. These regions include: the _quasi-neutral_ p-region characterized by a zero electric field, the space charge region with a nonzero electric field, and the quasineutral n-region also with a zero electric field.
 Previous studies have elaborated extensively that the ideal forward bias current can be determined by examining the current within the quasi-neutral region, attributable to the _low-level injection_ of minority carriers at the boundaries of the depletion region, $x_{p0}$ and $x_{n0}$. Under forward bias $V_F$, the equilibrium ratio of hole concentrations (@eq-semi-dev-contact-v2) transforms into:
 
@@ -429,5 +428,40 @@ $$
 \delta n(x_n) = n_p\left({e^{qV_F/kT} - 1}\right) e^{-x_n/L_n}
 $$ {#eq-semi-dev-diffusion-dist2}
 
+
+In the $n$ material, the diffusion current of holes, and in the $p$ material, the diffusion current of electrons can be determined by utilizing the diffusion component of the total current as described in @eq-semi-dev-total-curr :
+
+$$
+J_p(x_n) = -qD_p\frac{d\delta p(x_n)}{dx_n} = q \frac{D_p}{L_p}\delta p(x_n)
+$$
+
+$$
+J_n(x_p) = qD_n\frac{d\delta n(x_p)}{dx_p} = q \frac{D_n}{L_n}\delta n(x_p)
+$$ {#eq-semi-dev-pn-current-1}
+
+
+The total current can be now calculated by adding the hole and electron current evaluated at $x_{n0}$ and $x_{p0}$ respectively:
+
+
+\begin{eqnarray}\label{eq:}
+
+$$
+I = qA\left({\frac{D_p}{L_p}p_n + \frac{D_n}{L_n}n_p}\right)
+    \left({e^{V_F/kT} -1}\right)
+$$    
+
+or,
+
+$$
+I = I_S \left({e^{V_F/kT} -1}\right)
+$$ {#eq-semi-dev-diode-current-total}
+
+where, $A$ is the area of the $pn$ junction. @eq-semi-dev-diode-current-total is the _diode equation_, that has the same form as the _qualitative_ expression in @eq-semi-dev-diode-IV .
+
+To determine the reverse bias current, substitute the forward bias voltage $V_F$ with the negative value of the reverse bias voltage $-V_R$. When $V_R$ exceeds a few times $kT/q$, the complete current becomes equivalent to the reverse saturation current:
+
+$$
+I = -qA\left({\frac{D_p}{L_p}p_n + \frac{D_n}{L_n}n_p}\right) = -I_S
+$$ {#eq-semi-dev-diode-current-reverse}
 
 
