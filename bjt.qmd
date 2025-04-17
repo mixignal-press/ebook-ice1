@@ -25,10 +25,11 @@ You can contact the publisher at info@mixignal.com
 
 Bipolar Junction Transistors (BJTs) can be seen as a natural progression from the study of $pn$ junctions. Though this text does not provide an exhaustive examination of BJTs, it will offer a basic introduction.
 
+## Principle of Operation
+
 <!-- Ref: Fig 10.2 p-372 Pierret -->
 ![Schematic depiction and circuit symbols for (a) _npn_ and (b) _pnp_ BJTs illustrating on the top the device areas, terminal labels, and on the bottom the d.c. terminal currents, voltages, and reference polarities.](figures/fig-semi-dev-bjt-sch){#fig-semi-dev-bjt-sch}
 
-Bipolar Junction Transistors (BJTs) can be seen as a natural progression from the study of $pn$ junctions. Though this text does not provide an exhaustive examination of BJTs, it will offer a basic introduction.
 
 <!-- Ref: Fig 10.8 p-381 Pierret -->
 ![Bandgap visualization of carrier activity in a pnp BJT in active mode. ](figures/fig-semi-dev-bjt-iband){#fig-semi-dev-bjt-iband}
@@ -43,7 +44,7 @@ When forward bias is applied to the E-B junction, the emitter introduces majorit
 
 The majority of injected minority carriers diffuse through the narrow base and arrive at the reverse-biased C-B junction. The base's thinness and a high minority carrier lifetime are essential to reduce the recombination of these carriers with the base's majority carriers (electrons in pnp, holes in npn). Upon entering the depletion region of the reverse-biased C-B junction, the robust electric field there propels the minority carriers into the collector. Since the C-B junction is reverse-biased, there is typically no significant carrier injection from the collector to the base. Thus, the collector current mainly consists of the minority carriers injected at the emitter that have successfully crossed the base. The collector section of the reverse-biased C-B junction acts as a sink, gathering the emitted carriers post-base traversal.
 
-## Derivation and Qualitative Reasoning of Terminal Currents
+## Terminal Currents
 
 The terminal currents in the active region are linked to the excess minority carrier concentration within the base. Considering a pnp transistor, define $p_n(x)$ as the hole concentration in the n-type base. The excess hole concentration is 
 
@@ -98,7 +99,7 @@ where $B$ is the base transport factor, indicating the portion of injected holes
 
 ## Power Amplification
 
-The transistor amplifies because a minor variation in the base current $I_B$ (regulated by $V_{EB}$) leads to a significant change in the collector current $I_C$. This is quantified by the common-emitter current gain, $\beta$ (also known as $h_{FE}$), which is the ratio of the collector current to the base current in the active region: $\beta = \frac{I_C}{I_B}$. Given that $B \approx 1$ (indicating negligible recombination in the base) and emitter injection efficiency 
+_Power amplification_ (not voltage amplification) is the desired property of a _transconductance_ device like the BJT. The transistor amplifies because a minor variation in the base current $I_B$ (regulated by $V_{EB}$) leads to a significant change in the collector current $I_C$. This is quantified by the common-emitter current gain, $\beta$ (also known as $h_{FE}$), which is the ratio of the collector current to the base current in the active region: $\beta = \frac{I_C}{I_B}$. Given that $B \approx 1$ (indicating negligible recombination in the base) and emitter injection efficiency 
 
 $$
 \gamma = \frac{I_{Ep}}{I_{Ep} + I_{En}} \approx 1

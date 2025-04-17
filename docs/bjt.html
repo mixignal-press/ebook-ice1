@@ -187,8 +187,9 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#derivation-and-qualitative-reasoning-of-terminal-currents" id="toc-derivation-and-qualitative-reasoning-of-terminal-currents" class="nav-link active" data-scroll-target="#derivation-and-qualitative-reasoning-of-terminal-currents"><span class="header-section-number">5.1</span> Derivation and Qualitative Reasoning of Terminal Currents</a></li>
-  <li><a href="#power-amplification" id="toc-power-amplification" class="nav-link" data-scroll-target="#power-amplification"><span class="header-section-number">5.2</span> Power Amplification</a></li>
+  <li><a href="#principle-of-operation" id="toc-principle-of-operation" class="nav-link active" data-scroll-target="#principle-of-operation"><span class="header-section-number">5.1</span> Principle of Operation</a></li>
+  <li><a href="#terminal-currents" id="toc-terminal-currents" class="nav-link" data-scroll-target="#terminal-currents"><span class="header-section-number">5.2</span> Terminal Currents</a></li>
+  <li><a href="#power-amplification" id="toc-power-amplification" class="nav-link" data-scroll-target="#power-amplification"><span class="header-section-number">5.3</span> Power Amplification</a></li>
   </ul>
 </nav>
     </div>
@@ -215,6 +216,8 @@ window.Quarto = {
 
 
 <p>Bipolar Junction Transistors (BJTs) can be seen as a natural progression from the study of <span class="math inline">\(pn\)</span> junctions. Though this text does not provide an exhaustive examination of BJTs, it will offer a basic introduction.</p>
+<section id="principle-of-operation" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="principle-of-operation"><span class="header-section-number">5.1</span> Principle of Operation</h2>
 <!-- Ref: Fig 10.2 p-372 Pierret -->
 <div id="fig-semi-dev-bjt-sch" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -226,7 +229,6 @@ Figure&nbsp;5.1: Schematic depiction and circuit symbols for (a) <em>npn</em> an
 </figcaption>
 </figure>
 </div>
-<p>Bipolar Junction Transistors (BJTs) can be seen as a natural progression from the study of <span class="math inline">\(pn\)</span> junctions. Though this text does not provide an exhaustive examination of BJTs, it will offer a basic introduction.</p>
 <!-- Ref: Fig 10.8 p-381 Pierret -->
 <div id="fig-semi-dev-bjt-iband" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -252,8 +254,9 @@ Figure&nbsp;5.3: Spatial visualization of the diffusion currents flowing I
 </div>
 <p>When forward bias is applied to the E-B junction, the emitter introduces majority carriers as minority carriers into the base. In a pnp transistor, holes travel from the p-type emitter into the n-type base, whereas in an npn transistor, electrons move from the n-type emitter into the p-type base. The forward bias elevates the surplus carrier concentrations near the emitter’s space-charge region. Typically, the emitter is more heavily doped than the base, which ensures that the E-B junction current is largely due to carriers transitioning from the emitter into the base, thereby achieving high emitter injection efficiency.</p>
 <p>The majority of injected minority carriers diffuse through the narrow base and arrive at the reverse-biased C-B junction. The base’s thinness and a high minority carrier lifetime are essential to reduce the recombination of these carriers with the base’s majority carriers (electrons in pnp, holes in npn). Upon entering the depletion region of the reverse-biased C-B junction, the robust electric field there propels the minority carriers into the collector. Since the C-B junction is reverse-biased, there is typically no significant carrier injection from the collector to the base. Thus, the collector current mainly consists of the minority carriers injected at the emitter that have successfully crossed the base. The collector section of the reverse-biased C-B junction acts as a sink, gathering the emitted carriers post-base traversal.</p>
-<section id="derivation-and-qualitative-reasoning-of-terminal-currents" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="derivation-and-qualitative-reasoning-of-terminal-currents"><span class="header-section-number">5.1</span> Derivation and Qualitative Reasoning of Terminal Currents</h2>
+</section>
+<section id="terminal-currents" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="terminal-currents"><span class="header-section-number">5.2</span> Terminal Currents</h2>
 <p>The terminal currents in the active region are linked to the excess minority carrier concentration within the base. Considering a pnp transistor, define <span class="math inline">\(p_n(x)\)</span> as the hole concentration in the n-type base. The excess hole concentration is</p>
 <p><span class="math display">\[
 \Delta p_n(x) = p_n(x) - p_{n0}
@@ -287,9 +290,9 @@ I_B = I_E - I_C = I_{En} + (1-B)I_{Ep}
 \]</span></p>
 <p>where <span class="math inline">\(B\)</span> is the base transport factor, indicating the portion of injected holes reaching the collector without recombining. A thin base with a long carrier lifetime results in <span class="math inline">\(B\)</span> nearing one, reducing <span class="math inline">\(I_B\)</span>. All terminal currents (<span class="math inline">\(I_C\)</span>, <span class="math inline">\(I_B\)</span>, <span class="math inline">\(I_E\)</span>) exhibit an exponential dependency on the emitter-base voltage <span class="math inline">\(V_{EB}\)</span>.</p>
 </section>
-<section id="power-amplification" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="power-amplification"><span class="header-section-number">5.2</span> Power Amplification</h2>
-<p>The transistor amplifies because a minor variation in the base current <span class="math inline">\(I_B\)</span> (regulated by <span class="math inline">\(V_{EB}\)</span>) leads to a significant change in the collector current <span class="math inline">\(I_C\)</span>. This is quantified by the common-emitter current gain, <span class="math inline">\(\beta\)</span> (also known as <span class="math inline">\(h_{FE}\)</span>), which is the ratio of the collector current to the base current in the active region: <span class="math inline">\(\beta = \frac{I_C}{I_B}\)</span>. Given that <span class="math inline">\(B \approx 1\)</span> (indicating negligible recombination in the base) and emitter injection efficiency</p>
+<section id="power-amplification" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="power-amplification"><span class="header-section-number">5.3</span> Power Amplification</h2>
+<p><em>Power amplification</em> (not voltage amplification) is the desired property of a <em>transconductance</em> device like the BJT. The transistor amplifies because a minor variation in the base current <span class="math inline">\(I_B\)</span> (regulated by <span class="math inline">\(V_{EB}\)</span>) leads to a significant change in the collector current <span class="math inline">\(I_C\)</span>. This is quantified by the common-emitter current gain, <span class="math inline">\(\beta\)</span> (also known as <span class="math inline">\(h_{FE}\)</span>), which is the ratio of the collector current to the base current in the active region: <span class="math inline">\(\beta = \frac{I_C}{I_B}\)</span>. Given that <span class="math inline">\(B \approx 1\)</span> (indicating negligible recombination in the base) and emitter injection efficiency</p>
 <p><span class="math display">\[
 \gamma = \frac{I_{Ep}}{I_{Ep} + I_{En}} \approx 1
 \]</span></p>
