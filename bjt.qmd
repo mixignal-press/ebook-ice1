@@ -81,7 +81,13 @@ $$
 or,
 
 $$
-I_C \approx qA D_p \frac{p_n(0)}{W_b} = qA D_p \frac{p_{n0}}{W_b} (e^{qV_{EB}/kT} - 1)
+I_C \approx qA D_p \frac{p_n(0)}{W_b} 
+$$
+
+or,
+
+$$
+I_C  = qA D_p \frac{p_{n0}}{W_b} (e^{qV_{EB}/kT} - 1)
 $$
 
 with $q$ representing the elementary charge, $A$ the cross-sectional area, and $D_p$ the minority-carrier (hole) diffusion coefficient in the base.
