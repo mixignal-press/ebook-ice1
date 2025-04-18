@@ -240,7 +240,7 @@ Figure&nbsp;5.2: Bandgap visualization of carrier activity in a pnp BJT in activ
 </figcaption>
 </figure>
 </div>
-<p>A Bipolar Junction Transistor (BJT) operates as a controlling element by allowing minority carriers to move through the narrow base region between the emitter and collector junctions in the active region. This region is characterized by forward-biasing the emitter-base (E-B) junction and reverse-biasing the collector-base (C-B) junction, commonly used for linear signal amplification.</p>
+<p>A Bipolar Junction Transistor (BJT) operates as a <em>controlling element</em> by allowing minority carriers to move through the narrow base region between the emitter and collector junctions in the <em>active region</em>. This region is characterized by forward-biasing the emitter-base (E-B) junction and reverse-biasing the collector-base (C-B) junction, both bias voltages exceeding by few multiples of <span class="math inline">\(\kappa T/q\)</span>. Under these conditions, the excess-carrier distribution in the base region is approximately linear as shown in <a href="#fig-semi-dev-bjt-base" class="quarto-xref">Figure&nbsp;<span>5.4</span></a> . This region of operation is commonly used for linear signal amplification.</p>
 <!-- Ref: Fig 10.9 p-382 Pierret -->
 <div id="fig-semi-dev-bjt-curr" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -257,20 +257,32 @@ Figure&nbsp;5.3: Spatial visualization of the diffusion currents flowing I
 </section>
 <section id="terminal-currents" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="terminal-currents"><span class="header-section-number">5.2</span> Terminal Currents</h2>
+<!-- Ref: Fig 7-7 p-362  Streetman OR Fig 7.7 p-253 Gray-Searles -->
+<div id="fig-semi-dev-bjt-base" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-semi-dev-bjt-base-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/fig-semi-dev-bjt-base.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-bjt-base-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.4: Excess carrier distribution in the base for active-region operation.
+</figcaption>
+</figure>
+</div>
 <p>The terminal currents in the active region are linked to the excess minority carrier concentration within the base. Considering a pnp transistor, define <span class="math inline">\(p_n(x)\)</span> as the hole concentration in the n-type base. The excess hole concentration is</p>
 <p><span class="math display">\[
 \Delta p_n(x) = p_n(x) - p_{n0}
 \]</span></p>
-<p>with <span class="math inline">\(p_{n0}\)</span> as the equilibrium hole concentration. At the space-charge layer boundaries, the excess concentrations relate to junction voltages as follows:</p>
+<p>with <span class="math inline">\(p_{n0}\)</span> as the equilibrium hole concentration. At the space-charge layer boundaries, the excess concentrations relate to junction voltages exponentially, as in <em>pn</em> junction:</p>
 <p><span class="math display">\[
-\Delta p_E = p_n(0) = p_{n0} (e^{qV_{EB}/kT} - 1)
+\Delta p_E \approx p_n(0) = p_{n0} (e^{qV_{EB}/kT} - 1)
 \]</span></p>
-<p>at the emitter junction (<span class="math inline">\(x=0\)</span>), and</p>
+<p>at the emitter junction (<span class="math inline">\(x=0\)</span>), assuming <span class="math inline">\(p_n(0) \gg p_{n0}\)</span>.</p>
+<p>Similarly, the excess concentration at the collector junction is:</p>
 <p><span class="math display">\[
 \Delta p_C = p_n(W_b) = p_{n0} (e^{qV_{CB}/kT} - 1) \approx -p_{n0}
 \]</span></p>
-<p>at the reverse-biased collector junction (<span class="math inline">\(x=W_b\)</span>, with <span class="math inline">\(W_b\)</span> being the base width)</p>
-<p>In the context of a thin base with a linear excess minority carrier distribution (valid when <span class="math inline">\(W_b\)</span> is significantly less than the diffusion length <span class="math inline">\(L_p\)</span>), the concentration gradient is roughly <span class="math inline">\(-p_n(0)/W_b\)</span>. Consequently, the collector current <span class="math inline">\(I_C\)</span> is linked to this gradient and can be expressed as:</p>
+<p>at the reverse-biased collector junction (<span class="math inline">\(x=W_b\)</span>, with <span class="math inline">\(W_b\)</span> being the base width). The excess concentration is negative due to the reverse-biased C-B junction.</p>
+<p>In the context of a thin base with a linear excess minority carrier distribution (valid when <span class="math inline">\(W_b\)</span> is significantly less than the <em>diffusion length</em> <span class="math inline">\(L_p\)</span>), with bias assumption of few multiples of <span class="math inline">\(\kappa /Tq\)</span>, <span class="math inline">\(p_n(0) \gg p_n(W_b)\)</span>, consequently the concentration gradient is approximately <span class="math inline">\(-p_n(0)/W_b\)</span>. Therefore, the collector current <span class="math inline">\(I_C\)</span> is linked to this gradient and can be expressed as:</p>
 <p><span class="math display">\[
 I_C = -qA D_p \frac{dp_n}{dx}|_{x=W_b}
 \]</span></p>
@@ -278,7 +290,7 @@ I_C = -qA D_p \frac{dp_n}{dx}|_{x=W_b}
 <p><span class="math display">\[
 I_C \approx qA D_p \frac{p_n(0)}{W_b} = qA D_p \frac{p_{n0}}{W_b} (e^{qV_{EB}/kT} - 1)
 \]</span></p>
-<p>with <span class="math inline">\(q\)</span> representing the elementary charge, <span class="math inline">\(A\)</span> the cross-sectional area, and <span class="math inline">\(D_p\)</span> the hole diffusion coefficient in the base.</p>
+<p>with <span class="math inline">\(q\)</span> representing the elementary charge, <span class="math inline">\(A\)</span> the cross-sectional area, and <span class="math inline">\(D_p\)</span> the minority-carrier (hole) diffusion coefficient in the base.</p>
 <p>In <em>qualitative terms</em>, increasing the forward bias <span class="math inline">\(V_{EB}\)</span> elevates <span class="math inline">\(p_n(0)\)</span>, resulting in a sharper concentration gradient and consequently a higher collector current. In contrast, the reverse bias <span class="math inline">\(V_{CB}\)</span> exerts a smaller impact on <span class="math inline">\(p_n(W_b)\)</span>, approximating <span class="math inline">\(-p_{n0}\)</span>, provided that it exceeds a few multiples of <span class="math inline">\(kT/q\)</span>. The emitter current <span class="math inline">\(I_E\)</span> is composed of the hole current entering the base (<span class="math inline">\(I_{Ep}\)</span>) and the electron current moving from the base into the emitter (<span class="math inline">\(I_{En}\)</span>):</p>
 <p><span class="math display">\[
 I_E = I_{Ep} + I_{En}

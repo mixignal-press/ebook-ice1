@@ -35,7 +35,7 @@ Bipolar Junction Transistors (BJTs) can be seen as a natural progression from th
 ![Bandgap visualization of carrier activity in a pnp BJT in active mode. ](figures/fig-semi-dev-bjt-iband){#fig-semi-dev-bjt-iband}
 
 
-A Bipolar Junction Transistor (BJT) operates as a controlling element by allowing minority carriers to move through the narrow base region between the emitter and collector junctions in the active region. This region is characterized by forward-biasing the emitter-base (E-B) junction and reverse-biasing the collector-base (C-B) junction, commonly used for linear signal amplification.
+A Bipolar Junction Transistor (BJT) operates as a _controlling element_ by allowing minority carriers to move through the narrow base region between the emitter and collector junctions in the _active region_. This region is characterized by forward-biasing the emitter-base (E-B) junction  and reverse-biasing the collector-base (C-B) junction, both bias voltages exceeding by few multiples of $\kappa T/q$. Under these conditions, the excess-carrier distribution in the base region is approximately linear as shown in @fig-semi-dev-bjt-base . This region of operation is commonly used for linear signal amplification.
 
 <!-- Ref: Fig 10.9 p-382 Pierret -->
 ![Spatial visualization of the diffusion currents flowing I](figures/fig-semi-dev-bjt-curr){#fig-semi-dev-bjt-curr}
@@ -46,27 +46,33 @@ The majority of injected minority carriers diffuse through the narrow base and a
 
 ## Terminal Currents
 
+<!-- Ref: Fig 7-7 p-362  Streetman OR Fig 7.7 p-253 Gray-Searles -->
+
+![Excess carrier distribution in the base for active-region operation.](figures/fig-semi-dev-bjt-base){#fig-semi-dev-bjt-base}
+
 The terminal currents in the active region are linked to the excess minority carrier concentration within the base. Considering a pnp transistor, define $p_n(x)$ as the hole concentration in the n-type base. The excess hole concentration is 
 
 $$
 \Delta p_n(x) = p_n(x) - p_{n0}
 $$
 
-with $p_{n0}$ as the equilibrium hole concentration. At the space-charge layer boundaries, the excess concentrations relate to junction voltages as follows: 
+with $p_{n0}$ as the equilibrium hole concentration. At the space-charge layer boundaries, the excess concentrations relate to junction voltages exponentially, as in _pn_ junction: 
 
 $$
-\Delta p_E = p_n(0) = p_{n0} (e^{qV_{EB}/kT} - 1)
+\Delta p_E \approx p_n(0) = p_{n0} (e^{qV_{EB}/kT} - 1)
 $$ 
 
-at the emitter junction ($x=0$), and 
+at the emitter junction ($x=0$), assuming $p_n(0) \gg p_{n0}$.
+
+Similarly, the excess concentration at the collector junction is: 
 
 $$
 \Delta p_C = p_n(W_b) = p_{n0} (e^{qV_{CB}/kT} - 1) \approx -p_{n0}
 $$ 
 
-at the reverse-biased collector junction ($x=W_b$, with $W_b$ being the base width)
+at the reverse-biased collector junction ($x=W_b$, with $W_b$ being the base width). The excess concentration is negative due to the reverse-biased C-B junction.
 
-In the context of a thin base with a linear excess minority carrier distribution (valid when $W_b$ is significantly less than the diffusion length $L_p$), the concentration gradient is roughly $-p_n(0)/W_b$. Consequently, the collector current $I_C$ is linked to this gradient and can be expressed as: 
+In the context of a thin base with a linear excess minority carrier distribution (valid when $W_b$ is significantly less than the _diffusion length_ $L_p$), with bias assumption of few multiples of $\kappa /Tq$, $p_n(0) \gg p_n(W_b)$, consequently the concentration gradient is approximately $-p_n(0)/W_b$. Therefore, the collector current $I_C$ is linked to this gradient and can be expressed as: 
 
 $$
 I_C = -qA D_p \frac{dp_n}{dx}|_{x=W_b}
@@ -78,7 +84,7 @@ $$
 I_C \approx qA D_p \frac{p_n(0)}{W_b} = qA D_p \frac{p_{n0}}{W_b} (e^{qV_{EB}/kT} - 1)
 $$
 
-with $q$ representing the elementary charge, $A$ the cross-sectional area, and $D_p$ the hole diffusion coefficient in the base.
+with $q$ representing the elementary charge, $A$ the cross-sectional area, and $D_p$ the minority-carrier (hole) diffusion coefficient in the base.
 
 In _qualitative terms_, increasing the forward bias $V_{EB}$ elevates $p_n(0)$, resulting in a sharper concentration gradient and consequently a higher collector current. In contrast, the reverse bias $V_{CB}$ exerts a smaller impact on $p_n(W_b)$, approximating $-p_{n0}$, provided that it exceeds a few multiples of $kT/q$. The emitter current $I_E$ is composed of the hole current entering the base ($I_{Ep}$) and the electron current moving from the base into the emitter ($I_{En}$): 
 

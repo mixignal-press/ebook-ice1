@@ -443,8 +443,6 @@ $$ {#eq-semi-dev-pn-current-1}
 The total current can be now calculated by adding the hole and electron current evaluated at $x_{n0}$ and $x_{p0}$ respectively:
 
 
-\begin{eqnarray}\label{eq:}
-
 $$
 I = qA\left({\frac{D_p}{L_p}p_n + \frac{D_n}{L_n}n_p}\right)
     \left({e^{V_F/kT} -1}\right)
