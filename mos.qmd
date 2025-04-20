@@ -1,0 +1,42 @@
+::: {.content-hidden}
+
+Copyright (C) 2025 Mixignal Innovations LLC. All rights reserved.
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licensei (the "License"). You may share and adapt this material for non-commercial purposes, provided you give appropriate credit to the original author, indicate if changes were made, and distribute your contributions under the same License.
+
+You may obtain a copy of the License at
+
+   https://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+You can contact the publisher at info@mixignal.com
+:::
+
+::: {.content-hidden}
+Chap-1: Physics and Modeling of MOSFETs from [1] J. P. Uyemura, CMOS Logic Circuit Design. Springer Science & Business Media, 2007. 
+
+:::
+
+# MOS Transistor {#chap-mos}
+
+MOSFETs (metal-oxide-semiconductor field-effect transistors) (or MOS) are the pervasive _switching_ semiconductor devices in digital integrated circuits (IC) and serve as _transconductance_ components in analog ICs.This chapter focuses on analyzing and deriving the expressions of current in a _long channel_ MOSFET.
+
+## Principle of Operation
+
+<!-- Figure 1.1 -->
+![nMOSFET (nMOS) circuit symbol.](figures/fig-semi-dev-mos-sch){#fig-semi-dev-mos-sch}
+
+@fig-semi-dev-mos-sch(a) shows an n-channel MOSFET's circuit symbol (n-FET or nMOS), a _four-terminal_ device with _gate, source, drain_, and _bulk_ terminals. @fig-semi-dev-mos-sch(b) depicts the device voltages. The gate acts as the control electrode and the gate source voltage ($V_{GSn}$) regulates the drain current ($I_Dn$) from the drain to the source. The drain current depends on $V_{GSn}$ and the drain-source voltage ($V_{DSn}$), while the source-bulk voltage ($V_{SBn}$) has a minor influence.
+
+<!-- Figure 1.2 & 1.3 as (a) and (b) -->
+![(a) nMOSFET (nMOS) cross-section view.  (b) Top View] (figures/fig-semi-dev-mos-csec){#fig-semi-dev-mos-csec}
+
+@fig-semi-dev-mos-csec (a) shows an nMOS with a metal gate (*M*) on silicon dioxide (*O*) over p-type silicon (*S*). This structure forms a capacitor between the gate and the semiconductor. The drain and source terminals are on the sides, with a bulk electrode attached to the substrate. The length of the channel ($L$) between the drain and the source is crucial. @fig-semi-dev-mos-csec (b)'s top view shows that the channel width ($W$) allows current flow, with the aspect ratio (W/L) important for design. The _drawn_ channel length ($L'$) exceeds the electrical length ($L$).
+
+The MOSFET current-voltage characteristics ($I$-$V$) rely on a threshold voltage ($V_{Tn}$) determined by the manufacturing parameters. CMOS technology usually uses enhancement-mode MOSFETs with a positive threshold voltage.
+
+The MOS structure enables drain-to-source conduction due to its capacitor-like traits. A positive gate voltage induces negative charge in the semiconductor under the oxide via the field effect, altering surface charge distribution. 
+
+In an _ideal_ n-channel MOSFET, when $V_{GSn} < V_{Tn}$, it is in *cutoff* with zero current flow ($I_d$). Only immobile bulk charge exists under the gate, and the drain and source are separated by reverse-biased pn junctions.
+
+When $V_{GSn} \geq V_{Tn}$, an electron inversion layer is formed under the oxide, creating a conduction path from the drain to the source. Applying $V_{DSn}$ generates an electric field in the channel, driving electrons from source to drain, resulting in a drain current ($I_{Dn}$).
+
