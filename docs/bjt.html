@@ -225,10 +225,11 @@ window.Quarto = {
 <img src="figures/fig-semi-dev-bjt-sch.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-bjt-sch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5.1: Schematic depiction and circuit symbols for (a) <em>npn</em> and (b) <em>pnp</em> BJTs illustrating on the top the device areas, terminal labels, and on the bottom the d.c. terminal currents, voltages, and reference polarities.
+Figure&nbsp;5.1: Schematic depiction and circuit symbols for (a) <em>pnp</em> and (b) <em>npn</em> BJTs illustrating on the top the device areas, terminal labels, and on the bottom the d.c. terminal currents, voltages, and reference polarities.
 </figcaption>
 </figure>
 </div>
+<p>A Bipolar Junction Transistor (BJT) operates as a <em>controlling element</em> by allowing minority carriers to move through the narrow base region between the emitter and collector junctions in the <em>active region</em>. This region is characterized by forward-biasing the emitter-base (E-B) junction and reverse-biasing the collector-base (C-B) junction, both bias voltages exceeding by few multiples of <span class="math inline">\(\kappa T/q\)</span>. Under these conditions, the excess-carrier distribution in the base region is approximately linear as shown in <a href="#fig-semi-dev-bjt-base" class="quarto-xref">Figure&nbsp;<span>5.4</span></a> . This region of operation is commonly used for linear signal amplification.</p>
 <!-- Ref: Fig 10.8 p-381 Pierret -->
 <div id="fig-semi-dev-bjt-iband" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -240,7 +241,6 @@ Figure&nbsp;5.2: Bandgap visualization of carrier activity in a pnp BJT in activ
 </figcaption>
 </figure>
 </div>
-<p>A Bipolar Junction Transistor (BJT) operates as a <em>controlling element</em> by allowing minority carriers to move through the narrow base region between the emitter and collector junctions in the <em>active region</em>. This region is characterized by forward-biasing the emitter-base (E-B) junction and reverse-biasing the collector-base (C-B) junction, both bias voltages exceeding by few multiples of <span class="math inline">\(\kappa T/q\)</span>. Under these conditions, the excess-carrier distribution in the base region is approximately linear as shown in <a href="#fig-semi-dev-bjt-base" class="quarto-xref">Figure&nbsp;<span>5.4</span></a> . This region of operation is commonly used for linear signal amplification.</p>
 <!-- Ref: Fig 10.9 p-382 Pierret -->
 <div id="fig-semi-dev-bjt-curr" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -248,10 +248,11 @@ Figure&nbsp;5.2: Bandgap visualization of carrier activity in a pnp BJT in activ
 <img src="figures/fig-semi-dev-bjt-curr.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-bjt-curr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5.3: Spatial visualization of the diffusion currents flowing I
+Figure&nbsp;5.3: Spatial visualization of the diffusion currents flowing in the BJT. Forward biasing the E-B junction causes the emitter to inject majority carriers (<em>holes</em> in this case) as minority carriers into the base, increasing carrier concentration near the emitter’s space-charge region. The heavier doped emitter (<span class="math inline">\(p+\)</span>) ensures that the junction current is dominated by carriers entering the base. The injected carriers diffuse through the <em>narrow</em> base to the reverse-biased C-B junction, where a strong electric field directs them into the collector. The thin base and long minority carrier lifetime reduce recombination. So, the collector current consists mainly of minority carriers of the emitter.
 </figcaption>
 </figure>
 </div>
+<p>Using <a href="#fig-semi-dev-bjt-iband" class="quarto-xref">Figure&nbsp;<span>5.2</span></a> and <a href="#fig-semi-dev-bjt-curr" class="quarto-xref">Figure&nbsp;<span>5.3</span></a> as a visualizing tool, BJT <em>valve</em> action will be illustrated by tracking the hole diffusion current.</p>
 <p>When forward bias is applied to the E-B junction, the emitter introduces majority carriers as minority carriers into the base. In a pnp transistor, holes travel from the p-type emitter into the n-type base, whereas in an npn transistor, electrons move from the n-type emitter into the p-type base. The forward bias elevates the surplus carrier concentrations near the emitter’s space-charge region. Typically, the emitter is more heavily doped than the base, which ensures that the E-B junction current is largely due to carriers transitioning from the emitter into the base, thereby achieving high emitter injection efficiency.</p>
 <p>The majority of injected minority carriers diffuse through the narrow base and arrive at the reverse-biased C-B junction. The base’s thinness and a high minority carrier lifetime are essential to reduce the recombination of these carriers with the base’s majority carriers (electrons in pnp, holes in npn). Upon entering the depletion region of the reverse-biased C-B junction, the robust electric field there propels the minority carriers into the collector. Since the C-B junction is reverse-biased, there is typically no significant carrier injection from the collector to the base. Thus, the collector current mainly consists of the minority carriers injected at the emitter that have successfully crossed the base. The collector section of the reverse-biased C-B junction acts as a sink, gathering the emitted carriers post-base traversal.</p>
 </section>
