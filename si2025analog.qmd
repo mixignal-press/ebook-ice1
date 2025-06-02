@@ -25,13 +25,15 @@ Date: 02 June 2025 (Mon)
 
 **USB Microphone System**
 
-![USB-MIDI Microphone System](figures/SI-2025-Analog/Fig-d1-1-USBmic.png) {#fig-d1-1-USBmic}
+![USB-MIDI Microphone System](figures/SI-2025-Analog/Fig-d1-1-USBmic.png){#fig-d1-1-USBmic}
 
 - [Knowles MEMS capacitive microphone datasheet](https://cdn.sparkfun.com/assets/0/5/8/b/1/SPH8878LR5H-1_Lovato_DS.pdf)
 - [OPA344 TI OpAmp datasheet](https://www.ti.com/lit/ds/symlink/opa345.pdf)
 - [SparkFun Analog MEMS Microphone Breakout - SPH8878LR5H-1](https://www.sparkfun.com/sparkfun-analog-mems-microphone-breakout-sph8878lr5h-1.html)
 
-![Microphone Teardown](figures/SI-2025-Analog/Fig-d1-2-micTeardown.png) {#Fig-d1-2-micTeardown}
+**USB Microphone Teardown**
+
+![USB Microphone Teardown](figures/SI-2025-Analog/Fig-d1-2-micTeardown.png){#Fig-d1-2-micTeardown}
 
 **ASSIGNMENT**
 
