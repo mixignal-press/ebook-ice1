@@ -25,7 +25,7 @@ MOSFETs (metal-oxide-semiconductor field-effect transistors) (or MOS) are the pe
 <!-- Figure 1.1 -->
 ![nMOSFET (nMOS) circuit symbol.](figures/fig-semi-dev-mos-sch){#fig-semi-dev-mos-sch}
 
-@fig-semi-dev-mos-sch(a) shows an n-channel MOSFET's circuit symbol (n-FET or nMOS), a _four-terminal_ device with _gate, source, drain_, and _bulk_ terminals. @fig-semi-dev-mos-sch(b) depicts the device voltages. The gate acts as the control electrode and the gate source voltage ($V_{GSn}$) regulates the drain current ($I_Dn$) from the drain to the source. The drain current depends on $V_{GSn}$ and the drain-source voltage ($V_{DSn}$), while the source-bulk voltage ($V_{SBn}$) has a minor influence.
+@fig-semi-dev-mos-sch(a) shows an n-channel MOSFET's circuit symbol (n-FET or nMOS), a _four-terminal_ device with _gate, source, drain_, and _bulk_ terminals. @fig-semi-dev-mos-sch(b) depicts the device voltages. The gate acts as the control electrode and the gate source voltage ($V_{GSn}$) regulates the drain current ($I_{Dn}$) from the drain to the source. The drain current depends on $V_{GSn}$ and the drain-source voltage ($V_{DSn}$), while the source-bulk voltage ($V_{SBn}$) has a minor influence.
 
 <!-- Figure 1.2 & 1.3 as (a) and (b) -->
 ![(a) nMOSFET (nMOS) cross-section view.  (b) Top View](figures/fig-semi-dev-mos-csec){#fig-semi-dev-mos-csec}
