@@ -14,6 +14,7 @@ book:
     - devices.qmd
     - bjt.qmd
     - mos.qmd
+    - si2025analog.qmd
     - references.qmd
 
 bibliography: references.bib
