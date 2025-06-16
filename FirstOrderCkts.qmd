@@ -59,7 +59,7 @@ $$
 \frac{dv_{CH}}{dt} + \frac{v_{CH}}{RC} = 0
 $$
 
-Assume $ v_{CH} = Ae^{st} $:
+Assume $v_{CH} = Ae^{st}$:
 
 Substituting and solving gives:
 
@@ -79,18 +79,18 @@ $$
 
 **Particular Solution**
 
-For a constant input current $ I_0 $:
+For a constant input current $I_0$:
 
 $$
 I_0 = \frac{v_{cp}}{R} + C \frac{dv_{cp}}{dt}
 $$
 
-Assume \$ v_{cp} = K \$:
+Assume $v_{CP} = K$:
 
 Substitute into the equation:
 
 $$
-v_{cp} = I_0 R
+v_{CP} = I_0 R
 $$
 
 ---
@@ -100,10 +100,10 @@ $$
 Combine both solutions:
 
 $$
-v_c = A e^{-t/RC} + I_0 R
+v_C = A e^{-t/RC} + I_0 R
 $$
 
-Apply initial condition at $ t = 0 $:
+Apply initial condition at $t = 0$:
 
 $$
 A = -I_0 R
@@ -112,13 +112,13 @@ $$
 Thus,
 
 $$
-v_c = -I_0 R e^{-t/RC} + I_0 R
+v_C = -I_0 R e^{-t/RC} + I_0 R
 $$
 
 or
 
 $$
-v_c = I_0 R (1 - e^{-t/RC})
+v_C = I_0 R (1 - e^{-t/RC})
 $$
 
 ---
@@ -126,7 +126,7 @@ $$
 **Effect of RC Value**
 
 - **Small RC:** Faster charging, steeper curve.
-- **Large RC:** Slower charging, gradual curve[\#].
+- **Large RC:** Slower charging, gradual curve.
 
 ---
 
@@ -134,11 +134,11 @@ $$
 
 For the discharge case (homogeneous solution):
 
-- Initial condition: $ v_c = I_0 R $ at $ t = 0 $
+- Initial condition: $v_C = I_0 R$ at $t = 0$
 - Solution:
 
 $$
-v_c = I_0 R e^{-t/RC}
+v_C = I_0 R e^{-t/RC}
 $$
 
 ---
@@ -146,20 +146,20 @@ $$
 **General Form**
 
 $$
-v_c = v_c(0) e^{-t/RC}
+v_C = v_C(0) e^{-t/RC}
 $$
 
 ---
 
 **Properties of the Exponential Decay**
 
-- For $ x = A e^{-t/\tau} $, the initial slope at $ t = 0 $:
+- For $x = A e^{-t/\tau}$, the initial slope at $t = 0$:
 
 $$
 \left. \frac{dx}{dt} \right|_{t=0} = -\frac{A}{\tau}
 $$
 
-- At \$ t = \tau \$:
+- At $t = \tau$:
 
 $$
 x(\tau) = \frac{A}{e}
@@ -177,17 +177,17 @@ $$
 
 | Parameter | Formula | Notes |
 | :-- | :-- | :-- |
-| Time Constant (\$ \tau \$) | \$ RC \$ | Determines response speed |
-| Charging Voltage | \$ I_0 R (1 - e^{-t/RC}) \$ | Step input |
-| Discharge Voltage | \$ V_c(0) e^{-t/RC} \$ | Initial voltage \$ V_c(0) \$ |
-| Initial Slope | \$ -A/\tau \$ | At \$ t = 0 \$ |
-| 90%-10% Time Span | \$ 2.2\tau \$ | Exponential decay |
+| Time Constant ($\tau$) | $RC$ | Determines response speed |
+| Charging Voltage | $I_0 R (1 - e^{-t/RC})$ | Step input |
+| Discharge Voltage | $ v_C(0) e^{-t/RC}$ | Initial voltage $v_C(0)$ |
+| Initial Slope | $-A/\tau$ | At $t = 0$ |
+| 90%-10% Time Span | $2.2\tau$ | Exponential decay |
 
 
 ---
 
-## Notes
+**Notes**
 
 - The exponential response is a hallmark of first-order RC circuits.
-- The time constant $ RC $ is critical for determining how quickly the voltage changes in response to a step input or discharge.
+- The time constant $RC$ is critical for determining how quickly the voltage changes in response to a step input or discharge.
 
