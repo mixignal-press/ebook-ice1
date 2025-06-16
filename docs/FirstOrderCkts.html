@@ -200,7 +200,6 @@ window.Quarto = {
    
   <ul>
   <li><a href="#dynamic-analysis-rc-circuit" id="toc-dynamic-analysis-rc-circuit" class="nav-link active" data-scroll-target="#dynamic-analysis-rc-circuit"><span class="header-section-number">4.1</span> Dynamic Analysis RC Circuit</a></li>
-  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes"><span class="header-section-number">4.2</span> Notes</a></li>
   </ul>
 </nav>
     </div>
@@ -253,7 +252,7 @@ i(t) = \frac{v_C}{R} + C \frac{dv_C}{dt}
 <p><span class="math display">\[
 \frac{dv_{CH}}{dt} + \frac{v_{CH}}{RC} = 0
 \]</span></p>
-<p>Assume $ v_{CH} = Ae^{st} $:</p>
+<p>Assume <span class="math inline">\(v_{CH} = Ae^{st}\)</span>:</p>
 <p>Substituting and solving gives:</p>
 <p><span class="math display">\[
 s = -\frac{1}{RC}
@@ -267,64 +266,64 @@ v_{CH} = A e^{-t/RC}
 </ul>
 <hr>
 <p><strong>Particular Solution</strong></p>
-<p>For a constant input current $ I_0 $:</p>
+<p>For a constant input current <span class="math inline">\(I_0\)</span>:</p>
 <p><span class="math display">\[
 I_0 = \frac{v_{cp}}{R} + C \frac{dv_{cp}}{dt}
 \]</span></p>
-<p>Assume $ v_{cp} = K $:</p>
+<p>Assume <span class="math inline">\(v_{CP} = K\)</span>:</p>
 <p>Substitute into the equation:</p>
 <p><span class="math display">\[
-v_{cp} = I_0 R
+v_{CP} = I_0 R
 \]</span></p>
 <hr>
 <p><strong>Complete Solution</strong></p>
 <p>Combine both solutions:</p>
 <p><span class="math display">\[
-v_c = A e^{-t/RC} + I_0 R
+v_C = A e^{-t/RC} + I_0 R
 \]</span></p>
-<p>Apply initial condition at $ t = 0 $:</p>
+<p>Apply initial condition at <span class="math inline">\(t = 0\)</span>:</p>
 <p><span class="math display">\[
 A = -I_0 R
 \]</span></p>
 <p>Thus,</p>
 <p><span class="math display">\[
-v_c = -I_0 R e^{-t/RC} + I_0 R
+v_C = -I_0 R e^{-t/RC} + I_0 R
 \]</span></p>
 <p>or</p>
 <p><span class="math display">\[
-v_c = I_0 R (1 - e^{-t/RC})
+v_C = I_0 R (1 - e^{-t/RC})
 \]</span></p>
 <hr>
 <p><strong>Effect of RC Value</strong></p>
 <ul>
 <li><strong>Small RC:</strong> Faster charging, steeper curve.</li>
-<li><strong>Large RC:</strong> Slower charging, gradual curve[#].</li>
+<li><strong>Large RC:</strong> Slower charging, gradual curve.</li>
 </ul>
 <hr>
 <p><strong>Discharge Transient</strong></p>
 <p>For the discharge case (homogeneous solution):</p>
 <ul>
-<li>Initial condition: $ v_c = I_0 R $ at $ t = 0 $</li>
+<li>Initial condition: <span class="math inline">\(v_C = I_0 R\)</span> at <span class="math inline">\(t = 0\)</span></li>
 <li>Solution:</li>
 </ul>
 <p><span class="math display">\[
-v_c = I_0 R e^{-t/RC}
+v_C = I_0 R e^{-t/RC}
 \]</span></p>
 <hr>
 <p><strong>General Form</strong></p>
 <p><span class="math display">\[
-v_c = v_c(0) e^{-t/RC}
+v_C = v_C(0) e^{-t/RC}
 \]</span></p>
 <hr>
 <p><strong>Properties of the Exponential Decay</strong></p>
 <ul>
-<li>For $ x = A e^{-t/} $, the initial slope at $ t = 0 $:</li>
+<li>For <span class="math inline">\(x = A e^{-t/\tau}\)</span>, the initial slope at <span class="math inline">\(t = 0\)</span>:</li>
 </ul>
 <p><span class="math display">\[
 \left. \frac{dx}{dt} \right|_{t=0} = -\frac{A}{\tau}
 \]</span></p>
 <ul>
-<li>At $ t = $:</li>
+<li>At <span class="math inline">\(t = \tau\)</span>:</li>
 </ul>
 <p><span class="math display">\[
 x(\tau) = \frac{A}{e}
@@ -338,11 +337,6 @@ t_{90\%} - t_{10\%} = RC \ln\left(\frac{0.9}{0.1}\right) = 2.2\tau
 <hr>
 <p><strong>Summary Table</strong></p>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Parameter</th>
@@ -352,39 +346,37 @@ t_{90\%} - t_{10\%} = RC \ln\left(\frac{0.9}{0.1}\right) = 2.2\tau
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Time Constant ($ $)</td>
-<td style="text-align: left;">$ RC $</td>
+<td style="text-align: left;">Time Constant (<span class="math inline">\(\tau\)</span>)</td>
+<td style="text-align: left;"><span class="math inline">\(RC\)</span></td>
 <td style="text-align: left;">Determines response speed</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Charging Voltage</td>
-<td style="text-align: left;">$ I_0 R (1 - e^{-t/RC}) $</td>
+<td style="text-align: left;"><span class="math inline">\(I_0 R (1 - e^{-t/RC})\)</span></td>
 <td style="text-align: left;">Step input</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Discharge Voltage</td>
-<td style="text-align: left;">$ V_c(0) e^{-t/RC} $</td>
-<td style="text-align: left;">Initial voltage $ V_c(0) $</td>
+<td style="text-align: left;">$ v_C(0) e^{-t/RC}$</td>
+<td style="text-align: left;">Initial voltage <span class="math inline">\(v_C(0)\)</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Initial Slope</td>
-<td style="text-align: left;">$ -A/$</td>
-<td style="text-align: left;">At $ t = 0 $</td>
+<td style="text-align: left;"><span class="math inline">\(-A/\tau\)</span></td>
+<td style="text-align: left;">At <span class="math inline">\(t = 0\)</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">90%-10% Time Span</td>
-<td style="text-align: left;">$ 2.2$</td>
+<td style="text-align: left;"><span class="math inline">\(2.2\tau\)</span></td>
 <td style="text-align: left;">Exponential decay</td>
 </tr>
 </tbody>
 </table>
 <hr>
-</section>
-<section id="notes" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="notes"><span class="header-section-number">4.2</span> Notes</h2>
+<p><strong>Notes</strong></p>
 <ul>
 <li>The exponential response is a hallmark of first-order RC circuits.</li>
-<li>The time constant $ RC $ is critical for determining how quickly the voltage changes in response to a step input or discharge.</li>
+<li>The time constant <span class="math inline">\(RC\)</span> is critical for determining how quickly the voltage changes in response to a step input or discharge.</li>
 </ul>
 
 
