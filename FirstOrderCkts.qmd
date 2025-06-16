@@ -21,15 +21,7 @@ TASKS:
 
 ## Dynamic Analysis RC Circuit
 
-```
-      +-----R-----+
-      |           |
-     ---         ---
-     --- C       --- i(t)
-      |           |
-      +-----------+
-```
-
+![Step response of a RC circuit.](figures/fig-rc-step.png){#fig-rc-step}
 
 The **node analysis** for the parallel RC circuit yields:
 
