@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Semiconductor IC devices – IC Engineering I</title>
+<title>5&nbsp; Semiconductor IC devices – IC Engineering I</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -51,7 +51,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./bjt.html" rel="next">
-<link href="./circuits.html" rel="prev">
+<link href="./FirstOrderCkts.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -130,7 +130,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./devices.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Semiconductor IC devices</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./devices.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Semiconductor IC devices</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -181,26 +181,26 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./FirstOrderCkts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">First-Order Circuits</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./devices.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Semiconductor IC devices</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Semiconductor IC devices</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./bjt.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">BJT Fundamentals</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">BJT Fundamentals</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">MOS Transistor</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./si2025analog.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">SI 2025 Analog IC</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">MOS Transistor</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -219,15 +219,15 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-semi-dev-intro" id="toc-sec-semi-dev-intro" class="nav-link active" data-scroll-target="#sec-semi-dev-intro"><span class="header-section-number">4.1</span> Introduction</a></li>
-  <li><a href="#sec-semi-dev-band" id="toc-sec-semi-dev-band" class="nav-link" data-scroll-target="#sec-semi-dev-band"><span class="header-section-number">4.2</span> Energy Band Model</a></li>
-  <li><a href="#carriers" id="toc-carriers" class="nav-link" data-scroll-target="#carriers"><span class="header-section-number">4.3</span> Carriers</a></li>
-  <li><a href="#band-diagrams" id="toc-band-diagrams" class="nav-link" data-scroll-target="#band-diagrams"><span class="header-section-number">4.4</span> Band Diagrams</a></li>
-  <li><a href="#doping" id="toc-doping" class="nav-link" data-scroll-target="#doping"><span class="header-section-number">4.5</span> Doping</a></li>
-  <li><a href="#electric-current" id="toc-electric-current" class="nav-link" data-scroll-target="#electric-current"><span class="header-section-number">4.6</span> Electric Current</a></li>
-  <li><a href="#diffusion" id="toc-diffusion" class="nav-link" data-scroll-target="#diffusion"><span class="header-section-number">4.7</span> Diffusion</a></li>
-  <li><a href="#pn-junctions" id="toc-pn-junctions" class="nav-link" data-scroll-target="#pn-junctions"><span class="header-section-number">4.8</span> pn Junctions</a></li>
-  <li><a href="#pn-junction-current" id="toc-pn-junction-current" class="nav-link" data-scroll-target="#pn-junction-current"><span class="header-section-number">4.9</span> pn Junction Current</a></li>
+  <li><a href="#sec-semi-dev-intro" id="toc-sec-semi-dev-intro" class="nav-link active" data-scroll-target="#sec-semi-dev-intro"><span class="header-section-number">5.1</span> Introduction</a></li>
+  <li><a href="#sec-semi-dev-band" id="toc-sec-semi-dev-band" class="nav-link" data-scroll-target="#sec-semi-dev-band"><span class="header-section-number">5.2</span> Energy Band Model</a></li>
+  <li><a href="#carriers" id="toc-carriers" class="nav-link" data-scroll-target="#carriers"><span class="header-section-number">5.3</span> Carriers</a></li>
+  <li><a href="#band-diagrams" id="toc-band-diagrams" class="nav-link" data-scroll-target="#band-diagrams"><span class="header-section-number">5.4</span> Band Diagrams</a></li>
+  <li><a href="#doping" id="toc-doping" class="nav-link" data-scroll-target="#doping"><span class="header-section-number">5.5</span> Doping</a></li>
+  <li><a href="#electric-current" id="toc-electric-current" class="nav-link" data-scroll-target="#electric-current"><span class="header-section-number">5.6</span> Electric Current</a></li>
+  <li><a href="#diffusion" id="toc-diffusion" class="nav-link" data-scroll-target="#diffusion"><span class="header-section-number">5.7</span> Diffusion</a></li>
+  <li><a href="#pn-junctions" id="toc-pn-junctions" class="nav-link" data-scroll-target="#pn-junctions"><span class="header-section-number">5.8</span> pn Junctions</a></li>
+  <li><a href="#pn-junction-current" id="toc-pn-junction-current" class="nav-link" data-scroll-target="#pn-junction-current"><span class="header-section-number">5.9</span> pn Junction Current</a></li>
   </ul>
 </nav>
     </div>
@@ -236,7 +236,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="chap-semi-dev" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Semiconductor IC devices</span></span></h1>
+<h1 class="title"><span id="chap-semi-dev" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Semiconductor IC devices</span></span></h1>
 </div>
 
 
@@ -253,13 +253,13 @@ window.Quarto = {
 </header>
 
 
-<section id="sec-semi-dev-intro" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="sec-semi-dev-intro"><span class="header-section-number">4.1</span> Introduction</h2>
+<section id="sec-semi-dev-intro" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="sec-semi-dev-intro"><span class="header-section-number">5.1</span> Introduction</h2>
 <p>The large-scale integration of electronic circuits is rooted in the invention and evolution of semiconductor devices. We will discuss electronic materials to explain the fundamental properties of semiconductors in IC design and their role in the success of integrated circuits.</p>
 <div id="tbl-devices-rho" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-devices-rho-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.1: Specific resistance (at <span class="math inline">\(20^\circ C\)</span>) of typical metals used in integrated circuits expressed in <span class="math inline">\(\Omega cm\)</span> and, the unit resistance of a height of <span class="math inline">\(1\mu m\)</span> metal expressed in <span class="math inline">\(\Omega/\square\)</span>
+Table&nbsp;5.1: Specific resistance (at <span class="math inline">\(20^\circ C\)</span>) of typical metals used in integrated circuits expressed in <span class="math inline">\(\Omega cm\)</span> and, the unit resistance of a height of <span class="math inline">\(1\mu m\)</span> metal expressed in <span class="math inline">\(\Omega/\square\)</span>
 </figcaption>
 <div aria-describedby="tbl-devices-rho-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -291,14 +291,14 @@ Table&nbsp;4.1: Specific resistance (at <span class="math inline">\(20^\circ C\)
 </div>
 </figure>
 </div>
-<p>The fundamental materials in integrated circuits include metals, dielectrics, and semiconductors. Metals are used as conductors for interconnects because of their extremely low specific resistivity. <em>Specific resistivity</em> (<span class="math inline">\(\rho\)</span>) is a property of the material that can be defined as <em>resistance per unit volume</em> expressed in SI units of <span class="math inline">\(\Omega m\)</span> but more conveniently as <span class="math inline">\(\Omega cm\)</span>. The resistance of a rectangular piece of that material can be expressed as <span class="math inline">\(R=\rho\cdot l/A\)</span>, where <span class="math inline">\(l\)</span> is the length and <span class="math inline">\(A\)</span> is the cross-sectional area. In integrated circuit design, the height of the metal routing is fixed and is typically in the range of <span class="math inline">\(0.1\)</span> to <span class="math inline">\(5\)</span> micrometers (<span class="math inline">\(\mu m, 10^{-6} m)\)</span> and the resistance is measured in unit squares as or <span class="math inline">\(\Omega/\square\)</span>. The specific resistance (in <span class="math inline">\(\Omega cm\)</span>) and unit resistance (in <span class="math inline">\(\Omega/\square\)</span>) of typical metals used in integrated circuits such as aluminum (Al), copper (Cu) and gold (Au) are tabulated in <a href="#tbl-devices-rho" class="quarto-xref">Table&nbsp;<span>4.1</span></a>. Dielectric materials have extremely large specific resistances that provide electrical insulation for typical operating conditions. Specific resistances for semiconductors can vary enormously <span class="math inline">\(-\)</span> from <span class="math inline">\(10^{-4} ~\Omega cm\)</span> to <span class="math inline">\(10^{12} ~\Omega cm\)</span>.</p>
+<p>The fundamental materials in integrated circuits include metals, dielectrics, and semiconductors. Metals are used as conductors for interconnects because of their extremely low specific resistivity. <em>Specific resistivity</em> (<span class="math inline">\(\rho\)</span>) is a property of the material that can be defined as <em>resistance per unit volume</em> expressed in SI units of <span class="math inline">\(\Omega m\)</span> but more conveniently as <span class="math inline">\(\Omega cm\)</span>. The resistance of a rectangular piece of that material can be expressed as <span class="math inline">\(R=\rho\cdot l/A\)</span>, where <span class="math inline">\(l\)</span> is the length and <span class="math inline">\(A\)</span> is the cross-sectional area. In integrated circuit design, the height of the metal routing is fixed and is typically in the range of <span class="math inline">\(0.1\)</span> to <span class="math inline">\(5\)</span> micrometers (<span class="math inline">\(\mu m, 10^{-6} m)\)</span> and the resistance is measured in unit squares as or <span class="math inline">\(\Omega/\square\)</span>. The specific resistance (in <span class="math inline">\(\Omega cm\)</span>) and unit resistance (in <span class="math inline">\(\Omega/\square\)</span>) of typical metals used in integrated circuits such as aluminum (Al), copper (Cu) and gold (Au) are tabulated in <a href="#tbl-devices-rho" class="quarto-xref">Table&nbsp;<span>5.1</span></a>. Dielectric materials have extremely large specific resistances that provide electrical insulation for typical operating conditions. Specific resistances for semiconductors can vary enormously <span class="math inline">\(-\)</span> from <span class="math inline">\(10^{-4} ~\Omega cm\)</span> to <span class="math inline">\(10^{12} ~\Omega cm\)</span>.</p>
 <p>The history of semiconductors began with Tomas Seebeck’s observation of lead sulfur (PbS) properties in 1821. Michael Faraday noted that semiconductor resistance decreases with rising temperatures, unlike conductors. Early applications include Werner von Siemens’ selenium photometer (1875) and Alexander Graham Bell’s wireless device (1878). The pivotal discovery of the Bipolar Junction Transistor (BJT) by Shockley, Bardeen, and Brattain in 1947 led to today’s integrated circuits with millions of devices in a single IC.</p>
 <p>Electronic systems operate using a power supply formed by non-electric forces that separate charges to create a <strong>potential difference</strong>. Chemical forces generate batteries, while turbines produce AC, which is converted to DC voltages. This potential difference forms an electric field, driving current in the circuit. Manipulating this current with semiconductor devices in an integrated circuit is essential for intelligent systems like modern computers..</p>
 <p>Semiconductor devices excel in integrated circuits due to their rapid conductivity changes, small size, and low energy use. They are manufactured at nanometer scales with switching speeds of 100 gigahertz, consuming nanowatts of power. Their conductivity can shift dramatically from insulator to conductor, representing digital <em>zeros</em> and <em>ones</em>. Understanding semiconductors like silicon involves studying the physics of their conductivity changes, which vary significantly with temperature as well.</p>
 <p>Some excellent references for this subject matter are <span class="citation" data-cites="shur_introduction_1996">(<a href="references.html#ref-shur_introduction_1996" role="doc-biblioref">Shur 1996</a>)</span>, <span class="citation" data-cites="pierret_semiconductor_1996">(<a href="references.html#ref-pierret_semiconductor_1996" role="doc-biblioref">Pierret 1996</a>)</span>, <span class="citation" data-cites="streetman_solid_2014">(<a href="references.html#ref-streetman_solid_2014" role="doc-biblioref">Streetman and Banerjee 2014</a>)</span>, and <span class="citation" data-cites="gray_electronic_1969">(<a href="references.html#ref-gray_electronic_1969" role="doc-biblioref">Gray and Searle 1969</a>)</span></p>
 </section>
-<section id="sec-semi-dev-band" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="sec-semi-dev-band"><span class="header-section-number">4.2</span> Energy Band Model</h2>
+<section id="sec-semi-dev-band" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="sec-semi-dev-band"><span class="header-section-number">5.2</span> Energy Band Model</h2>
 <p>The energy band model explains the conduction properties of matter easily that we will introduce now using <em>quantum mechanical properties of matter</em>. Instead of explaining the model for a semiconductor crystal such as silicon, the basic principles can be explained using a much simpler atomic system, the <em>isolated hydrogen atom</em>. During the 1900s, the emission spectrum of heated gases did not agree with the contemporary physical model of continuous electron energy. In order to reconcile the discrepancy, in 1913 Neils Bohr proposed that the electrons can have only certain discrete allowed energy levels, called <strong>energy states</strong>.</p>
 <p>For hydrogen atom the quantization of energy states is <span class="math inline">\(E_n = -E_B/n^2\)</span> where <span class="math inline">\(n = 1,2,3,4,\ldots\)</span> is called the <em>energy quantum number</em> and <span class="math inline">\(E_B\)</span> is called the <em>Bohr energy</em> or the <em>electron binding energy</em>.</p>
 <p>For hydrogen atom, Bohr energy <span class="math inline">\(E_B = 13.6 eV/n^2\)</span></p>
@@ -310,18 +310,18 @@ Table&nbsp;4.1: Specific resistance (at <span class="math inline">\(20^\circ C\)
 <img src="figures/fig-semi-dev-band.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-band-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.1: Conceptual development of the energy band model starting with N isolated Si atoms on the top left, then showing the split bands for Crytalline SI N-atoms and concluding, at bottom right, with the popular version of the energy band model.
+Figure&nbsp;5.1: Conceptual development of the energy band model starting with N isolated Si atoms on the top left, then showing the split bands for Crytalline SI N-atoms and concluding, at bottom right, with the popular version of the energy band model.
 </figcaption>
 </figure>
 </div>
-<p>Let us now study the many electron energies of a Si crystal (Si), which is more complicated, but the basic principles still apply. The concept of <em>band diagrams</em> can be qualitatively conceived by starting with N-isolated Si atoms and observing the energy states as the atoms are brought closer and closer together (see <a href="#fig-semi-dev-band" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>). <em>Pauli exclusion principle</em> plays an important role in determining energy states as the atoms are brought closer. The principle states that no more than two electrons can occupy each energy state. In a solid material, as many atoms (N) are brought closer, the energy states start to split to satisfy the exclusion principle. At the interatomic spacing of the lattice, the split energy levels form essentially continuous <em>energy bands</em>. However, these bands are separated by <em>forbidden energy gaps</em> that cannot be occupied by any electron. The magnitude of the forbidden energy gaps determines primarily the electrical properties of different materials. In filling the allowed energy states, electrons tend to gravitate to the lowest possible states. At room temperature in semiconductors and dielectrics, almost all of the states in the lower energy bands are filled by electrons, and the higher energy states are mostly empty. The upper band of the allowed states is called the <em>conduction band</em>; the lower band of the allowed states is called the <em>valence band</em>; and the gap between the two bands without any allowed energy states, the <em>forbidden band</em> or the <em>energy band gap</em>. An electron in the valence band needs energy equal to or greater than the energy band gap to transition from the valence band to the conduction band.</p>
+<p>Let us now study the many electron energies of a Si crystal (Si), which is more complicated, but the basic principles still apply. The concept of <em>band diagrams</em> can be qualitatively conceived by starting with N-isolated Si atoms and observing the energy states as the atoms are brought closer and closer together (see <a href="#fig-semi-dev-band" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>). <em>Pauli exclusion principle</em> plays an important role in determining energy states as the atoms are brought closer. The principle states that no more than two electrons can occupy each energy state. In a solid material, as many atoms (N) are brought closer, the energy states start to split to satisfy the exclusion principle. At the interatomic spacing of the lattice, the split energy levels form essentially continuous <em>energy bands</em>. However, these bands are separated by <em>forbidden energy gaps</em> that cannot be occupied by any electron. The magnitude of the forbidden energy gaps determines primarily the electrical properties of different materials. In filling the allowed energy states, electrons tend to gravitate to the lowest possible states. At room temperature in semiconductors and dielectrics, almost all of the states in the lower energy bands are filled by electrons, and the higher energy states are mostly empty. The upper band of the allowed states is called the <em>conduction band</em>; the lower band of the allowed states is called the <em>valence band</em>; and the gap between the two bands without any allowed energy states, the <em>forbidden band</em> or the <em>energy band gap</em>. An electron in the valence band needs energy equal to or greater than the energy band gap to transition from the valence band to the conduction band.</p>
 <div id="fig-semi-dev-class" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-semi-dev-class-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/fig-semi-dev-class.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-class-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.2: Illustration of the distinction between (a) insulator, (b) semiconductor, and (c) metal.
+Figure&nbsp;5.2: Illustration of the distinction between (a) insulator, (b) semiconductor, and (c) metal.
 </figcaption>
 </figure>
 </div>
@@ -329,8 +329,8 @@ Figure&nbsp;4.2: Illustration of the distinction between (a) insulator, (b) semi
 <p>At room temperature (T=300K), <span class="math inline">\(E_G=1.42eV\)</span> (GaAs), <span class="math inline">\(E_G=1.12eV\)</span> (Si), and <span class="math inline">\(E_G=0.66eV\)</span> (Ge).</p>
 <p>In dielectric, the energy band gap is large and so the valence bands are completely filled and the conduction band is totally void of electrons making them perfect insulators. Typically for dielectrics, <span class="math inline">\(E_g\)</span> is larger than <span class="math inline">\(5~eV\)</span> (diamond) to <span class="math inline">\(8~eV~(SiO_2)\)</span>. In a metal, the lowest conduction band is partially filled with many electrons, making it an ideal conductor.</p>
 </section>
-<section id="carriers" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="carriers"><span class="header-section-number">4.3</span> Carriers</h2>
+<section id="carriers" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="carriers"><span class="header-section-number">5.3</span> Carriers</h2>
 <p>Carriers are the current-carrying entities within the semiconductor material and we are now in a position to introduce them, the semiconductor model having been well established. Referring to our bonding model, there are no carriers or possible current flow if no bonds are broken in the semiconductor solid. In the energy band model, this refers to a valence band which is <em>completely</em> filled with electrons and a conduction band which is completely devoid of electrons. This will be the case for a <em>pure</em> semiconductor like a silicon crystal at temperature <span class="math inline">\(T=0^\circ K\)</span>. Now, for an electron to carry current under the influence of an applied electric field, it has to break free from the bond, for example, the Si-Si bond. In terms of the energy band model, this refers to an electron from the valence band jumping over to the conduction band creating <em>carriers</em>; that is, <em>electrons in the conduction band are carriers</em>. Note that the energy required to break a bond is the same as the forbidden energy gap <span class="math inline">\(E_G\)</span>.</p>
 <div id="fig-semi-dev-carrierviz" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -338,7 +338,7 @@ Figure&nbsp;4.2: Illustration of the distinction between (a) insulator, (b) semi
 <img src="figures/fig-semi-dev-carrierviz.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-carrierviz-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.3: Visualization of carriers using the bonding model (left) and the energy band model (right) (a) No-carrier situation; (b) visualization of an electron; (c ) visualization of a hole
+Figure&nbsp;5.3: Visualization of carriers using the bonding model (left) and the energy band model (right) (a) No-carrier situation; (b) visualization of an electron; (c ) visualization of a hole
 </figcaption>
 </figure>
 </div>
@@ -356,14 +356,14 @@ Figure&nbsp;4.3: Visualization of carriers using the bonding model (left) and th
 <img src="figures/fig-semi-dev-carrier-efield.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-carrier-efield-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.4: Electrons move in an electric field. The band diagrams are like <a href="#fig-semi-dev-class" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>, but with an expanded energy scale showing closely packed levels, each accommodating two electrons. Solid circles show electrons in a level; open circles indicate available levels.
+Figure&nbsp;5.4: Electrons move in an electric field. The band diagrams are like <a href="#fig-semi-dev-class" class="quarto-xref">Figure&nbsp;<span>5.2</span></a>, but with an expanded energy scale showing closely packed levels, each accommodating two electrons. Solid circles show electrons in a level; open circles indicate available levels.
 </figcaption>
 </figure>
 </div>
 </section>
-<section id="band-diagrams" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="band-diagrams"><span class="header-section-number">4.4</span> Band Diagrams</h2>
-<p>Band diagrams are a very efficient way of illustrating electrical properties of semiconductor materials and devices without going into the detail atomic or molecular structure of the material. As shown in <a href="#fig-semi-dev-carrier-efield" class="quarto-xref">Figure&nbsp;<span>4.4</span></a>, the band diagram represents the electrical energies allowed within the semiconductor as a function of position, where the increase in energy <span class="math inline">\(E\)</span> upward represents the total energy of electrons. The <em>charge carriers</em> or <em>free charge carriers</em> start to occupy the lowest energy states in the conduction band which are <em>lower edge of the conduction band</em> (<span class="math inline">\(E_C\)</span>) and <em>upper edge of the valence band</em> (<span class="math inline">\(E_V\)</span>) for <em>electrons</em> and <em>holes</em>, respectively.</p>
+<section id="band-diagrams" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="band-diagrams"><span class="header-section-number">5.4</span> Band Diagrams</h2>
+<p>Band diagrams are a very efficient way of illustrating electrical properties of semiconductor materials and devices without going into the detail atomic or molecular structure of the material. As shown in <a href="#fig-semi-dev-carrier-efield" class="quarto-xref">Figure&nbsp;<span>5.4</span></a>, the band diagram represents the electrical energies allowed within the semiconductor as a function of position, where the increase in energy <span class="math inline">\(E\)</span> upward represents the total energy of electrons. The <em>charge carriers</em> or <em>free charge carriers</em> start to occupy the lowest energy states in the conduction band which are <em>lower edge of the conduction band</em> (<span class="math inline">\(E_C\)</span>) and <em>upper edge of the valence band</em> (<span class="math inline">\(E_V\)</span>) for <em>electrons</em> and <em>holes</em>, respectively.</p>
 <p>Therefore, to analyze or understand the electrical behavior of a <em>uniform</em> semiconductor material it is typically sufficient to study the material properties with the <em>band edges</em> only. Normal operation is assumed here without any external disturbances, where the electric field, magnetic field, temperature gradient, and stress-induced effects are negligible.</p>
 <div id="fig-semi-dev-band-electrostatic" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -371,13 +371,13 @@ Figure&nbsp;4.4: Electrons move in an electric field. The band diagrams are like
 <img src="figures/fig-semi-dev-band-electrostatic.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-band-electrostatic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.5: Relationship between band bending and electrostatic variables in a semiconductor: (a) energy band diagram showing band bending; (b) identification of carrier kinetic energies; (c) electron potential energy; (d) electrostatic potential; (e) electric field vs.&nbsp;position from part (a).
+Figure&nbsp;5.5: Relationship between band bending and electrostatic variables in a semiconductor: (a) energy band diagram showing band bending; (b) identification of carrier kinetic energies; (c) electron potential energy; (d) electrostatic potential; (e) electric field vs.&nbsp;position from part (a).
 </figcaption>
 </figure>
 </div>
 <p>On careful examination of the band diagram, we can show that an energy equal to the <em>bandgap</em>, <span class="math inline">\(E_G = E_C-E_V\)</span>, is required to break an atomic bond to create <em>motionless</em> electrons and holes occupying <span class="math inline">\(E_C\)</span> and <span class="math inline">\(E_V\)</span>, respectively. Therefore, we can interpret the edges of the band <span class="math inline">\(E_C\)</span> and <span class="math inline">\(E_V\)</span> as the potential energy of the electron and hole, respectively, with reference to an arbitrary energy level <span class="math inline">\(E_{ref}\)</span>.</p>
 <p>Potential Energy: <span class="math inline">\(P.E.=E_C-E_{ref}\)</span> NOTE: Show PE and KE on the diagram itself.</p>
-<p>Any energy in excess of <span class="math inline">\(E_G\)</span> will result in the kinetic energy shown in figure <a href="#fig-semi-dev-band-electrostatic" class="quarto-xref">Figure&nbsp;<span>4.5</span></a>, with the carriers moving rapidly in the lattice. The potential energy is the key to relating the positional variations in the energy band with the electric field within the semiconductor. The potential energy (<span class="math inline">\(P.E.\)</span>) of an electron (<span class="math inline">\(-q\)</span>) can be expressed as <span class="math inline">\(-qV\)</span>, where <span class="math inline">\(V\)</span> is the electrostatic potential at a given point with reference to an arbitrary constant. The potential can be expressed in terms of <span class="math inline">\(E_C\)</span> using the relationship shown previously between <span class="math inline">\(P.E.\)</span> and <span class="math inline">\(E_C\)</span>.</p>
+<p>Any energy in excess of <span class="math inline">\(E_G\)</span> will result in the kinetic energy shown in figure <a href="#fig-semi-dev-band-electrostatic" class="quarto-xref">Figure&nbsp;<span>5.5</span></a>, with the carriers moving rapidly in the lattice. The potential energy is the key to relating the positional variations in the energy band with the electric field within the semiconductor. The potential energy (<span class="math inline">\(P.E.\)</span>) of an electron (<span class="math inline">\(-q\)</span>) can be expressed as <span class="math inline">\(-qV\)</span>, where <span class="math inline">\(V\)</span> is the electrostatic potential at a given point with reference to an arbitrary constant. The potential can be expressed in terms of <span class="math inline">\(E_C\)</span> using the relationship shown previously between <span class="math inline">\(P.E.\)</span> and <span class="math inline">\(E_C\)</span>.</p>
 <p><span class="math display">\[
 P.E. = -qV = E_C - E_{ref}
 \]</span></p>
@@ -390,11 +390,11 @@ V=-1/q(E_C - E_{ref})
 <img src="figures/fig-semi-dev-band-efield.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-band-efield-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.6: Energy band diagrams for an uniform semiconductor sample in (a) zero and (b) non-zero electric field.
+Figure&nbsp;5.6: Energy band diagrams for an uniform semiconductor sample in (a) zero and (b) non-zero electric field.
 </figcaption>
 </figure>
 </div>
-<p>The band diagram of a piece of semiconductor with the presence of an electric field <span class="math inline">\(E\)</span> is shown as an example in <a href="#fig-semi-dev-band-efield" class="quarto-xref">Figure&nbsp;<span>4.6</span></a> (b). The bands are <em>tilted</em> with a slope of <span class="math inline">\(-qE\)</span> popularly known as <em>band bending</em>. Since electrons are negatively charged, the direction of the forces on electrons is opposite to that of the electric field. The forces on the holes are in the same direction as the electric field. Consequently, the electrons and holes move in opposite directions.</p>
+<p>The band diagram of a piece of semiconductor with the presence of an electric field <span class="math inline">\(E\)</span> is shown as an example in <a href="#fig-semi-dev-band-efield" class="quarto-xref">Figure&nbsp;<span>5.6</span></a> (b). The bands are <em>tilted</em> with a slope of <span class="math inline">\(-qE\)</span> popularly known as <em>band bending</em>. Since electrons are negatively charged, the direction of the forces on electrons is opposite to that of the electric field. The forces on the holes are in the same direction as the electric field. Consequently, the electrons and holes move in opposite directions.</p>
 <p><span class="math display">\[
 E=-\nabla V \text{ or,}
 \]</span></p>
@@ -415,7 +415,7 @@ E_x = \frac{1}{q}\frac{dE_i}{dx}
 <div id="tbl-semi-dev-ni-conc" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-semi-dev-ni-conc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.2: Intrinsic electron-hole concentration of different semiconductor material at room temperature
+Table&nbsp;5.2: Intrinsic electron-hole concentration of different semiconductor material at room temperature
 </figcaption>
 <div aria-describedby="tbl-semi-dev-ni-conc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -443,11 +443,11 @@ Table&nbsp;4.2: Intrinsic electron-hole concentration of different semiconductor
 </div>
 </figure>
 </div>
-<p>In general, the number of electrons and holes per cubic-centimeter are defined as <span class="math inline">\(n\)</span> and <span class="math inline">\(p\)</span> respectively. Since electrons and holes are created in pairs in an intrinsic semiconductor, the concentrations of electrons and holes are the same and are represented as <span class="math inline">\(n_i\)</span> where <span class="math inline">\(n_i=n=p\)</span>. The intrinsic electron-hole concentrations in some popular semiconductor material are tabulated in <a href="#tbl-semi-dev-ni-conc" class="quarto-xref">Table&nbsp;<span>4.2</span></a>. Although the absolute concentration appears to be a large number, it is an insignificant number compared to the density of atoms in the material. For example, in silicon (Si) there are <span class="math inline">\(5\times 10^{22}~atoms/cm^3\)</span>. An intrinsic concentration of <span class="math inline">\(n_i\approx 10^{10}/cm^3\)</span> is less than <em>one broken bond</em> in <span class="math inline">\(10^{13}\)</span> atoms.</p>
+<p>In general, the number of electrons and holes per cubic-centimeter are defined as <span class="math inline">\(n\)</span> and <span class="math inline">\(p\)</span> respectively. Since electrons and holes are created in pairs in an intrinsic semiconductor, the concentrations of electrons and holes are the same and are represented as <span class="math inline">\(n_i\)</span> where <span class="math inline">\(n_i=n=p\)</span>. The intrinsic electron-hole concentrations in some popular semiconductor material are tabulated in <a href="#tbl-semi-dev-ni-conc" class="quarto-xref">Table&nbsp;<span>5.2</span></a>. Although the absolute concentration appears to be a large number, it is an insignificant number compared to the density of atoms in the material. For example, in silicon (Si) there are <span class="math inline">\(5\times 10^{22}~atoms/cm^3\)</span>. An intrinsic concentration of <span class="math inline">\(n_i\approx 10^{10}/cm^3\)</span> is less than <em>one broken bond</em> in <span class="math inline">\(10^{13}\)</span> atoms.</p>
 <div id="tbl-semi-dev-si-dopants" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-semi-dev-si-dopants-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.3: Common Silicon (Si) dopants. (*) Commonly used dopants. Donors and acceptors are all from the Column V and III of the Periodic Table of Elements respectively.
+Table&nbsp;5.3: Common Silicon (Si) dopants. (*) Commonly used dopants. Donors and acceptors are all from the Column V and III of the Periodic Table of Elements respectively.
 </figcaption>
 <div aria-describedby="tbl-semi-dev-si-dopants-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -480,8 +480,8 @@ Table&nbsp;4.3: Common Silicon (Si) dopants. (*) Commonly used dopants. Donors a
 </figure>
 </div>
 </section>
-<section id="doping" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="doping"><span class="header-section-number">4.5</span> Doping</h2>
+<section id="doping" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="doping"><span class="header-section-number">5.5</span> Doping</h2>
 <p>Doping is a semiconductor engineering method to change the electron or hole concentration of the native material by many orders of magnitude. As a result, the conductance of the semiconductor varies by a large magnitude. Doping is a routine method in IC fabrication in which semiconductor impurity atoms called <em>dopants</em> are added to the pure semiconductor material. Dopants that increase the electron concentration of the native semiconductor material are called <em>donors</em>. Consequently, <em>acceptors</em> are dopants that increase hole concentration.</p>
 <div id="fig-semi-dev-viz-doping" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -489,13 +489,13 @@ Table&nbsp;4.3: Common Silicon (Si) dopants. (*) Commonly used dopants. Donors a
 <img src="figures/fig-semi-dev-viz-doping.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-viz-doping-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.7: Visualization of (a) donor and (b) acceptor actions via the bonding model. In (a), <em>Column V</em> element P replaces a Si atom; in (b), Column III element B replaces a Si atom.
+Figure&nbsp;5.7: Visualization of (a) donor and (b) acceptor actions via the bonding model. In (a), <em>Column V</em> element P replaces a Si atom; in (b), Column III element B replaces a Si atom.
 </figcaption>
 </figure>
 </div>
-<p>Commonly used silicon dopants are listed in <a href="#tbl-semi-dev-si-dopants" class="quarto-xref">Table&nbsp;<span>4.3</span></a>. Phosphorous dopants, closely followed by arsenic, are the most commonly used donor dopants to increase the electron concentration. Boron is the most commonly used acceptor dopant for increasing hole concentration.</p>
+<p>Commonly used silicon dopants are listed in <a href="#tbl-semi-dev-si-dopants" class="quarto-xref">Table&nbsp;<span>5.3</span></a>. Phosphorous dopants, closely followed by arsenic, are the most commonly used donor dopants to increase the electron concentration. Boron is the most commonly used acceptor dopant for increasing hole concentration.</p>
 <p>The donors are all from the Column-V of the Periodic Table of Elements and correspondingly, the acceptors are from Column-III.</p>
-<p>As shown in <a href="#fig-semi-dev-viz-doping" class="quarto-xref">Figure&nbsp;<span>4.7</span></a>, using the bonding model, when a Column-V element replaces a silicon atom, four valence electrons bond with nearby silicon atoms, while the fifth is <em>weakly</em> bound to the donor site. At room temperature, this electron gains enough energy to become a conduction band carrier without increasing hole concentration, leaving an immobile ion.</p>
+<p>As shown in <a href="#fig-semi-dev-viz-doping" class="quarto-xref">Figure&nbsp;<span>5.7</span></a>, using the bonding model, when a Column-V element replaces a silicon atom, four valence electrons bond with nearby silicon atoms, while the fifth is <em>weakly</em> bound to the donor site. At room temperature, this electron gains enough energy to become a conduction band carrier without increasing hole concentration, leaving an immobile ion.</p>
 <p>The binding energy of a Phosphorous donor electron in silicon is about <span class="math inline">\(0.045~eV\)</span> compared to <span class="math inline">\(1~eV\)</span> for Si-Si atom.</p>
 <p>A semiconductor doped with donors is called an <em>n-type</em> semiconductor.</p>
 <p><span class="math inline">\(n+\)</span> and <span class="math inline">\(n-\)</span> refers to <em>heavily</em> and <em>lightly</em> doped n-type semiconductor.</p>
@@ -516,22 +516,22 @@ Figure&nbsp;4.7: Visualization of (a) donor and (b) acceptor actions via the bon
 <img src="figures/fig-semi-dev-carrier-vs-t.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-carrier-vs-t-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.8: (a) Typical temperature dependence of majority-carrier concentration in a phosphorus-doped semiconductor. The plot includes <span class="math inline">\(n_i/N_D\)</span> vs.&nbsp;T (dashed line) for comparison. (b) Qualitative explanation of the concentration-temperature relationship shown in (a).
+Figure&nbsp;5.8: (a) Typical temperature dependence of majority-carrier concentration in a phosphorus-doped semiconductor. The plot includes <span class="math inline">\(n_i/N_D\)</span> vs.&nbsp;T (dashed line) for comparison. (b) Qualitative explanation of the concentration-temperature relationship shown in (a).
 </figcaption>
 </figure>
 </div>
-<p><a href="#fig-semi-dev-carrier-vs-t" class="quarto-xref">Figure&nbsp;<span>4.8</span></a> illustrates a carrier concentration vs.&nbsp;temperature plot for Si doped with phosphorus <span class="math inline">\(N_D = 10^{15}/cm^3\)</span>, highlighting the dependence of carrier concentration on temperature. The majority carrier concentration <span class="math inline">\(n\)</span> remains near the donor concentration <span class="math inline">\(N_D\)</span> from <span class="math inline">\(-125^\circ~C\)</span> to <span class="math inline">\(175^\circ~C\)</span> (<span class="math inline">\(\approx~150~K\text{ to } 450~K\)</span>), known as the <em>extrinsic temperature range</em>, which is typical for integrated circuits’ operating temperatures.</p>
+<p><a href="#fig-semi-dev-carrier-vs-t" class="quarto-xref">Figure&nbsp;<span>5.8</span></a> illustrates a carrier concentration vs.&nbsp;temperature plot for Si doped with phosphorus <span class="math inline">\(N_D = 10^{15}/cm^3\)</span>, highlighting the dependence of carrier concentration on temperature. The majority carrier concentration <span class="math inline">\(n\)</span> remains near the donor concentration <span class="math inline">\(N_D\)</span> from <span class="math inline">\(-125^\circ~C\)</span> to <span class="math inline">\(175^\circ~C\)</span> (<span class="math inline">\(\approx~150~K\text{ to } 450~K\)</span>), known as the <em>extrinsic temperature range</em>, which is typical for integrated circuits’ operating temperatures.</p>
 <p>The carrier concentration varies with temperature. Below the extrinsic range, donor electrons lack energy to enter the conduction band. Around temperature <span class="math inline">\(150~K\)</span>, most donor electrons are in the conduction band. As temperature rises, electrons from Si-Si bonds are excited but remain below <span class="math inline">\(N_D\)</span>. Beyond the extrinsic range, Si-Si bond electrons surpass donor electrons, equating carrier concentration to an intrinsic semiconductor in the intrinsic range.</p>
 </section>
-<section id="electric-current" class="level2" data-number="4.6">
-<h2 data-number="4.6" class="anchored" data-anchor-id="electric-current"><span class="header-section-number">4.6</span> Electric Current</h2>
+<section id="electric-current" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="electric-current"><span class="header-section-number">5.6</span> Electric Current</h2>
 <div id="fig-semi-dev-carrier-drift" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-semi-dev-carrier-drift-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/fig-semi-dev-carrier-drift.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-carrier-drift-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.9: Visualization of carrier drift: (a) motion of carriers within a biased semiconductor bar; (b) <em>drifting</em> hole on a microscopic or atomic scale; (c) carrier drift on a macroscopic scale.
+Figure&nbsp;5.9: Visualization of carrier drift: (a) motion of carriers within a biased semiconductor bar; (b) <em>drifting</em> hole on a microscopic or atomic scale; (c) carrier drift on a macroscopic scale.
 </figcaption>
 </figure>
 </div>
@@ -542,7 +542,7 @@ Figure&nbsp;4.9: Visualization of carrier drift: (a) motion of carriers within a
 <img src="figures/fig-semi-dev-current-drift.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-current-drift-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.10: Expanded view of a biased <span class="math inline">\(p\)</span>-type semiconductor bar of cross-sectional area <span class="math inline">\(A\)</span>.
+Figure&nbsp;5.10: Expanded view of a biased <span class="math inline">\(p\)</span>-type semiconductor bar of cross-sectional area <span class="math inline">\(A\)</span>.
 </figcaption>
 </figure>
 </div>
@@ -553,19 +553,19 @@ v_n = -\mu_n\vec{E}
 <p><span class="math display">\[
 v_p = \mu_p\vec{E}
 \]</span></p>
-<p>where, <span class="math inline">\(\mu_n\)</span> and <span class="math inline">\(\mu_p\)</span> are called the <em>electron mobility</em> and the <em>hole mobility</em>, respectively. Note that <span class="math inline">\(v_p\)</span> and <span class="math inline">\(v_n\)</span> are proportional to <span class="math inline">\(\vec{E}\)</span> for <em>weak</em> electric fields. At <em>strong</em> electric fields <span class="math inline">\(v_p\)</span> and <span class="math inline">\(v_n\)</span> become independent of <span class="math inline">\(\vec{E}\)</span> (See <a href="#fig-semi-dev-drift-vs-efield" class="quarto-xref">Figure&nbsp;<span>4.11</span></a>).</p>
+<p>where, <span class="math inline">\(\mu_n\)</span> and <span class="math inline">\(\mu_p\)</span> are called the <em>electron mobility</em> and the <em>hole mobility</em>, respectively. Note that <span class="math inline">\(v_p\)</span> and <span class="math inline">\(v_n\)</span> are proportional to <span class="math inline">\(\vec{E}\)</span> for <em>weak</em> electric fields. At <em>strong</em> electric fields <span class="math inline">\(v_p\)</span> and <span class="math inline">\(v_n\)</span> become independent of <span class="math inline">\(\vec{E}\)</span> (See <a href="#fig-semi-dev-drift-vs-efield" class="quarto-xref">Figure&nbsp;<span>5.11</span></a>).</p>
 <div id="fig-semi-dev-drift-vs-efield" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-semi-dev-drift-vs-efield-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/fig-semi-dev-drift-vs-efield.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-drift-vs-efield-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.11: Measured carrier drift velocity within ultrapure silicon kept at ambient temperature, analyzing its relationship with the imposed electric field.
+Figure&nbsp;5.11: Measured carrier drift velocity within ultrapure silicon kept at ambient temperature, analyzing its relationship with the imposed electric field.
 </figcaption>
 </figure>
 </div>
 <p>Notice that the direction of the current: <span class="math inline">\(v_p\)</span> coincides with the direction of the electric field and <span class="math inline">\(v_n\)</span> is opposite to the direction of the electric field because of the carriers charged opposite.</p>
-<p>The flow of electric current in a uniform semiconductor material can be determined by evaluating the number of charge carriers passing through a unit cross-section each second. For the <em>p-type</em> semiconductor bar with a unit cross-sectional area depicted in <a href="#fig-semi-dev-drift-vs-efield" class="quarto-xref">Figure&nbsp;<span>4.11</span></a>, the hole current density, <span class="math inline">\(J_P\)</span>, can be straightforwardly defined as:</p>
+<p>The flow of electric current in a uniform semiconductor material can be determined by evaluating the number of charge carriers passing through a unit cross-section each second. For the <em>p-type</em> semiconductor bar with a unit cross-sectional area depicted in <a href="#fig-semi-dev-drift-vs-efield" class="quarto-xref">Figure&nbsp;<span>5.11</span></a>, the hole current density, <span class="math inline">\(J_P\)</span>, can be straightforwardly defined as:</p>
 <p><span class="math display">\[
     J_P = qp v_p
 \]</span></p>
@@ -576,32 +576,32 @@ Figure&nbsp;4.11: Measured carrier drift velocity within ultrapure silicon kept 
 <p>In a similar way, the current density for electrons can be represented as</p>
 <p><span id="eq-semi-dev-drift"><span class="math display">\[
 J_N = qn\mu_n\vec{E}
-\tag{4.1}\]</span></span></p>
-<p>Observe that the electrons move in the opposite direction to the applied electric field (<span class="math inline">\(v_n = -\mu_n\vec{E}\)</span>). However, the current density flows in the opposite direction of this drift velocity due to the negative charge of the electrons (<span class="math inline">\(J_N = -qn v_n\)</span>). Consequently, as stated in <a href="#eq-semi-dev-drift" class="quarto-xref">Equation&nbsp;<span>4.1</span></a>, the resulting electron current aligns with the direction of the applied electric field.</p>
+\tag{5.1}\]</span></span></p>
+<p>Observe that the electrons move in the opposite direction to the applied electric field (<span class="math inline">\(v_n = -\mu_n\vec{E}\)</span>). However, the current density flows in the opposite direction of this drift velocity due to the negative charge of the electrons (<span class="math inline">\(J_N = -qn v_n\)</span>). Consequently, as stated in <a href="#eq-semi-dev-drift" class="quarto-xref">Equation&nbsp;<span>5.1</span></a>, the resulting electron current aligns with the direction of the applied electric field.</p>
 <p>In semiconductors where both electrons and holes function as charge carriers, the overall current density is represented by</p>
 <p><span id="eq-semi-dev-drift-total"><span class="math display">\[
     J = q\vec{E}\left({n\mu_n + p\mu_p}\right)
-\tag{4.2}\]</span></span></p>
+\tag{5.2}\]</span></span></p>
 <p>In n-type materials, the contribution from <em>hole-current</em> can often be overlooked since the hole concentration, <span class="math inline">\(p\)</span>, is significantly smaller in comparison to the electron concentration, <span class="math inline">\(n\)</span>. Similarly, in p-type semiconductors, the <em>electron current</em> can be disregarded.</p>
-<p><a href="#eq-semi-dev-drift-total" class="quarto-xref">Equation&nbsp;<span>4.2</span></a> is commonly referred to as Ohm’s Law and can be expressed in its well-known format.</p>
+<p><a href="#eq-semi-dev-drift-total" class="quarto-xref">Equation&nbsp;<span>5.2</span></a> is commonly referred to as Ohm’s Law and can be expressed in its well-known format.</p>
 <p><span id="eq-semi-dev-ohms-law"><span class="math display">\[
   I = \frac{V}{R}
-\tag{4.3}\]</span></span></p>
+\tag{5.3}\]</span></span></p>
 <p>where <span class="math inline">\(I=J \cdot A\)</span> represents the overall current passing through a cross-sectional area <span class="math inline">\(A\)</span> of the sample. With the electric field magnitude <span class="math inline">\(E\)</span> being constant, the voltage differential over the semiconductor length <span class="math inline">\(L\)</span> is given by <span class="math inline">\(V = E \cdot L\)</span>, and the resistance of the sample can be written as</p>
 <p><span id="eq-semi-dev-resistance"><span class="math display">\[
   R=\frac{L}{\sigma \cdot A}
-\tag{4.4}\]</span></span></p>
-<p>where <span class="math inline">\(\sigma=q\left({n\mu_n + p\mu_p}\right)\)</span> (see <a href="#eq-semi-dev-drift-total" class="quarto-xref">Equation&nbsp;<span>4.2</span></a>). Keep in mind that Ohm’s law generally applies to weak electric fields, a condition seldom met in contemporary integrated circuits with feature sizes below a micrometer. Nonetheless, it remains a valuable expression for grasping the basic principles of current transport in semiconductors.</p>
+\tag{5.4}\]</span></span></p>
+<p>where <span class="math inline">\(\sigma=q\left({n\mu_n + p\mu_p}\right)\)</span> (see <a href="#eq-semi-dev-drift-total" class="quarto-xref">Equation&nbsp;<span>5.2</span></a>). Keep in mind that Ohm’s law generally applies to weak electric fields, a condition seldom met in contemporary integrated circuits with feature sizes below a micrometer. Nonetheless, it remains a valuable expression for grasping the basic principles of current transport in semiconductors.</p>
 </section>
-<section id="diffusion" class="level2" data-number="4.7">
-<h2 data-number="4.7" class="anchored" data-anchor-id="diffusion"><span class="header-section-number">4.7</span> Diffusion</h2>
+<section id="diffusion" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="diffusion"><span class="header-section-number">5.7</span> Diffusion</h2>
 <div id="fig-semi-dev-diffusion" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-semi-dev-diffusion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/fig-semi-dev-diffusion.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-diffusion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.12: Diffusion of electrons and holes at a macroscopic level.
+Figure&nbsp;5.12: Diffusion of electrons and holes at a macroscopic level.
 </figcaption>
 </figure>
 </div>
@@ -609,57 +609,57 @@ Figure&nbsp;4.12: Diffusion of electrons and holes at a macroscopic level.
 <p>In a general three-dimensional case the concentration profiles will be expressed as gradients:</p>
 <p><span id="eq-semi-dev-diffp"><span class="math display">\[
 J_{P|diff} = -qD_P\nabla p
-\tag{4.5}\]</span></span></p>
+\tag{5.5}\]</span></span></p>
 <p><span id="eq-semi-dev-diffn"><span class="math display">\[
 J_{N|diff} = qD_N\nabla n
-\tag{4.6}\]</span></span></p>
+\tag{5.6}\]</span></span></p>
 <p>In a one-dimensional scenario, the overall current can now be described as</p>
 <p><span class="math display">\[
    J =
         \underbrace{q\vec{E}\left({n\mu_n + p\mu_p}\right)}_{drift} +
         \underbrace{q\left({D_N\frac{dn}{dx}  - D_P\frac{dp}{dx}}\right)}_{diffusion}
 \]</span></p>
-<p>where <span class="math inline">\(D_N\)</span> and <span class="math inline">\(D_P\)</span> are the <em>diffusion constants</em> for electrons and holes respectively. For a positive concentration gradient (<span class="math inline">\(dp/dx &gt; 0\)</span> and <span class="math inline">\(dn/dx &gt; 0\)</span>), as shown in <a href="#fig-semi-dev-diffusion" class="quarto-xref">Figure&nbsp;<span>4.12</span></a>, both holes and electrons will diffuse in the <em>negative-x</em> direction. Therefore, <span class="math inline">\(J_{P|diff}\)</span> will be in the negative x direction and <span class="math inline">\(J_{N|diff}\)</span> in the positive x direction.</p>
+<p>where <span class="math inline">\(D_N\)</span> and <span class="math inline">\(D_P\)</span> are the <em>diffusion constants</em> for electrons and holes respectively. For a positive concentration gradient (<span class="math inline">\(dp/dx &gt; 0\)</span> and <span class="math inline">\(dn/dx &gt; 0\)</span>), as shown in <a href="#fig-semi-dev-diffusion" class="quarto-xref">Figure&nbsp;<span>5.12</span></a>, both holes and electrons will diffuse in the <em>negative-x</em> direction. Therefore, <span class="math inline">\(J_{P|diff}\)</span> will be in the negative x direction and <span class="math inline">\(J_{N|diff}\)</span> in the positive x direction.</p>
 <p>Both drift and diffusion arise from the random thermal movement of carriers. As a result, the mobility <span class="math inline">\(\mu\)</span> and the diffusion coefficient <span class="math inline">\(D\)</span> are interconnected through the <em>Einstein relationship</em>:</p>
 <p><span id="eq-semi-dev-einstein-rel"><span class="math display">\[
 D_N/\mu_n = D_P/\mu_p = kT/q
-\tag{4.7}\]</span></span></p>
+\tag{5.7}\]</span></span></p>
 <p>With a foundational understanding of semiconductor materials, we can now delve into the electronics of semiconductor devices within integrated circuits, beginning with <em>p-n junctions</em> and progressing to the pivotal component in integrated circuits, the MOSFET.</p>
 </section>
-<section id="pn-junctions" class="level2" data-number="4.8">
-<h2 data-number="4.8" class="anchored" data-anchor-id="pn-junctions"><span class="header-section-number">4.8</span> pn Junctions</h2>
+<section id="pn-junctions" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="pn-junctions"><span class="header-section-number">5.8</span> pn Junctions</h2>
 <div id="fig-semi-dev-pnjunc" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-semi-dev-pnjunc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/fig-semi-dev-pnjunc.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-pnjunc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.13: Distribution of charge, electric field, and potential for a <span class="math inline">\(p-n\)</span> junction diode (a) when unbiased, and (b) contrast of potential distributions under zero, forward, and reverse bias conditions.
+Figure&nbsp;5.13: Distribution of charge, electric field, and potential for a <span class="math inline">\(p-n\)</span> junction diode (a) when unbiased, and (b) contrast of potential distributions under zero, forward, and reverse bias conditions.
 </figcaption>
 </figure>
 </div>
 <p>Junctions are fundamental to understanding any semiconductor device since these junctions are formed when two different materials come into contact or the same semiconductor material with different doping.</p>
-<p>p-n junctions occur where an <span class="math inline">\(n\)</span>-type semiconductor meets a <span class="math inline">\(p\)</span>-type semiconductor. In equilibrium, holes migrate from the <span class="math inline">\(p\)</span> region to the <span class="math inline">\(n\)</span> region, moving from an area of higher concentration to one of lower concentration. This movement leaves behind a zone of immobile, negatively charged acceptor ions near the junction. Similarly, electrons move from the <span class="math inline">\(n\)</span> region to the <span class="math inline">\(p\)</span> region, resulting in an accumulation of positively charged donor ions near the junction (see <a href="#fig-semi-dev-pnjunc" class="quarto-xref">Figure&nbsp;<span>4.13</span></a>). The interface thus forms a <em>space charge region</em> or <em>depletion region</em>, characterized by the absence of holes in the <span class="math inline">\(p\)</span>-region and electrons in the <span class="math inline">\(n\)</span>-region. These immobile charges on either side generate a potential barrier known as the <em>contact potential</em> <span class="math inline">\(V_0\)</span>, also referred to as a <em>built-in potential</em>, which ultimately inhibits further crossing of electrons and holes across the interface.</p>
+<p>p-n junctions occur where an <span class="math inline">\(n\)</span>-type semiconductor meets a <span class="math inline">\(p\)</span>-type semiconductor. In equilibrium, holes migrate from the <span class="math inline">\(p\)</span> region to the <span class="math inline">\(n\)</span> region, moving from an area of higher concentration to one of lower concentration. This movement leaves behind a zone of immobile, negatively charged acceptor ions near the junction. Similarly, electrons move from the <span class="math inline">\(n\)</span> region to the <span class="math inline">\(p\)</span> region, resulting in an accumulation of positively charged donor ions near the junction (see <a href="#fig-semi-dev-pnjunc" class="quarto-xref">Figure&nbsp;<span>5.13</span></a>). The interface thus forms a <em>space charge region</em> or <em>depletion region</em>, characterized by the absence of holes in the <span class="math inline">\(p\)</span>-region and electrons in the <span class="math inline">\(n\)</span>-region. These immobile charges on either side generate a potential barrier known as the <em>contact potential</em> <span class="math inline">\(V_0\)</span>, also referred to as a <em>built-in potential</em>, which ultimately inhibits further crossing of electrons and holes across the interface.</p>
 <p>In the n-region, the majority of electrons reside in energy states near the conduction band edge <span class="math inline">\(E_C\)</span>, having minimal thermal energy. As energy levels rise from the band edge, the quantity of electrons <em>diminishes exponentially</em>, leaving only a small number able to surpass the built-in potential barrier. Upon crossing, the built-in electric field moves them to the p-side. Likewise, on the p-side, a similar process occurs with holes, maintaining a net current of zero.</p>
 <p>Under equilibrium conditions, the overall current resulting from both drift and diffusion processes, such as for holes, sums to zero.</p>
 <p><span id="eq-semi-dev-total-curr"><span class="math display">\[
 \frac{J_{P_x}}{q} = \mu_{p_x}  E_x - D_p \frac{d p_x}{dx} = 0
-\tag{4.8}\]</span></span></p>
+\tag{5.8}\]</span></span></p>
 <p>By applying this condition, the relationship between the contact potential and the doping concentrations on each side of the junction can be determined as:</p>
 <p><span id="eq-semi-dev-contact-v"><span class="math display">\[
 V_0 = \frac{kT}{q}\ln{\frac{N_A N_D}{n_i^2}}
-\tag{4.9}\]</span></span></p>
+\tag{5.9}\]</span></span></p>
 <p>assuming the doping concentration dominates on both sides. Then, applying the equilibrium condition <span class="math inline">\(p_pn_p = n_i^2 = n_nn_p\)</span>, the #eq-semi-dev-contact-v can be reformulated into a more advantageous form as:</p>
 <p><span id="eq-semi-dev-contact-v2"><span class="math display">\[
 \frac{p_p}{p_n} = \frac{n_n}{n_p} = e^{qV_0/kT}
-\tag{4.10}\]</span></span></p>
+\tag{5.10}\]</span></span></p>
 <p>where <span class="math inline">\(p_p\)</span> and <span class="math inline">\(p_n\)</span> signify the hole densities on the <span class="math inline">\(p\)</span> and <span class="math inline">\(n\)</span> regions, respectively, while <span class="math inline">\(n_n\)</span> and <span class="math inline">\(n_p\)</span> indicate the electron densities on the <span class="math inline">\(n\)</span> and <span class="math inline">\(p\)</span> regions, respectively.</p>
 <p>Evaluate the situation of <em>forward bias</em>, where a voltage <span class="math inline">\(V_F\)</span> is applied across the p-side relative to the n-side. This causes a <em>linear reduction</em> in the potential barrier by <span class="math inline">\(V_F\)</span>. However, the count of electrons at the junction capable of overcoming the barrier <em>grows exponentially</em> with <span class="math inline">\(V_F\)</span>. As electrons constitute minority carriers in the <span class="math inline">\(p\)</span> region, the carrier concentration near the contact reduces due to a <em>recombination</em> process, resulting in forward current driven by <em>diffusion</em>.</p>
 <p>Therefore, the forward current <span class="math inline">\(I\)</span> is anticipated to be an exponentially increasing function relative to the applied forward voltage <span class="math inline">\(V_F\)</span>. The overall relationship between <span class="math inline">\(I\)</span> and <span class="math inline">\(V\)</span> can be represented in its general expression.</p>
 <p><span id="eq-semi-dev-diode-IV"><span class="math display">\[  
 I = I_S(e^{qV_F/kT} - 1 )
-\tag{4.11}\]</span></span></p>
-<p><a href="#eq-semi-dev-diode-IV" class="quarto-xref">Equation&nbsp;<span>4.11</span></a> represents the ideal diode equation, which forecasts that the minor reverse-bias current will settle at <span class="math inline">\(-I_S\)</span>. This saturation persists even at low reverse bias voltages exceeding several <span class="math inline">\(kT/q\)</span>. The current arises from a limited number of <em>bias-independent</em> minority carriers being driven by the electric field upon entering the depletion region.</p>
+\tag{5.11}\]</span></span></p>
+<p><a href="#eq-semi-dev-diode-IV" class="quarto-xref">Equation&nbsp;<span>5.11</span></a> represents the ideal diode equation, which forecasts that the minor reverse-bias current will settle at <span class="math inline">\(-I_S\)</span>. This saturation persists even at low reverse bias voltages exceeding several <span class="math inline">\(kT/q\)</span>. The current arises from a limited number of <em>bias-independent</em> minority carriers being driven by the electric field upon entering the depletion region.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Further Reading">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -674,8 +674,8 @@ Further Reading
 </div>
 </div>
 </section>
-<section id="pn-junction-current" class="level2" data-number="4.9">
-<h2 data-number="4.9" class="anchored" data-anchor-id="pn-junction-current"><span class="header-section-number">4.9</span> pn Junction Current</h2>
+<section id="pn-junction-current" class="level2" data-number="5.9">
+<h2 data-number="5.9" class="anchored" data-anchor-id="pn-junction-current"><span class="header-section-number">5.9</span> pn Junction Current</h2>
 <p>To enhance our comprehension of the current flow through the pn junction, we can now incorporate some <em>quantitative</em> analysis. Staying true to the approach of this text, the quantitative explanation will be kept quite brief, primarily by presenting key principles as given assumptions or as <em>a priori</em> knowledge sourced from references.</p>
 <div id="fig-semi-dev-pn-cuurent" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -683,46 +683,46 @@ Further Reading
 <img src="figures/fig-semi-dev-pn-current.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-pn-cuurent-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.14: Forward-biased junction: (a) distribution of minority carriers on both sides of the transition region, alongside the definitions for distances <span class="math inline">\(x_n\)</span> and <span class="math inline">\(x_p\)</span> measured from the edges of the transition zone; (b) positional variation of the quasi-Fermi levels
+Figure&nbsp;5.14: Forward-biased junction: (a) distribution of minority carriers on both sides of the transition region, alongside the definitions for distances <span class="math inline">\(x_n\)</span> and <span class="math inline">\(x_p\)</span> measured from the edges of the transition zone; (b) positional variation of the quasi-Fermi levels
 </figcaption>
 </figure>
 </div>
-<p>The present derivation can be arranged by considering three separate electrostatic regions of a pn junction as illustrated in <a href="#fig-semi-dev-pn-cuurent" class="quarto-xref">Figure&nbsp;<span>4.14</span></a>. These regions include: the <em>quasi-neutral</em> p-region characterized by a zero electric field, the space charge region with a nonzero electric field, and the quasineutral n-region also with a zero electric field. Previous studies have elaborated extensively that the ideal forward bias current can be determined by examining the current within the quasi-neutral region, attributable to the <em>low-level injection</em> of minority carriers at the boundaries of the depletion region, <span class="math inline">\(x_{p0}\)</span> and <span class="math inline">\(x_{n0}\)</span>. Under forward bias <span class="math inline">\(V_F\)</span>, the equilibrium ratio of hole concentrations (<a href="#eq-semi-dev-contact-v2" class="quarto-xref">Equation&nbsp;<span>4.10</span></a>) transforms into:</p>
+<p>The present derivation can be arranged by considering three separate electrostatic regions of a pn junction as illustrated in <a href="#fig-semi-dev-pn-cuurent" class="quarto-xref">Figure&nbsp;<span>5.14</span></a>. These regions include: the <em>quasi-neutral</em> p-region characterized by a zero electric field, the space charge region with a nonzero electric field, and the quasineutral n-region also with a zero electric field. Previous studies have elaborated extensively that the ideal forward bias current can be determined by examining the current within the quasi-neutral region, attributable to the <em>low-level injection</em> of minority carriers at the boundaries of the depletion region, <span class="math inline">\(x_{p0}\)</span> and <span class="math inline">\(x_{n0}\)</span>. Under forward bias <span class="math inline">\(V_F\)</span>, the equilibrium ratio of hole concentrations (<a href="#eq-semi-dev-contact-v2" class="quarto-xref">Equation&nbsp;<span>5.10</span></a>) transforms into:</p>
 <p><span id="eq-semi-dev-hole-conc-vf"><span class="math display">\[
   p(x_{p0}) = p(x_{n0}) e^{q(V_0-V_F)/kT}
-\tag{4.12}\]</span></span></p>
-<p>In low-level injection scenarios, the alteration in the majority carrier concentration is generally negligible (<span class="math inline">\(p(x_{p0}) = p_p\)</span>). By substituting <a href="#eq-semi-dev-contact-v2" class="quarto-xref">Equation&nbsp;<span>4.10</span></a> into <a href="#eq-semi-dev-hole-conc-vf" class="quarto-xref">Equation&nbsp;<span>4.12</span></a>, the concentration of minority holes at <span class="math inline">\(x_{n0}\)</span> can be represented as follows:</p>
+\tag{5.12}\]</span></span></p>
+<p>In low-level injection scenarios, the alteration in the majority carrier concentration is generally negligible (<span class="math inline">\(p(x_{p0}) = p_p\)</span>). By substituting <a href="#eq-semi-dev-contact-v2" class="quarto-xref">Equation&nbsp;<span>5.10</span></a> into <a href="#eq-semi-dev-hole-conc-vf" class="quarto-xref">Equation&nbsp;<span>5.12</span></a>, the concentration of minority holes at <span class="math inline">\(x_{n0}\)</span> can be represented as follows:</p>
 <p><span id="eq-semi-dev-hole-conc-xn"><span class="math display">\[
   p(x_{n0}) = p_n e^{qV_F/kT}
-\tag{4.13}\]</span></span></p>
-<p>Take into consideration that <a href="#eq-semi-dev-hole-conc-xn" class="quarto-xref">Equation&nbsp;<span>4.13</span></a> is originally formulated for a forward-biased junction, but it remains applicable for reverse bias by altering the sign of the voltage to negative. Under this condition, the carrier concentration falls below the equilibrium level. The concentration of <em>excess</em> minority carriers on both the p-side and n-side is given by:</p>
+\tag{5.13}\]</span></span></p>
+<p>Take into consideration that <a href="#eq-semi-dev-hole-conc-xn" class="quarto-xref">Equation&nbsp;<span>5.13</span></a> is originally formulated for a forward-biased junction, but it remains applicable for reverse bias by altering the sign of the voltage to negative. Under this condition, the carrier concentration falls below the equilibrium level. The concentration of <em>excess</em> minority carriers on both the p-side and n-side is given by:</p>
 <p><span class="math display">\[
 \Delta p_n = p(x_{n0}) - p_n = p_n \left({e^{qV_F/kT} - 1}\right)
 \]</span></p>
 <p><span id="eq-semi-dev-minority-xs-inj"><span class="math display">\[
     \Delta n_p = n(x_{p0}) - n_p = n_p\left({e^{qV_F/kT} - 1}\right)
-\tag{4.14}\]</span></span></p>
+\tag{5.14}\]</span></span></p>
 <p>The diffusion theory suggests that minority carriers are injected at the boundaries of the space charge region, resulting in a stable concentration of <span class="math inline">\(\Delta p_n\)</span> holes in the <span class="math inline">\(n\)</span>-type material at <span class="math inline">\(x_{n0}\)</span> and <span class="math inline">\(\Delta n_p\)</span> electrons in the <span class="math inline">\(p\)</span>-type material at <span class="math inline">\(x_{p0}\)</span>. This injection initiates a <em>distribution</em> of minority carriers, which follows the diffusion equation.</p>
 <p><span class="math display">\[
 \delta p(x_p) = \Delta p e^{-x_p/L_p}
 \]</span></p>
 <p><span id="eq-semi-dev-diffusion-dist"><span class="math display">\[
 \delta n(x_n) = \Delta n e^{-x_n/L_n}
-\tag{4.15}\]</span></span></p>
-<p>where <span class="math inline">\(L_p\)</span> and <span class="math inline">\(L_n\)</span> represent the diffusion lengths for holes and electrons, respectively. It is also presumed that the dimensions of the <span class="math inline">\(p\)</span> and <span class="math inline">\(n\)</span> materials exceed their corresponding diffusion lengths. By incorporating <a href="#eq-semi-dev-minority-xs-inj" class="quarto-xref">Equation&nbsp;<span>4.14</span></a> into the diffusion equation, the distribution of minority carriers can be represented as follows:</p>
+\tag{5.15}\]</span></span></p>
+<p>where <span class="math inline">\(L_p\)</span> and <span class="math inline">\(L_n\)</span> represent the diffusion lengths for holes and electrons, respectively. It is also presumed that the dimensions of the <span class="math inline">\(p\)</span> and <span class="math inline">\(n\)</span> materials exceed their corresponding diffusion lengths. By incorporating <a href="#eq-semi-dev-minority-xs-inj" class="quarto-xref">Equation&nbsp;<span>5.14</span></a> into the diffusion equation, the distribution of minority carriers can be represented as follows:</p>
 <p><span class="math display">\[
 \delta p(x_p) = p_n\left({e^{qV_F/kT} - 1}\right) e^{-x_p/L_p}
 \]</span></p>
 <p><span id="eq-semi-dev-diffusion-dist2"><span class="math display">\[
 \delta n(x_n) = n_p\left({e^{qV_F/kT} - 1}\right) e^{-x_n/L_n}
-\tag{4.16}\]</span></span></p>
-<p>In the <span class="math inline">\(n\)</span> material, the diffusion current of holes, and in the <span class="math inline">\(p\)</span> material, the diffusion current of electrons can be determined by utilizing the diffusion component of the total current as described in <a href="#eq-semi-dev-total-curr" class="quarto-xref">Equation&nbsp;<span>4.8</span></a> :</p>
+\tag{5.16}\]</span></span></p>
+<p>In the <span class="math inline">\(n\)</span> material, the diffusion current of holes, and in the <span class="math inline">\(p\)</span> material, the diffusion current of electrons can be determined by utilizing the diffusion component of the total current as described in <a href="#eq-semi-dev-total-curr" class="quarto-xref">Equation&nbsp;<span>5.8</span></a> :</p>
 <p><span class="math display">\[
 J_p(x_n) = -qD_p\frac{d\delta p(x_n)}{dx_n} = q \frac{D_p}{L_p}\delta p(x_n)
 \]</span></p>
 <p><span id="eq-semi-dev-pn-current-1"><span class="math display">\[
 J_n(x_p) = qD_n\frac{d\delta n(x_p)}{dx_p} = q \frac{D_n}{L_n}\delta n(x_p)
-\tag{4.17}\]</span></span></p>
+\tag{5.17}\]</span></span></p>
 <p>The total current can be now calculated by adding the hole and electron current evaluated at <span class="math inline">\(x_{n0}\)</span> and <span class="math inline">\(x_{p0}\)</span> respectively:</p>
 <p><span class="math display">\[
 I = qA\left({\frac{D_p}{L_p}p_n + \frac{D_n}{L_n}n_p}\right)
@@ -731,12 +731,12 @@ I = qA\left({\frac{D_p}{L_p}p_n + \frac{D_n}{L_n}n_p}\right)
 <p>or,</p>
 <p><span id="eq-semi-dev-diode-current-total"><span class="math display">\[
 I = I_S \left({e^{V_F/kT} -1}\right)
-\tag{4.18}\]</span></span></p>
-<p>where, <span class="math inline">\(A\)</span> is the area of the <span class="math inline">\(pn\)</span> junction. <a href="#eq-semi-dev-diode-current-total" class="quarto-xref">Equation&nbsp;<span>4.18</span></a> is the <em>diode equation</em>, that has the same form as the <em>qualitative</em> expression in <a href="#eq-semi-dev-diode-IV" class="quarto-xref">Equation&nbsp;<span>4.11</span></a> .</p>
+\tag{5.18}\]</span></span></p>
+<p>where, <span class="math inline">\(A\)</span> is the area of the <span class="math inline">\(pn\)</span> junction. <a href="#eq-semi-dev-diode-current-total" class="quarto-xref">Equation&nbsp;<span>5.18</span></a> is the <em>diode equation</em>, that has the same form as the <em>qualitative</em> expression in <a href="#eq-semi-dev-diode-IV" class="quarto-xref">Equation&nbsp;<span>5.11</span></a> .</p>
 <p>To determine the reverse bias current, substitute the forward bias voltage <span class="math inline">\(V_F\)</span> with the negative value of the reverse bias voltage <span class="math inline">\(-V_R\)</span>. When <span class="math inline">\(V_R\)</span> exceeds a few times <span class="math inline">\(kT/q\)</span>, the complete current becomes equivalent to the reverse saturation current:</p>
 <p><span id="eq-semi-dev-diode-current-reverse"><span class="math display">\[
 I = -qA\left({\frac{D_p}{L_p}p_n + \frac{D_n}{L_n}n_p}\right) = -I_S
-\tag{4.19}\]</span></span></p>
+\tag{5.19}\]</span></span></p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
@@ -1175,13 +1175,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./circuits.html" class="pagination-link" aria-label="Linear Circuits">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Linear Circuits</span></span>
+      <a href="./FirstOrderCkts.html" class="pagination-link" aria-label="First-Order Circuits">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">First-Order Circuits</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./bjt.html" class="pagination-link" aria-label="BJT Fundamentals">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">BJT Fundamentals</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">BJT Fundamentals</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; MOS Transistor – IC Engineering I</title>
+<title>7&nbsp; MOS Transistor – IC Engineering I</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./si2025analog.html" rel="next">
+<link href="./references.html" rel="next">
 <link href="./bjt.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -110,7 +110,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./mos.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">MOS Transistor</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./mos.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">MOS Transistor</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -161,26 +161,26 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./FirstOrderCkts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">First-Order Circuits</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./devices.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Semiconductor IC devices</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Semiconductor IC devices</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./bjt.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">BJT Fundamentals</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">BJT Fundamentals</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mos.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">MOS Transistor</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./si2025analog.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">SI 2025 Analog IC</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">MOS Transistor</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -199,7 +199,7 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#principle-of-operation" id="toc-principle-of-operation" class="nav-link active" data-scroll-target="#principle-of-operation"><span class="header-section-number">6.1</span> Principle of Operation</a></li>
+  <li><a href="#principle-of-operation" id="toc-principle-of-operation" class="nav-link active" data-scroll-target="#principle-of-operation"><span class="header-section-number">7.1</span> Principle of Operation</a></li>
   </ul>
 </nav>
     </div>
@@ -208,7 +208,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="chap-mos" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">MOS Transistor</span></span></h1>
+<h1 class="title"><span id="chap-mos" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">MOS Transistor</span></span></h1>
 </div>
 
 
@@ -226,8 +226,8 @@ window.Quarto = {
 
 
 <p>MOSFETs (metal-oxide-semiconductor field-effect transistors) (or MOS) are the pervasive <em>switching</em> semiconductor devices in digital integrated circuits (IC) and serve as <em>transconductance</em> components in analog ICs.This chapter focuses on analyzing and deriving the expressions of current in a <em>long channel</em> MOSFET.</p>
-<section id="principle-of-operation" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="principle-of-operation"><span class="header-section-number">6.1</span> Principle of Operation</h2>
+<section id="principle-of-operation" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="principle-of-operation"><span class="header-section-number">7.1</span> Principle of Operation</h2>
 <!-- Figure 1.1 -->
 <div id="fig-semi-dev-mos-sch" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -235,11 +235,11 @@ window.Quarto = {
 <img src="figures/fig-semi-dev-mos-sch.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-mos-sch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.1: nMOSFET (nMOS) circuit symbol.
+Figure&nbsp;7.1: nMOSFET (nMOS) circuit symbol.
 </figcaption>
 </figure>
 </div>
-<p><a href="#fig-semi-dev-mos-sch" class="quarto-xref">Figure&nbsp;<span>6.1</span></a>(a) shows an n-channel MOSFET’s circuit symbol (n-FET or nMOS), a <em>four-terminal</em> device with <em>gate, source, drain</em>, and <em>bulk</em> terminals. <a href="#fig-semi-dev-mos-sch" class="quarto-xref">Figure&nbsp;<span>6.1</span></a>(b) depicts the device voltages. The gate acts as the control electrode and the gate source voltage (<span class="math inline">\(V_{GSn}\)</span>) regulates the drain current (<span class="math inline">\(I_{Dn}\)</span>) from the drain to the source. The drain current depends on <span class="math inline">\(V_{GSn}\)</span> and the drain-source voltage (<span class="math inline">\(V_{DSn}\)</span>), while the source-bulk voltage (<span class="math inline">\(V_{SBn}\)</span>) has a minor influence.</p>
+<p><a href="#fig-semi-dev-mos-sch" class="quarto-xref">Figure&nbsp;<span>7.1</span></a>(a) shows an n-channel MOSFET’s circuit symbol (n-FET or nMOS), a <em>four-terminal</em> device with <em>gate, source, drain</em>, and <em>bulk</em> terminals. <a href="#fig-semi-dev-mos-sch" class="quarto-xref">Figure&nbsp;<span>7.1</span></a>(b) depicts the device voltages. The gate acts as the control electrode and the gate source voltage (<span class="math inline">\(V_{GSn}\)</span>) regulates the drain current (<span class="math inline">\(I_{Dn}\)</span>) from the drain to the source. The drain current depends on <span class="math inline">\(V_{GSn}\)</span> and the drain-source voltage (<span class="math inline">\(V_{DSn}\)</span>), while the source-bulk voltage (<span class="math inline">\(V_{SBn}\)</span>) has a minor influence.</p>
 <!-- Figure 1.2 & 1.3 as (a) and (b) -->
 <div id="fig-semi-dev-mos-csec" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -247,11 +247,11 @@ Figure&nbsp;6.1: nMOSFET (nMOS) circuit symbol.
 <img src="figures/fig-semi-dev-mos-csec.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semi-dev-mos-csec-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.2: (a) nMOSFET (nMOS) cross-section view. (b) Top View
+Figure&nbsp;7.2: (a) nMOSFET (nMOS) cross-section view. (b) Top View
 </figcaption>
 </figure>
 </div>
-<p><a href="#fig-semi-dev-mos-csec" class="quarto-xref">Figure&nbsp;<span>6.2</span></a> (a) shows an nMOS with a metal gate (<em>M</em>) on silicon dioxide (<em>O</em>) over p-type silicon (<em>S</em>). This structure forms a capacitor between the gate and the semiconductor. The drain and source terminals are on the sides, with a bulk electrode attached to the substrate. The length of the channel (<span class="math inline">\(L\)</span>) between the drain and the source is crucial. <a href="#fig-semi-dev-mos-csec" class="quarto-xref">Figure&nbsp;<span>6.2</span></a> (b)’s top view shows that the channel width (<span class="math inline">\(W\)</span>) allows current flow, with the aspect ratio (W/L) important for design. The <em>drawn</em> channel length (<span class="math inline">\(L'\)</span>) exceeds the electrical length (<span class="math inline">\(L\)</span>).</p>
+<p><a href="#fig-semi-dev-mos-csec" class="quarto-xref">Figure&nbsp;<span>7.2</span></a> (a) shows an nMOS with a metal gate (<em>M</em>) on silicon dioxide (<em>O</em>) over p-type silicon (<em>S</em>). This structure forms a capacitor between the gate and the semiconductor. The drain and source terminals are on the sides, with a bulk electrode attached to the substrate. The length of the channel (<span class="math inline">\(L\)</span>) between the drain and the source is crucial. <a href="#fig-semi-dev-mos-csec" class="quarto-xref">Figure&nbsp;<span>7.2</span></a> (b)’s top view shows that the channel width (<span class="math inline">\(W\)</span>) allows current flow, with the aspect ratio (W/L) important for design. The <em>drawn</em> channel length (<span class="math inline">\(L'\)</span>) exceeds the electrical length (<span class="math inline">\(L\)</span>).</p>
 <p>The MOSFET current-voltage characteristics (<span class="math inline">\(I\)</span>-<span class="math inline">\(V\)</span>) rely on a threshold voltage (<span class="math inline">\(V_{Tn}\)</span>) determined by the manufacturing parameters. CMOS technology usually uses enhancement-mode MOSFETs with a positive threshold voltage.</p>
 <p>The MOS structure enables drain-to-source conduction due to its capacitor-like traits. A positive gate voltage induces negative charge in the semiconductor under the oxide via the field effect, altering surface charge distribution.</p>
 <p>In an <em>ideal</em> n-channel MOSFET, when <span class="math inline">\(V_{GSn} &lt; V_{Tn}\)</span>, it is in <em>cutoff</em> with zero current flow (<span class="math inline">\(I_d\)</span>). Only immobile bulk charge exists under the gate, and the drain and source are separated by reverse-biased pn junctions.</p>
@@ -681,12 +681,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./bjt.html" class="pagination-link" aria-label="BJT Fundamentals">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">BJT Fundamentals</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">BJT Fundamentals</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./si2025analog.html" class="pagination-link" aria-label="SI 2025 Analog IC">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">SI 2025 Analog IC</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
